@@ -1,0 +1,54 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# Ignore the images folder
+images/
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### 시크릿 / 환경변수 (절대 커밋 금지) ###
+.env
+*.env
+*.env.local
+application-local.properties
+application-secret.properties
+
+### macOS ###
+.DS_Store
+
+### 로그 ###
+*.log
+logs/
+
+### Postman (예시 토큰 포함 / 강의 출처 노출) ###
+*.postman_collection.json
