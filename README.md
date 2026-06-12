@@ -4,7 +4,7 @@ Spring Boot 기반 이커머스 백엔드 REST API. 상품·주문·결제·인�
 
 - 🚀 **라이브 데모**: http://Ecom-app-env.eba-npaqhkee.ap-northeast-2.elasticbeanstalk.com
 - 🔗 **API 문서 (Swagger)**: http://Ecom-app-env.eba-npaqhkee.ap-northeast-2.elasticbeanstalk.com/swagger-ui/index.html
-- 🖥️ **프론트엔드 레포**: [ecommerce-frontend](https://github.com/Dawit-lee/ecommerce-frontend)
+- 🖥️ **프론트엔드 레포**: [ecommerce-frontend](https://github.com/Dawit-lee/ecommerce-frontend) ([라이브](https://ecommerce-backend-gules-eight.vercel.app))
 
 ---
 
