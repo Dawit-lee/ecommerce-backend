@@ -2,10 +2,9 @@
 
 Spring Boot 기반 이커머스 백엔드 REST API. 상품·주문·결제·인증 등 온라인 쇼핑몰의 핵심 기능을 제공하며, 역할(Role) 기반 권한 관리와 Stripe 결제 연동을 포함합니다.
 
-<!-- TODO: 배포 후 링크 채우기 -->
-- 🔗 **API 문서 (Swagger)**: `https://<배포주소>/swagger-ui.html`
+- 🚀 **라이브 데모**: http://Ecom-app-env.eba-npaqhkee.ap-northeast-2.elasticbeanstalk.com
+- 🔗 **API 문서 (Swagger)**: http://Ecom-app-env.eba-npaqhkee.ap-northeast-2.elasticbeanstalk.com/swagger-ui/index.html
 - 🖥️ **프론트엔드 레포**: [ecommerce-frontend](https://github.com/Dawit-lee/ecommerce-frontend)
-- 🚀 **라이브 데모**: `https://<배포주소>` <!-- 배포 완료 후 업데이트 -->
 
 ---
 
@@ -89,7 +88,7 @@ PostgreSQL (AWS RDS)        Stripe API
 | Address | `GET /api/addresses`, `POST /api/addresses` |
 | Analytics | `GET /api/admin/app/analytics` |
 
-> 전체 명세는 실행 후 **Swagger UI**(`/swagger-ui.html`)에서 확인할 수 있습니다.
+> 전체 명세는 **[Swagger UI](http://Ecom-app-env.eba-npaqhkee.ap-northeast-2.elasticbeanstalk.com/swagger-ui/index.html)** 에서 확인할 수 있습니다.
 
 ---
 
@@ -158,7 +157,8 @@ src/main/java/com/ecommerce/project
 
 ## 🗺️ 향후 개선 (Roadmap)
 
-- [ ] Docker 기반 AWS EC2 배포
+- [x] Docker 컨테이너화 (멀티스테이지 빌드)
+- [x] AWS Elastic Beanstalk 배포 (라이브)
 - [ ] GitHub Actions CI/CD 파이프라인
 - [ ] 도메인 연결 및 HTTPS 적용
 - [ ] 테스트 커버리지 확대
