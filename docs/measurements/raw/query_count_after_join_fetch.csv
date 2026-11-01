@@ -1,0 +1,7 @@
+label,scenario,repeat,cart_items,statements_prepared,statements_captured,entity_loads,collection_loads
+after_join_fetch,getCart,0,10,14,14,24,13
+after_join_fetch,getAllProducts,0,10,15,15,24,12
+after_join_fetch,getCart,1,10,14,14,24,13
+after_join_fetch,getAllProducts,1,10,15,15,24,12
+after_join_fetch,getCart,2,10,14,14,24,13
+after_join_fetch,getAllProducts,2,10,15,15,24,12
