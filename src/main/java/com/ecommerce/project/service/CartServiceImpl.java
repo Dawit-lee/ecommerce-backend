@@ -120,7 +120,7 @@ public class CartServiceImpl implements CartService{
 
     @Override
     public CartDTO getCart(String emailId, Long cartId) {
-        Cart cart = cartRepository.findCartByEmailAndCartId(emailId, cartId);
+        Cart cart = cartRepository.findCartWithItemsByEmailAndCartId(emailId, cartId);
         if (cart == null){
             throw new ResourceNotFoundException("Cart", "cartId", cartId);
         }

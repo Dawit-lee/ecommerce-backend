@@ -13,6 +13,10 @@ public interface CartRepository extends JpaRepository<Cart, Long> {
     @Query("SELECT c FROM Cart c WHERE c.user.email = ?1 AND c.id = ?2")
     Cart findCartByEmailAndCartId(String emailId, Long cartId);
 
+    // Loads the cart with its items and their products in one query for cart lookup.
+    @Query("SELECT DISTINCT c FROM Cart c LEFT JOIN FETCH c.cartItems ci LEFT JOIN FETCH ci.product WHERE c.user.email = ?1 AND c.id = ?2")
+    Cart findCartWithItemsByEmailAndCartId(String emailId, Long cartId);
+
     @Query("SELECT c FROM Cart c JOIN FETCH c.cartItems ci JOIN FETCH ci.product p WHERE p.id = ?1")
     List<Cart> findCartsByProductId(Long productId);
 }
