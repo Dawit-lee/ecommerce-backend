@@ -51,7 +51,7 @@ class CartQueryCountMeasurementTest extends MeasurementSupport {
         readOnly.setReadOnly(true);
         Statistics stats = entityManagerFactory.unwrap(SessionFactory.class).getStatistics();
 
-        String prefix = "nq" + LABEL;
+        String prefix = "nq" + Integer.toHexString(LABEL.hashCode());
         Long[] ids = tx.execute(status -> {
             User seller = userRepository.save(new User(prefix + "_seller", prefix + "_seller@measure.test", "measure-password"));
             Category category = new Category();
