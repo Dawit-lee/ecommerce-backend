@@ -1,0 +1,21 @@
+postgres_image=postgres:16
+postgres_version=PostgreSQL 16.15 (Debian 16.15-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+transaction_isolation=read committed
+hikari_maximum_pool_size=10
+max_attempts=1
+java=Eclipse Adoptium 24.0.2+12
+os=Mac OS X 15.7.4 aarch64
+available_processors=10
+scenarios=A,B,C,D,E,F
+runs=5
+warmup_runs=1
+seed=run index (0 = warmup)
+zipf_s=1.0
+products=50
+stock=100
+orders=200
+threads=50
+c_orders=1000
+c_seconds=10.0
+f_sizes=[2, 5, 10, 20, 30, 50]
+total_elapsed_s=98.7

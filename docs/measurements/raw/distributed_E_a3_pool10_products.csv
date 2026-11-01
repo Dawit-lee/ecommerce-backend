@@ -1,0 +1,7 @@
+scenario,run,warmup,product_rank,initial_stock,assigned_qty,ordered_qty_db,final_stock,consistent,orders_success,orders_exhausted,orders_exhausted_with_stock_left,orders_out_of_stock,orders_other
+E,0,true,0,100,200,85,15,true,85,115,115,0,0
+E,1,false,0,100,200,84,16,true,84,116,116,0,0
+E,2,false,0,100,200,91,9,true,91,109,109,0,0
+E,3,false,0,100,200,93,7,true,93,107,107,0,0
+E,4,false,0,100,200,91,9,true,91,109,109,0,0
+E,5,false,0,100,200,93,7,true,93,107,107,0,0
