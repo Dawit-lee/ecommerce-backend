@@ -110,10 +110,18 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
         }
     }
 
+    /** First product UPDATE seen in the last run, recorded as evidence of the SQL actually executed. */
+    String productUpdateSqlSample = "";
+
+    /** Label used in output file names and generated user names; the no-lock baseline overrides it. */
+    String configLabel(int poolSize) {
+        return "a" + maxAttempts + "_pool" + poolSize;
+    }
+
     @Test
     void measure() throws Exception {
         int poolSize = dataSource.unwrap(HikariDataSource.class).getMaximumPoolSize();
-        String config = "a" + maxAttempts + "_pool" + poolSize;
+        String config = configLabel(poolSize);
         Map<String, StringBuilder> runs = new LinkedHashMap<>();
         Map<String, StringBuilder> requests = new LinkedHashMap<>();
         Map<String, StringBuilder> products = new LinkedHashMap<>();
@@ -148,6 +156,8 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
                 "runs=" + RUNS, "warmup_runs=" + WARMUP_RUNS, "seed=run index (0 = warmup)",
                 "zipf_s=" + ZIPF_S, "products=" + PRODUCTS, "stock=" + STOCK, "orders=" + ORDERS, "threads=" + THREADS,
                 "c_orders=" + C_ORDERS, "c_seconds=" + C_SECONDS, "f_sizes=" + Arrays.toString(F_SIZES),
+                "statement_inspector=" + System.getProperty("measure.inspector", SqlCapture.class.getName()),
+                "product_update_sql_sample=" + productUpdateSqlSample,
                 "total_elapsed_s=" + String.format(Locale.ROOT, "%.1f", (System.nanoTime() - started) / 1e9), ""));
     }
 
@@ -245,6 +255,7 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
         Mockito.clearInvocations(stripeService);
         Mockito.when(stripeService.refundPayment(anyString())).thenReturn(null);
         stats.clear();
+        SqlCapture.clear();
 
         HikariPoolMXBean pool = dataSource.unwrap(HikariDataSource.class).getHikariPoolMXBean();
         AtomicBoolean sampling = new AtomicBoolean(true);
@@ -312,8 +323,18 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
         Integer ordersInDb = jdbcTemplate.queryForObject("select count(*) from orders where email like ?", Integer.class, prefix + "\\_%");
 
         int oversoldProducts = 0;
+        int negativeStockProducts = 0;
+        int decrementMismatchProducts = 0;
+        int decrementedTotal = 0;
+        int lostDecrements = 0;   // sold (order_items) minus actually decremented stock
+        int oversoldUnits = 0;    // sold beyond the initial stock
         for (int i = 0; i < p; i++) {
             if (finalStock[i] < 0 || spec.stocks()[i] - finalStock[i] != orderedQty[i]) oversoldProducts++;
+            if (finalStock[i] < 0) negativeStockProducts++;
+            if (spec.stocks()[i] - finalStock[i] != orderedQty[i]) decrementMismatchProducts++;
+            decrementedTotal += spec.stocks()[i] - finalStock[i];
+            lostDecrements += orderedQty[i] - (spec.stocks()[i] - finalStock[i]);
+            oversoldUnits += Math.max(0, orderedQty[i] - spec.stocks()[i]);
         }
 
         Map<String, Integer> counts = new TreeMap<>();
@@ -349,6 +370,10 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
         long refundCalls = Mockito.mockingDetails(stripeService).getInvocations().stream()
                 .filter(inv -> inv.getMethod().getName().equals("refundPayment")).count();
 
+        SqlCapture.snapshot().stream().filter(sql -> sql.startsWith("update products ")).findFirst()
+                .ifPresent(sql -> productUpdateSqlSample = sql);
+        SqlCapture.clear();
+
         double[] lat = reqs.stream().mapToDouble(Req::latencyMs).sorted().toArray();
         double[] queue = reqs.stream().mapToDouble(Req::queueMs).sorted().toArray();
 
@@ -362,7 +387,9 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
                 successByAttempt[1], successByAttempt[2], successByAttempt[3], successByAttempt[4], totalAttempts,
                 fmt(wallMs), fmt(mean(lat)), fmt(pct(lat, 50)), fmt(pct(lat, 95)), fmt(pct(lat, 99)), fmt(lat[lat.length - 1]),
                 fmt(mean(queue)), fmt(pct(queue, 95)),
-                hikari[0], hikari[1], fmt(hikari[3] == 0 ? 0 : (double) hikari[2] / hikari[3]))).append('\n');
+                hikari[0], hikari[1], fmt(hikari[3] == 0 ? 0 : (double) hikari[2] / hikari[3]),
+                orderedTotal, successItems, decrementedTotal, lostDecrements, oversoldUnits,
+                negativeStockProducts, decrementMismatchProducts)).append('\n');
 
         for (Req r : reqs) {
             int[] items = spec.orders().get(r.index());
@@ -375,7 +402,9 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
         for (int i = 0; i < p; i++) {
             productsCsv.append(csv(spec.name(), run, warmup, i, spec.stocks()[i], assigned[i], orderedQty[i], finalStock[i],
                     !(finalStock[i] < 0 || spec.stocks()[i] - finalStock[i] != orderedQty[i]),
-                    perProduct[i][0], perProduct[i][1], perProduct[i][2], perProduct[i][3], perProduct[i][4])).append('\n');
+                    perProduct[i][0], perProduct[i][1], perProduct[i][2], perProduct[i][3], perProduct[i][4],
+                    spec.stocks()[i] - finalStock[i], orderedQty[i] - (spec.stocks()[i] - finalStock[i]),
+                    Math.max(0, orderedQty[i] - spec.stocks()[i]))).append('\n');
         }
     }
 
@@ -463,10 +492,12 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
             + "orders_in_db,orders_in_db_eq_success,ordered_qty_eq_success_items,refund_calls,optimistic_failures,"
             + "success_attempt1,success_attempt2,success_attempt3,success_attempt_over3,total_attempts,"
             + "wall_ms,avg_ms,p50_ms,p95_ms,p99_ms,max_ms,queue_avg_ms,queue_p95_ms,"
-            + "hikari_max_active,hikari_max_pending,hikari_avg_pending\n";
+            + "hikari_max_active,hikari_max_pending,hikari_avg_pending,"
+            + "sold_qty,success_items,decremented_qty,lost_decrements,oversold_units,negative_stock_products,decrement_mismatch_products\n";
     static final String REQUESTS_HEADER = "scenario,run,warmup,order,products,attempts,attempt_log,result,latency_ms,queue_ms,stock_left_for_all_items,error\n";
     static final String PRODUCTS_HEADER = "scenario,run,warmup,product_rank,initial_stock,assigned_qty,ordered_qty_db,final_stock,consistent,"
-            + "orders_success,orders_exhausted,orders_exhausted_with_stock_left,orders_out_of_stock,orders_other\n";
+            + "orders_success,orders_exhausted,orders_exhausted_with_stock_left,orders_out_of_stock,orders_other,"
+            + "decremented_qty,lost_decrements,oversold_units\n";
 
     static String csv(Object... values) {
         StringJoiner j = new StringJoiner(",");

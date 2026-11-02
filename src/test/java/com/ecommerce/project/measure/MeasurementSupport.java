@@ -31,7 +31,9 @@ public abstract class MeasurementSupport {
         registry.add("spring.app.jwtSecret", () -> "bWVhc3VyZW1lbnQtb25seS1zZWNyZXQtbWVhc3VyZW1lbnQtb25seS1zZWNyZXQtMDEyMzQ1Njc4OQ==");
         registry.add("stripe.secret.key", () -> "sk_test_measurement_dummy");
         registry.add("spring.jpa.properties.hibernate.generate_statistics", () -> "true");
-        registry.add("spring.jpa.properties.hibernate.session_factory.statement_inspector", SqlCapture.class::getName);
+        // -Dmeasure.inspector lets the no-lock baseline swap in NoVersionCheckInspector (test-only).
+        registry.add("spring.jpa.properties.hibernate.session_factory.statement_inspector",
+                () -> System.getProperty("measure.inspector", SqlCapture.class.getName()));
         registry.add("logging.level.org.hibernate.engine.internal.StatisticalLoggingSessionEventListener", () -> "OFF");
     }
 
