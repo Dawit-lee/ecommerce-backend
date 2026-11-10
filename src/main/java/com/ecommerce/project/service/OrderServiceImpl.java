@@ -74,6 +74,10 @@ public class OrderServiceImpl implements OrderService {
     @Value("${order.stock.max-attempts:3}")
     private int maxStockAttempts;
 
+    // Measurement toggle: "optimistic" (default, @Version + retry) or "pessimistic" (SELECT ... FOR UPDATE).
+    @Value("${order.stock.lock:optimistic}")
+    private String stockLockMode;
+
     @Override
     public OrderDTO placeOrder(String emailId, Long addressId, String paymentMethod, String pgName, String pgPaymentId, String pgStatus, String pgResponseMessage) {
         int attempt = 0;
@@ -123,6 +127,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Transactional
     public OrderDTO placeOrderTransactional(String emailId, Long addressId, String paymentMethod, String pgName, String pgPaymentId, String pgStatus, String pgResponseMessage) {
+        if ("pessimistic".equals(stockLockMode)) {
+            // Lock the cart's product rows first (before the cart load and any insert), in product-id order
+            // so multi-item orders cannot deadlock; the locked, fresh rows are then reused by the cart load.
+            productRepository.lockCartProductsByEmail(emailId);
+        }
+
         Cart cart = cartRepository.findCartByEmail(emailId);
         if (cart == null) {
             throw new ResourceNotFoundException("Cart", "email", emailId);

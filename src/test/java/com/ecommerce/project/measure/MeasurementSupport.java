@@ -16,7 +16,7 @@ public abstract class MeasurementSupport {
 
     static final String POSTGRES_IMAGE = "postgres:16";
     static final PostgreSQLContainer POSTGRES = new PostgreSQLContainer(POSTGRES_IMAGE);
-    static final Path OUT_DIR = Path.of("docs", "measurements", "raw");
+    static final Path OUT_DIR = Path.of(System.getProperty("measure.out", "docs/measurements/raw"));
 
     static {
         POSTGRES.start();

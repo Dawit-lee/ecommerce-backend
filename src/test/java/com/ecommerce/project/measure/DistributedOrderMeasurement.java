@@ -89,6 +89,9 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
     @Value("${order.stock.max-attempts:3}")
     int maxAttempts;
 
+    @Value("${order.stock.lock:optimistic}")
+    String stockLock;
+
     /** stocks[p] = initial stock of product p; orders.get(i) = product indexes in order i's cart (qty 1 each). */
     record Spec(String scenario, String name, int seed, int[] stocks, List<int[]> orders, int threads, long[] arrivalNanos) {}
 
@@ -112,6 +115,8 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
 
     /** First product UPDATE seen in the last run, recorded as evidence of the SQL actually executed. */
     String productUpdateSqlSample = "";
+    /** First locking SELECT on products seen (pessimistic configs only). */
+    String productLockSqlSample = "";
 
     /** Label used in output file names and generated user names; the no-lock baseline overrides it. */
     String configLabel(int poolSize) {
@@ -158,6 +163,8 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
                 "c_orders=" + C_ORDERS, "c_seconds=" + C_SECONDS, "f_sizes=" + Arrays.toString(F_SIZES),
                 "statement_inspector=" + System.getProperty("measure.inspector", SqlCapture.class.getName()),
                 "product_update_sql_sample=" + productUpdateSqlSample,
+                "order_stock_lock=" + stockLock,
+                "product_lock_sql_sample=" + productLockSqlSample,
                 "total_elapsed_s=" + String.format(Locale.ROOT, "%.1f", (System.nanoTime() - started) / 1e9), ""));
     }
 
@@ -249,7 +256,8 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
 
     private void execute(Spec spec, int run, boolean warmup, int poolSize, String config,
                          StringBuilder runsCsv, StringBuilder requestsCsv, StringBuilder productsCsv) throws Exception {
-        String prefix = config.replace("_pool", "p") + spec.name().replace("_", "") + "r" + run;
+        String prefix = config.replace("_pool", "p").replace("pessimistic", "pes") // usernames are limited to 20 chars
+                + spec.name().replace("_", "") + "r" + run;
         Seeded seeded = seed(spec, prefix);
         Statistics stats = entityManagerFactory.unwrap(SessionFactory.class).getStatistics();
         Mockito.clearInvocations(stripeService);
@@ -372,6 +380,8 @@ abstract class DistributedOrderMeasurement extends MeasurementSupport {
 
         SqlCapture.snapshot().stream().filter(sql -> sql.startsWith("update products ")).findFirst()
                 .ifPresent(sql -> productUpdateSqlSample = sql);
+        SqlCapture.snapshot().stream().filter(sql -> sql.contains("from products") && sql.contains(" for "))
+                .findFirst().ifPresent(sql -> productLockSqlSample = sql);
         SqlCapture.clear();
 
         double[] lat = reqs.stream().mapToDouble(Req::latencyMs).sorted().toArray();
