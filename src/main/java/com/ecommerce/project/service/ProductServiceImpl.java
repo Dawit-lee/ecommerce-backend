@@ -13,12 +13,16 @@ import com.ecommerce.project.repositories.CartRepository;
 import com.ecommerce.project.repositories.CategoryRepository;
 import com.ecommerce.project.repositories.ProductRepository;
 import com.ecommerce.project.util.AuthUtil;
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.security.access.AccessDeniedException;
@@ -27,6 +31,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -58,6 +63,13 @@ public class ProductServiceImpl implements ProductService {
 
     @Value("${image.base.url}")
     private String imageBaseUrl;
+
+    // count(*) over the whole products table was ~78% of DB time under load (docs/measurements/LOADTEST.md).
+    // shortcut: totalElements may lag up to 30s behind inserts/deletes; use an exact count if a page needs it.
+    private final Cache<String, Long> productCountCache = Caffeine.newBuilder()
+            .maximumSize(10_000)
+            .expireAfterWrite(Duration.ofSeconds(30))
+            .build();
 
     @Override
     public ProductDTO addProduct(Long categoryId, ProductDTO productDTO) {
@@ -108,7 +120,12 @@ public class ProductServiceImpl implements ProductService {
                     criteriaBuilder.like(root.get("category").get("categoryName"), category));
         }
 
-        Page<Product> pageProducts = productRepository.findAll(spec, pageDetails);
+        // Slice fetches the page without a count query; the total comes from the short-lived cache.
+        Slice<Product> slice = productRepository.findBy(spec, q -> q.slice(pageDetails));
+        Specification<Product> countSpec = spec;
+        String countKey = (keyword == null ? "" : keyword.toLowerCase()) + "\u0000" + (category == null ? "" : category);
+        long total = productCountCache.get(countKey, k -> productRepository.count(countSpec));
+        Page<Product> pageProducts = new PageImpl<>(slice.getContent(), pageDetails, total);
 
         List<Product> products = pageProducts.getContent();
 

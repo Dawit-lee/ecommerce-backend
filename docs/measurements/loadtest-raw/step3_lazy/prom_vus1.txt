@@ -1,0 +1,5 @@
+max_over_time(hikaricp_connections_pending[61s]) = ['0']
+max_over_time(hikaricp_connections_active[61s]) = ['1']
+avg_over_time(process_cpu_usage[61s]) = ['0.17124074074074075']
+increase(jvm_gc_pause_seconds_sum[61s]) = ['0', '0.2495363804952547']
+max_over_time(tomcat_threads_busy_threads[61s]) = []

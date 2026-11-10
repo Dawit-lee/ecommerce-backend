@@ -1,0 +1,5 @@
+VUS=200 reqs=63819 rps=1060.8 p95=490.2ms avg=188.1ms fail=0.00%
+  list: p95=488.3ms avg=183.8ms
+  category: p95=491.5ms avg=190.7ms
+  keyword: p95=494.7ms avg=197.2ms
+  price_sort: p95=488.8ms avg=184.8ms

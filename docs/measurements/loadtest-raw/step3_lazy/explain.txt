@@ -1,0 +1,171 @@
+=== list: count
+                                                                                 QUERY PLAN                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=25232.97..25232.98 rows=1 width=8) (actual time=38.421..39.910 rows=1 loops=1)
+   Buffers: shared hit=3498
+   ->  Gather  (cost=25232.76..25232.97 rows=2 width=8) (actual time=38.355..39.907 rows=3 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         Buffers: shared hit=3498
+         ->  Partial Aggregate  (cost=24232.76..24232.77 rows=1 width=8) (actual time=37.172..37.173 rows=1 loops=3)
+               Buffers: shared hit=3498
+               ->  Parallel Index Only Scan using products_pkey on products p1_0  (cost=0.42..23191.09 rows=416667 width=8) (actual time=0.024..26.405 rows=333333 loops=3)
+                     Heap Fetches: 0
+                     Buffers: shared hit=3498
+ Planning:
+   Buffers: shared hit=111
+ Planning Time: 1.203 ms
+ Execution Time: 39.954 ms
+(15 rows)
+
+=== list: page 50
+                                                                    QUERY PLAN                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=54.72..55.81 rows=10 width=123) (actual time=0.684..0.700 rows=10 loops=1)
+   Buffers: shared hit=514
+   ->  Index Scan using products_pkey on products p1_0  (cost=0.42..108589.68 rows=1000000 width=123) (actual time=0.022..0.690 rows=510 loops=1)
+         Buffers: shared hit=514
+ Planning:
+   Buffers: shared hit=51
+ Planning Time: 0.519 ms
+ Execution Time: 0.713 ms
+(8 rows)
+
+=== keyword: count
+                                                                  QUERY PLAN                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=21175.62..21175.63 rows=1 width=8) (actual time=24.939..24.940 rows=1 loops=1)
+   Buffers: shared hit=16360
+   ->  Bitmap Heap Scan on products p1_0  (cost=216.72..21125.12 rows=20202 width=8) (actual time=5.400..23.931 rows=33558 loops=1)
+         Recheck Cond: (lower((product_name)::text) ~~ '%keyboard%'::text)
+         Heap Blocks: exact=16263
+         Buffers: shared hit=16360
+         ->  Bitmap Index Scan on idx_products_name_trgm  (cost=0.00..211.67 rows=20202 width=0) (actual time=4.098..4.098 rows=33558 loops=1)
+               Index Cond: (lower((product_name)::text) ~~ '%keyboard%'::text)
+               Buffers: shared hit=97
+ Planning:
+   Buffers: shared hit=15
+ Planning Time: 0.323 ms
+ Execution Time: 25.022 ms
+(13 rows)
+
+=== keyword: page 5
+                                                                  QUERY PLAN                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=281.56..337.79 rows=10 width=123) (actual time=0.694..0.792 rows=10 loops=1)
+   Buffers: shared hit=1565
+   ->  Index Scan using products_pkey on products p1_0  (cost=0.42..113589.68 rows=20202 width=123) (actual time=0.018..0.790 rows=60 loops=1)
+         Filter: (lower((product_name)::text) ~~ '%keyboard%'::text)
+         Rows Removed by Filter: 1498
+         Buffers: shared hit=1565
+ Planning:
+   Buffers: shared hit=1
+ Planning Time: 0.064 ms
+ Execution Time: 0.799 ms
+(10 rows)
+
+=== category: count
+                                                                     QUERY PLAN                                                                     
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=21306.57..21306.58 rows=1 width=8) (actual time=2.790..2.790 rows=1 loops=1)
+   Buffers: shared hit=1683
+   ->  Nested Loop  (cost=227.43..21256.57 rows=20000 width=8) (actual time=0.320..2.446 rows=13012 loops=1)
+         Buffers: shared hit=1683
+         ->  Seq Scan on categories c1_0  (cost=0.00..1.62 rows=1 width=8) (actual time=0.003..0.005 rows=1 loops=1)
+               Filter: ((category_name)::text ~~ 'Category-030'::text)
+               Rows Removed by Filter: 49
+               Buffers: shared hit=1
+         ->  Bitmap Heap Scan on products p1_0  (cost=227.43..21054.95 rows=20000 width=16) (actual time=0.315..1.822 rows=13012 loops=1)
+               Recheck Cond: (category_id = c1_0.category_id)
+               Heap Blocks: exact=1668
+               Buffers: shared hit=1682
+               ->  Bitmap Index Scan on idx_products_category  (cost=0.00..222.43 rows=20000 width=0) (actual time=0.220..0.220 rows=13012 loops=1)
+                     Index Cond: (category_id = c1_0.category_id)
+                     Buffers: shared hit=14
+ Planning:
+   Buffers: shared hit=69
+ Planning Time: 0.185 ms
+ Execution Time: 2.806 ms
+(19 rows)
+
+=== category: page 5
+                                                                       QUERY PLAN                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=309.40..371.20 rows=10 width=123) (actual time=2.035..2.453 rows=10 loops=1)
+   Buffers: shared hit=4712
+   ->  Nested Loop  (cost=0.42..123591.31 rows=20000 width=123) (actual time=0.028..2.451 rows=60 loops=1)
+         Join Filter: (p1_0.category_id = c1_0.category_id)
+         Rows Removed by Join Filter: 4637
+         Buffers: shared hit=4712
+         ->  Index Scan using products_pkey on products p1_0  (cost=0.42..108589.68 rows=1000000 width=123) (actual time=0.006..1.720 rows=4697 loops=1)
+               Buffers: shared hit=4711
+         ->  Materialize  (cost=0.00..1.63 rows=1 width=8) (actual time=0.000..0.000 rows=1 loops=4697)
+               Buffers: shared hit=1
+               ->  Seq Scan on categories c1_0  (cost=0.00..1.62 rows=1 width=8) (actual time=0.003..0.004 rows=1 loops=1)
+                     Filter: ((category_name)::text ~~ 'Category-030'::text)
+                     Rows Removed by Filter: 49
+                     Buffers: shared hit=1
+ Planning:
+   Buffers: shared hit=4
+ Planning Time: 0.045 ms
+ Execution Time: 2.460 ms
+(18 rows)
+
+=== price sort: page 50
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=53.21..54.26 rows=10 width=123) (actual time=0.173..0.176 rows=10 loops=1)
+   Buffers: shared hit=499
+   ->  Index Scan Backward using idx_products_price on products p1_0  (cost=0.42..105564.42 rows=1000000 width=123) (actual time=0.003..0.166 rows=510 loops=1)
+         Buffers: shared hit=499
+ Planning:
+   Buffers: shared hit=4
+ Planning Time: 0.019 ms
+ Execution Time: 0.179 ms
+(8 rows)
+
+=== keyword: page 9 (remaining top query)
+                                                                    QUERY PLAN                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=418.44..418.46 rows=10 width=123) (actual time=21.810..21.812 rows=11 loops=1)
+   Buffers: shared hit=16315
+   ->  Sort  (cost=418.21..418.46 rows=100 width=123) (actual time=21.803..21.808 rows=101 loops=1)
+         Sort Key: product_id
+         Sort Method: top-N heapsort  Memory: 63kB
+         Buffers: shared hit=16315
+         ->  Bitmap Heap Scan on products p1_0  (cost=34.66..414.89 rows=100 width=123) (actual time=4.203..20.507 rows=33357 loops=1)
+               Recheck Cond: (lower((product_name)::text) ~~ '%tent%'::text)
+               Heap Blocks: exact=16283
+               Buffers: shared hit=16312
+               ->  Bitmap Index Scan on idx_products_name_trgm  (cost=0.00..34.63 rows=100 width=0) (actual time=2.887..2.887 rows=33357 loops=1)
+                     Index Cond: (lower((product_name)::text) ~~ '%tent%'::text)
+                     Buffers: shared hit=29
+ Planning:
+   Buffers: shared hit=164
+ Planning Time: 0.371 ms
+ Execution Time: 21.959 ms
+(17 rows)
+
+=== category: smallest category, page 9
+                                                                       QUERY PLAN                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=556.58..624.56 rows=11 width=123) (actual time=3.911..4.464 rows=11 loops=1)
+   Buffers: shared hit=8439
+   ->  Nested Loop  (cost=0.42..123591.31 rows=20000 width=123) (actual time=0.032..4.460 rows=101 loops=1)
+         Join Filter: (p1_0.category_id = c1_0.category_id)
+         Rows Removed by Join Filter: 8313
+         Buffers: shared hit=8439
+         ->  Index Scan using products_pkey on products p1_0  (cost=0.42..108589.68 rows=1000000 width=123) (actual time=0.004..3.230 rows=8414 loops=1)
+               Buffers: shared hit=8438
+         ->  Materialize  (cost=0.00..1.63 rows=1 width=8) (actual time=0.000..0.000 rows=1 loops=8414)
+               Buffers: shared hit=1
+               ->  Seq Scan on categories c1_0  (cost=0.00..1.62 rows=1 width=8) (actual time=0.005..0.005 rows=1 loops=1)
+                     Filter: ((category_name)::text ~~ 'Category-050'::text)
+                     Rows Removed by Filter: 49
+                     Buffers: shared hit=1
+ Planning:
+   Buffers: shared hit=69
+ Planning Time: 0.172 ms
+ Execution Time: 4.476 ms
+(18 rows)
+
