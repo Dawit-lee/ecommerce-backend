@@ -86,6 +86,8 @@ public class WebSecurityConfig {
                                 .requestMatchers("/api/seller/**").hasAnyRole("ADMIN","SELLER")
                                 //.requestMatchers("/api/admin/**").permitAll()
                                 .requestMatchers("/api/public/**").permitAll()
+                                // exposure is limited by management.endpoints.web.exposure.include (default: health only)
+                                .requestMatchers("/actuator/**").permitAll()
                                 .requestMatchers("/swagger-ui/**").permitAll()
                                 .requestMatchers("/api/test/**").permitAll()
                                 .requestMatchers("/images/**").permitAll()

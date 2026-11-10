@@ -1,0 +1,49 @@
+# HTTP load-test environment. Resource limits are fixed so before/after runs are comparable.
+# Usage: see loadtest/README.md
+name: scom-loadtest
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ecommerce
+      POSTGRES_PASSWORD: loadtest
+    command:
+      - postgres
+      - -c
+      - shared_preload_libraries=pg_stat_statements
+      - -c
+      - pg_stat_statements.track=all
+      - -c
+      - shared_buffers=512MB
+      - -c
+      - max_connections=200
+    cpus: 2
+    mem_limit: 2g
+    shm_size: 512m
+    ports: ["55432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+
+  app:
+    build: ..
+    depends_on: [db]
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/ecommerce
+      SPRING_DATASOURCE_PASSWORD: loadtest
+      # test-only value (base64 of a 64-byte dummy string), never used outside this compose file
+      JWT_SECRET: bG9hZHRlc3Qtb25seS1zZWNyZXQtbG9hZHRlc3Qtb25seS1zZWNyZXQtbG9hZHRlc3Qtb25seS1zZWNyZXQtMTIzNA==
+      STRIPE_SECRET_KEY: sk_test_dummy_not_called
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: health,prometheus,metrics
+      JAVA_TOOL_OPTIONS: -XX:MaxRAMPercentage=75
+      # override via env to try pool sizes, e.g. HIKARI_MAX=20 docker compose up -d app
+      SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE: ${HIKARI_MAX:-10}
+    cpus: 2
+    mem_limit: 1g
+    ports: ["18080:5000"]  # host 5000 is taken by macOS AirPlay
+
+  prometheus:
+    image: prom/prometheus:v3.5.0
+    volumes: [./prometheus.yml:/etc/prometheus/prometheus.yml:ro]
+    ports: ["9090:9090"]
+
+volumes:
+  pgdata:
