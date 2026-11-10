@@ -1,0 +1,12 @@
+ calls | total_ms | mean_ms |  rows  |                                                                                                  query                                                                                                   
+-------+----------+---------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 18258 |    93694 |    5.13 | 200838 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+ 18376 |    55139 |    3.00 | 202136 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 join cate
+ 36552 |     7018 |    0.19 | 402072 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+ 18360 |     5122 |    0.28 | 201960 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+    20 |      631 |   31.57 |     20 | select count(p1_0.product_id) from products p1_0 where $2=$3 and lower(p1_0.product_name) like $1 escape $4
+   100 |      436 |    4.36 |    100 | select count(p1_0.product_id) from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id where 1=1 and c1_0.category_name like $1 escape ''
+ 91668 |      282 |    0.00 |      0 | BEGIN READ ONLY
+     2 |      148 |   73.97 |      2 | select count(p1_0.product_id) from products p1_0 where $1=$2
+(8 rows)
+

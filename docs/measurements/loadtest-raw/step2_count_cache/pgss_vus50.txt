@@ -1,0 +1,14 @@
+ calls  | total_ms | mean_ms |  rows  |                                                                                                  query                                                                                                   
+--------+----------+---------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   8865 |   132579 |   14.96 |  97515 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+   8908 |    80521 |    9.04 |  97988 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 join cate
+  17799 |    21782 |    1.22 | 195789 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+   8713 |    11204 |    1.29 |  95843 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+ 431210 |     7043 |    0.02 | 431210 | select u1_0.user_id,c1_0.cart_id,c1_0.total_price,u1_0.email,u1_0.password,r1_0.user_id,r1_1.role_id,r1_1.role_name,u1_0.username from users u1_0 left join carts c1_0 on u1_0.user_id=c1_0.user_id left
+ 338647 |     2404 |    0.01 | 338647 | select c1_0.category_id,c1_0.category_name from categories c1_0 where c1_0.category_id=$1
+    100 |     1906 |   19.06 |    100 | select count(p1_0.product_id) from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id where 1=1 and c1_0.category_name like $1 escape ''
+     20 |     1775 |   88.75 |     20 | select count(p1_0.product_id) from products p1_0 where 1=1 and lower(p1_0.product_name) like $1 escape ''
+  44407 |      409 |    0.01 |      0 | BEGIN READ ONLY
+      2 |      199 |   99.27 |      2 | select count(p1_0.product_id) from products p1_0 where $1=$2
+(10 rows)
+

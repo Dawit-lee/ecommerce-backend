@@ -1,0 +1,14 @@
+ calls | total_ms | mean_ms | rows  |                                                                                                  query                                                                                                   
+-------+----------+---------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1405 |    34107 |   24.28 |  1405 | select count(p1_0.product_id) from products p1_0 where 1=1
+   450 |    10887 |   24.19 |   450 | select count(p1_0.product_id) from products p1_0 where 1=1 and lower(p1_0.product_name) like $1 escape ''
+   450 |     1613 |    3.59 |  4500 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+   432 |     1578 |    3.65 |   432 | select count(p1_0.product_id) from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id where 1=1 and c1_0.category_name like $1 escape ''
+   432 |     1261 |    2.92 |  4320 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 join cate
+   944 |      456 |    0.48 |  9440 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+   461 |      202 |    0.44 |  4610 | select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.discount,p1_0.image,p1_0.price,p1_0.product_name,p1_0.quantity,p1_0.special_price,p1_0.seller_id,p1_0.version from products p1_0 where 1=1
+ 20261 |      179 |    0.01 | 20261 | select u1_0.user_id,c1_0.cart_id,c1_0.total_price,u1_0.email,u1_0.password,r1_0.user_id,r1_1.role_id,r1_1.role_name,u1_0.username from users u1_0 left join carts c1_0 on u1_0.user_id=c1_0.user_id left
+ 16294 |       64 |    0.00 | 16294 | select c1_0.category_id,c1_0.category_name from categories c1_0 where c1_0.category_id=$1
+  2287 |       17 |    0.01 |     0 | BEGIN READ ONLY
+(10 rows)
+

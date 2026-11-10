@@ -1,0 +1,5 @@
+VUS=1 reqs=2287 rps=38.1 p95=46.0ms avg=26.1ms fail=0.00%
+  list: p95=46.8ms avg=28.7ms
+  category: p95=17.5ms avg=10.8ms
+  keyword: p95=50.9ms avg=32.4ms
+  price_sort: p95=47.5ms avg=28.9ms

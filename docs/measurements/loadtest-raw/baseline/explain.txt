@@ -1,0 +1,150 @@
+=== list: count
+                                                                                 QUERY PLAN                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=25232.97..25232.98 rows=1 width=8) (actual time=57.125..58.792 rows=1 loops=1)
+   Buffers: shared hit=3498
+   ->  Gather  (cost=25232.76..25232.97 rows=2 width=8) (actual time=57.047..58.788 rows=3 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         Buffers: shared hit=3498
+         ->  Partial Aggregate  (cost=24232.76..24232.77 rows=1 width=8) (actual time=55.538..55.538 rows=1 loops=3)
+               Buffers: shared hit=3498
+               ->  Parallel Index Only Scan using products_pkey on products p1_0  (cost=0.42..23191.09 rows=416667 width=8) (actual time=0.085..43.906 rows=333333 loops=3)
+                     Heap Fetches: 0
+                     Buffers: shared hit=3498
+ Planning:
+   Buffers: shared hit=61
+ Planning Time: 0.772 ms
+ Execution Time: 58.868 ms
+(15 rows)
+
+=== list: page 50
+                                                                    QUERY PLAN                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=54.72..55.81 rows=10 width=123) (actual time=1.998..2.036 rows=10 loops=1)
+   Buffers: shared hit=514
+   ->  Index Scan using products_pkey on products p1_0  (cost=0.42..108589.35 rows=1000000 width=123) (actual time=0.011..2.023 rows=510 loops=1)
+         Buffers: shared hit=514
+ Planning:
+   Buffers: shared hit=42
+ Planning Time: 0.095 ms
+ Execution Time: 2.050 ms
+(8 rows)
+
+=== keyword: count
+                                                                 QUERY PLAN                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=27142.32..27142.33 rows=1 width=8) (actual time=447.133..450.843 rows=1 loops=1)
+   Buffers: shared hit=19892
+   ->  Gather  (cost=27142.10..27142.31 rows=2 width=8) (actual time=446.871..450.838 rows=3 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         Buffers: shared hit=19892
+         ->  Partial Aggregate  (cost=26142.10..26142.11 rows=1 width=8) (actual time=445.714..445.715 rows=1 loops=3)
+               Buffers: shared hit=19892
+               ->  Parallel Seq Scan on products p1_0  (cost=0.00..26142.00 rows=42 width=8) (actual time=0.052..444.126 rows=11186 loops=3)
+                     Filter: (lower((product_name)::text) ~~ '%keyboard%'::text)
+                     Rows Removed by Filter: 322147
+                     Buffers: shared hit=19892
+ Planning Time: 0.047 ms
+ Execution Time: 450.882 ms
+(14 rows)
+
+=== keyword: page 5
+                                                                  QUERY PLAN                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=27148.99..27150.16 rows=10 width=123) (actual time=127.533..129.399 rows=10 loops=1)
+   Buffers: shared hit=20006
+   ->  Gather Merge  (cost=27143.16..27152.96 rows=84 width=123) (actual time=127.520..129.396 rows=60 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         Buffers: shared hit=20006
+         ->  Sort  (cost=26143.13..26143.24 rows=42 width=123) (actual time=125.759..125.766 rows=47 loops=3)
+               Sort Key: product_id
+               Sort Method: top-N heapsort  Memory: 51kB
+               Buffers: shared hit=20006
+               Worker 0:  Sort Method: top-N heapsort  Memory: 52kB
+               Worker 1:  Sort Method: top-N heapsort  Memory: 50kB
+               ->  Parallel Seq Scan on products p1_0  (cost=0.00..26142.00 rows=42 width=123) (actual time=0.046..124.808 rows=11186 loops=3)
+                     Filter: (lower((product_name)::text) ~~ '%keyboard%'::text)
+                     Rows Removed by Filter: 322147
+                     Buffers: shared hit=19892
+ Planning Time: 0.105 ms
+ Execution Time: 129.485 ms
+(18 rows)
+
+=== category: count
+                                                                       QUERY PLAN                                                                       
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=26267.81..26267.82 rows=1 width=8) (actual time=79.487..81.063 rows=1 loops=1)
+   Buffers: shared hit=20059
+   ->  Gather  (cost=26267.59..26267.80 rows=2 width=8) (actual time=79.406..81.059 rows=3 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         Buffers: shared hit=20059
+         ->  Partial Aggregate  (cost=25267.59..25267.60 rows=1 width=8) (actual time=78.447..78.448 rows=1 loops=3)
+               Buffers: shared hit=20059
+               ->  Hash Join  (cost=1.64..25246.76 rows=8333 width=8) (actual time=0.118..78.263 rows=4337 loops=3)
+                     Hash Cond: (p1_0.category_id = c1_0.category_id)
+                     Buffers: shared hit=20059
+                     ->  Parallel Seq Scan on products p1_0  (cost=0.00..24058.67 rows=416667 width=16) (actual time=0.004..17.130 rows=333333 loops=3)
+                           Buffers: shared hit=19892
+                     ->  Hash  (cost=1.62..1.62 rows=1 width=8) (actual time=0.010..0.010 rows=1 loops=3)
+                           Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                           Buffers: shared hit=3
+                           ->  Seq Scan on categories c1_0  (cost=0.00..1.62 rows=1 width=8) (actual time=0.007..0.008 rows=1 loops=3)
+                                 Filter: ((category_name)::text ~~ 'Category-030'::text)
+                                 Rows Removed by Filter: 49
+                                 Buffers: shared hit=3
+ Planning:
+   Buffers: shared hit=69
+ Planning Time: 0.288 ms
+ Execution Time: 81.086 ms
+(24 rows)
+
+=== category: page 5
+                                                                       QUERY PLAN                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=309.40..371.20 rows=10 width=123) (actual time=3.117..3.635 rows=10 loops=1)
+   Buffers: shared hit=4712
+   ->  Nested Loop  (cost=0.42..123590.98 rows=20000 width=123) (actual time=0.069..3.633 rows=60 loops=1)
+         Join Filter: (c1_0.category_id = p1_0.category_id)
+         Rows Removed by Join Filter: 4637
+         Buffers: shared hit=4712
+         ->  Index Scan using products_pkey on products p1_0  (cost=0.42..108589.35 rows=1000000 width=123) (actual time=0.009..2.939 rows=4697 loops=1)
+               Buffers: shared hit=4711
+         ->  Materialize  (cost=0.00..1.63 rows=1 width=8) (actual time=0.000..0.000 rows=1 loops=4697)
+               Buffers: shared hit=1
+               ->  Seq Scan on categories c1_0  (cost=0.00..1.62 rows=1 width=8) (actual time=0.005..0.006 rows=1 loops=1)
+                     Filter: ((category_name)::text ~~ 'Category-030'::text)
+                     Rows Removed by Filter: 49
+                     Buffers: shared hit=1
+ Planning:
+   Buffers: shared hit=4
+ Planning Time: 0.098 ms
+ Execution Time: 3.659 ms
+(18 rows)
+
+=== price sort: page 50
+                                                                    QUERY PLAN                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=45938.61..45939.78 rows=10 width=123) (actual time=35.845..64.868 rows=10 loops=1)
+   Buffers: shared hit=20004
+   ->  Gather Merge  (cost=45880.28..143109.36 rows=833334 width=123) (actual time=35.779..64.857 rows=510 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         Buffers: shared hit=20004
+         ->  Sort  (cost=44880.25..45921.92 rows=416667 width=123) (actual time=34.733..34.752 rows=449 loops=3)
+               Sort Key: price DESC
+               Sort Method: top-N heapsort  Memory: 243kB
+               Buffers: shared hit=20004
+               Worker 0:  Sort Method: top-N heapsort  Memory: 245kB
+               Worker 1:  Sort Method: top-N heapsort  Memory: 247kB
+               ->  Parallel Seq Scan on products p1_0  (cost=0.00..24058.67 rows=416667 width=123) (actual time=0.004..15.228 rows=333333 loops=3)
+                     Buffers: shared hit=19892
+ Planning:
+   Buffers: shared hit=10
+ Planning Time: 0.043 ms
+ Execution Time: 64.909 ms
+(18 rows)
+

@@ -1,0 +1,5 @@
+VUS=25 reqs=499 rps=7.9 p95=7924.3ms avg=3092.6ms fail=0.00%
+  list: p95=2007.5ms avg=1218.0ms
+  category: p95=3399.2ms avg=1987.3ms
+  keyword: p95=12373.6ms avg=6693.8ms
+  price_sort: p95=7591.4ms avg=4657.1ms

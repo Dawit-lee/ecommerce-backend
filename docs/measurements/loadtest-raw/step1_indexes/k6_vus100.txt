@@ -1,0 +1,5 @@
+VUS=100 reqs=2009 rps=31.8 p95=3815.4ms avg=3078.6ms fail=0.00%
+  list: p95=3904.1ms avg=3197.4ms
+  category: p95=3503.2ms avg=2775.8ms
+  keyword: p95=3802.9ms avg=3071.0ms
+  price_sort: p95=3878.7ms avg=3152.0ms
