@@ -6,9 +6,11 @@ import com.stripe.exception.StripeException;
 import com.stripe.model.Customer;
 import com.stripe.model.CustomerSearchResult;
 import com.stripe.model.PaymentIntent;
+import com.stripe.model.Refund;
 import com.stripe.param.CustomerCreateParams;
 import com.stripe.param.CustomerSearchParams;
 import com.stripe.param.PaymentIntentCreateParams;
+import com.stripe.param.RefundCreateParams;
 import jakarta.annotation.PostConstruct;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Value;
@@ -71,5 +73,15 @@ public class StripeServiceImpl implements StripeService {
                         .build();
 
         return PaymentIntent.create(params);
+    }
+
+    @Override
+    public Refund refundPayment(String paymentIntentId) throws StripeException {
+        // Full refund of the captured PaymentIntent. Called as a compensating transaction
+        // when the local order could not be persisted after the payment already succeeded.
+        RefundCreateParams params = RefundCreateParams.builder()
+                .setPaymentIntent(paymentIntentId)
+                .build();
+        return Refund.create(params);
     }
 }

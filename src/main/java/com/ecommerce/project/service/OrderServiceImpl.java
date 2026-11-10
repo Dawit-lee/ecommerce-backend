@@ -8,9 +8,14 @@ import com.ecommerce.project.payload.OrderItemDTO;
 import com.ecommerce.project.payload.OrderResponse;
 import com.ecommerce.project.repositories.*;
 import com.ecommerce.project.util.AuthUtil;
+import com.stripe.exception.StripeException;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -24,6 +29,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class OrderServiceImpl implements OrderService {
+
+    private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
 
     @Autowired
     CartRepository cartRepository;
@@ -52,9 +59,67 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     AuthUtil authUtil;
 
+    @Autowired
+    StripeService stripeService;
+
+    // Self-injection so the retry loop calls placeOrderTransactional THROUGH the Spring proxy,
+    // giving each attempt a brand-new transaction. @Lazy avoids a circular-dependency failure at startup.
+    @Autowired
+    @Lazy
+    private OrderServiceImpl self;
+
+    // Number of times to retry when a concurrent order changed the product version underneath us.
+    private static final int MAX_STOCK_RETRIES = 3;
+
     @Override
-    @Transactional
     public OrderDTO placeOrder(String emailId, Long addressId, String paymentMethod, String pgName, String pgPaymentId, String pgStatus, String pgResponseMessage) {
+        int attempt = 0;
+        while (true) {
+            try {
+                // Each call opens a new transaction and re-reads the cart/products with the latest version.
+                return self.placeOrderTransactional(emailId, addressId, paymentMethod, pgName, pgPaymentId, pgStatus, pgResponseMessage);
+            } catch (OptimisticLockingFailureException ex) {
+                attempt++;
+                if (attempt >= MAX_STOCK_RETRIES) {
+                    // Retries exhausted: the local order rolled back, but the payment was already
+                    // captured externally. Compensate by refunding, then fail the request.
+                    compensatePayment(pgName, pgPaymentId, "order placement failed after concurrent stock conflicts");
+                    throw new APIException("Order could not be placed due to high demand on one of the products. Your payment has been refunded.");
+                }
+                // Loop again: the next attempt re-fetches fresh stock and version, then re-applies the decrement.
+            } catch (RuntimeException ex) {
+                // Any other failure (insufficient stock, missing cart/address, unexpected error):
+                // the DB transaction already rolled back, so the local state is clean, but the money
+                // is still taken at the payment gateway. Refund it as a compensating transaction.
+                compensatePayment(pgName, pgPaymentId, ex.getMessage());
+                throw ex;
+            }
+        }
+    }
+
+    /**
+     * Compensating transaction for the external payment. The order is stored in a local DB
+     * transaction, so a failure there is rolled back automatically — but the Stripe charge lives
+     * outside that boundary and cannot be rolled back, only refunded. Best-effort: a failed refund
+     * must never mask the original error, but it is logged loudly for manual follow-up.
+     */
+    private void compensatePayment(String pgName, String pgPaymentId, String reason) {
+        // Nothing captured externally (e.g. cash on delivery / no gateway id) → nothing to refund.
+        if (pgPaymentId == null || pgPaymentId.isBlank() || !"Stripe".equalsIgnoreCase(pgName)) {
+            return;
+        }
+        try {
+            stripeService.refundPayment(pgPaymentId);
+            log.warn("Refunded payment {} after failed order placement. Reason: {}", pgPaymentId, reason);
+        } catch (StripeException e) {
+            // Refund itself failed: money is stuck and needs out-of-band reconciliation.
+            log.error("CRITICAL: refund failed for payment {} (order not placed, reason: {}). Manual intervention required.",
+                    pgPaymentId, reason, e);
+        }
+    }
+
+    @Transactional
+    public OrderDTO placeOrderTransactional(String emailId, Long addressId, String paymentMethod, String pgName, String pgPaymentId, String pgStatus, String pgResponseMessage) {
         Cart cart = cartRepository.findCartByEmail(emailId);
         if (cart == null) {
             throw new ResourceNotFoundException("Cart", "email", emailId);
@@ -99,7 +164,15 @@ public class OrderServiceImpl implements OrderService {
             int quantity = item.getQuantity();
             Product product = item.getProduct();
 
-            // Reduce stock quantity
+            // Re-validate against the freshly read stock. On a retry this runs against the latest
+            // quantity, so we fail cleanly instead of letting stock go negative (oversell).
+            if (product.getQuantity() < quantity) {
+                throw new APIException("Not enough stock for product '" + product.getProductName()
+                        + "'. Available: " + product.getQuantity() + ", requested: " + quantity + ".");
+            }
+
+            // Reduce stock quantity. The @Version column makes this save fail with an
+            // OptimisticLockingFailureException if another order changed the row concurrently.
             product.setQuantity(product.getQuantity() - quantity);
 
             // Save product back to the database

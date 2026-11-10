@@ -21,6 +21,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -258,6 +260,7 @@ public class ProductServiceImpl implements ProductService {
     public ProductDTO updateProduct(Long productId, ProductDTO productDTO) {
         Product productFromDb = productRepository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException("Product", "productId", productId));
+        checkOwnership(productFromDb);
 
         Product product = modelMapper.map(productDTO, Product.class);
 
@@ -293,6 +296,7 @@ public class ProductServiceImpl implements ProductService {
     public ProductDTO deleteProduct(Long productId) {
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException("Product", "productId", productId));
+        checkOwnership(product);
 
         // DELETE
         List<Cart> carts = cartRepository.findCartsByProductId(productId);
@@ -306,6 +310,7 @@ public class ProductServiceImpl implements ProductService {
     public ProductDTO updateProductImage(Long productId, MultipartFile image) throws IOException {
         Product productFromDb = productRepository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException("Product", "productId", productId));
+        checkOwnership(productFromDb);
 
         String fileName = fileService.uploadImage(path, image);
         productFromDb.setImage(fileName);
@@ -315,4 +320,13 @@ public class ProductServiceImpl implements ProductService {
     }
 
 
+    // Sellers may only modify their own products; admins may modify any.
+    private void checkOwnership(Product product) {
+        boolean isAdmin = SecurityContextHolder.getContext().getAuthentication().getAuthorities().stream()
+                .anyMatch(a -> "ROLE_ADMIN".equals(a.getAuthority()));
+        if (isAdmin) return;
+        if (product.getUser() == null || !product.getUser().getUserId().equals(authUtil.loggedInUserId())) {
+            throw new AccessDeniedException("You are not the owner of product " + product.getProductId());
+        }
+    }
 }
