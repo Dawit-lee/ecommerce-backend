@@ -1,0 +1,7 @@
+label,scenario,repeat,cart_items,statements_prepared,statements_captured,entity_loads,collection_loads
+lazy_only,getCart,0,10,4,4,24,3
+lazy_only,getAllProducts,0,10,4,4,12,1
+lazy_only,getCart,1,10,4,4,24,3
+lazy_only,getAllProducts,1,10,4,4,12,1
+lazy_only,getCart,2,10,4,4,24,3
+lazy_only,getAllProducts,2,10,4,4,12,1

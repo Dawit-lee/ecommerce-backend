@@ -14,6 +14,7 @@ import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.data.domain.Page;
@@ -68,8 +69,14 @@ public class OrderServiceImpl implements OrderService {
     @Lazy
     private OrderServiceImpl self;
 
-    // Number of times to retry when a concurrent order changed the product version underneath us.
-    private static final int MAX_STOCK_RETRIES = 3;
+    // Total attempts (including the first) when a concurrent order changed the product version underneath us.
+    // Configurable only so measurements can compare against a no-retry baseline (max-attempts=1).
+    @Value("${order.stock.max-attempts:3}")
+    private int maxStockAttempts;
+
+    // Measurement toggle: "optimistic" (default, @Version + retry) or "pessimistic" (SELECT ... FOR UPDATE).
+    @Value("${order.stock.lock:optimistic}")
+    private String stockLockMode;
 
     @Override
     public OrderDTO placeOrder(String emailId, Long addressId, String paymentMethod, String pgName, String pgPaymentId, String pgStatus, String pgResponseMessage) {
@@ -80,7 +87,7 @@ public class OrderServiceImpl implements OrderService {
                 return self.placeOrderTransactional(emailId, addressId, paymentMethod, pgName, pgPaymentId, pgStatus, pgResponseMessage);
             } catch (OptimisticLockingFailureException ex) {
                 attempt++;
-                if (attempt >= MAX_STOCK_RETRIES) {
+                if (attempt >= maxStockAttempts) {
                     // Retries exhausted: the local order rolled back, but the payment was already
                     // captured externally. Compensate by refunding, then fail the request.
                     compensatePayment(pgName, pgPaymentId, "order placement failed after concurrent stock conflicts");
@@ -120,6 +127,12 @@ public class OrderServiceImpl implements OrderService {
 
     @Transactional
     public OrderDTO placeOrderTransactional(String emailId, Long addressId, String paymentMethod, String pgName, String pgPaymentId, String pgStatus, String pgResponseMessage) {
+        if ("pessimistic".equals(stockLockMode)) {
+            // Lock the cart's product rows first (before the cart load and any insert), in product-id order
+            // so multi-item orders cannot deadlock; the locked, fresh rows are then reused by the cart load.
+            productRepository.lockCartProductsByEmail(emailId);
+        }
+
         Cart cart = cartRepository.findCartByEmail(emailId);
         if (cart == null) {
             throw new ResourceNotFoundException("Cart", "email", emailId);

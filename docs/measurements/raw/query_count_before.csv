@@ -1,0 +1,7 @@
+label,scenario,repeat,cart_items,statements_prepared,statements_captured,entity_loads,collection_loads
+before,getCart,0,10,14,14,24,13
+before,getAllProducts,0,10,15,15,24,12
+before,getCart,1,10,14,14,24,13
+before,getAllProducts,1,10,15,15,24,12
+before,getCart,2,10,14,14,24,13
+before,getAllProducts,2,10,15,15,24,12

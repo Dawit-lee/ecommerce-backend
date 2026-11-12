@@ -1,0 +1,1201 @@
+scenario,run,warmup,order,products,attempts,attempt_log,result,latency_ms,queue_ms,stock_left_for_all_items,error
+D,0,true,0,23,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,173.33,0.00,true,
+D,0,true,1,9;6;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,143.17,0.00,true,
+D,0,true,2,1;8;46,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,154.98,0.00,true,
+D,0,true,3,38,1,OK,SUCCESS,37.05,0.00,true,
+D,0,true,4,1;2,1,OK,SUCCESS,38.20,0.00,true,
+D,0,true,5,0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,281.95,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,6,6;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,201.50,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,7,47,1,OK,SUCCESS,32.86,0.00,true,
+D,0,true,8,27;45;6,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,199.64,0.00,true,
+D,0,true,9,23,1,OK,SUCCESS,31.88,0.00,true,
+D,0,true,10,14;46;6,1,OK,SUCCESS,43.20,0.00,true,
+D,0,true,11,45;13,1,OK,SUCCESS,38.61,0.00,true,
+D,0,true,12,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,255.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,13,3;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,240.82,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,14,8;36;15,1,OK,SUCCESS,48.17,0.00,true,
+D,0,true,15,8;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,225.33,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,16,0,1,OK,SUCCESS,32.07,0.00,true,
+D,0,true,17,0;12,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,75.62,0.00,true,
+D,0,true,18,39,1,OK,SUCCESS,31.78,0.00,true,
+D,0,true,19,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,118.23,0.00,true,
+D,0,true,20,2;17;8,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,156.91,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,21,25;18,1,OK,SUCCESS,120.72,0.00,true,
+D,0,true,22,1;4,1,OK,SUCCESS,64.18,0.00,true,
+D,0,true,23,42,1,OK,SUCCESS,56.85,0.00,true,
+D,0,true,24,32;1;10,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,216.27,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,25,3,1,OK,SUCCESS,56.82,0.00,true,
+D,0,true,26,4,1,OK,SUCCESS,175.68,0.00,true,
+D,0,true,27,48;43,1,OK,SUCCESS,65.49,0.00,true,
+D,0,true,28,2;18,1,OK,SUCCESS,63.95,0.00,true,
+D,0,true,29,0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,189.16,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,30,4;2,1,OK,SUCCESS,129.22,0.00,true,
+D,0,true,31,4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,453.60,0.00,true,
+D,0,true,32,2;15;14,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,204.44,0.00,true,
+D,0,true,33,0;2;25,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,217.95,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,34,15;13,1,OK,SUCCESS,83.18,0.00,true,
+D,0,true,35,34;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,249.91,0.00,true,
+D,0,true,36,17;6,1,OK,SUCCESS,77.89,0.00,true,
+D,0,true,37,0;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,315.79,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,38,0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,261.18,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,39,2;4,1,OK,SUCCESS,88.69,0.00,true,
+D,0,true,40,0,1,OK,SUCCESS,200.29,0.00,true,
+D,0,true,41,0;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,377.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,42,15,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,119.38,0.00,true,
+D,0,true,43,1;2;33,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,208.43,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,44,7;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,322.06,0.00,true,
+D,0,true,45,1;3;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,332.61,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,46,11,1,OK,SUCCESS,101.19,0.00,true,
+D,0,true,47,11,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,232.75,0.00,true,
+D,0,true,48,24;23;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,643.43,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,49,1;5;44,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,214.13,0.00,true,
+D,0,true,50,3;28,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,121.96,0.00,true,
+D,0,true,51,9,1,OK,SUCCESS,79.64,0.00,true,
+D,0,true,52,43,1,OK,SUCCESS,79.22,0.00,true,
+D,0,true,53,9,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,162.35,0.00,true,
+D,0,true,54,19;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,238.54,0.00,true,
+D,0,true,55,0;13;36,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,187.37,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,56,7;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,132.04,0.00,true,
+D,0,true,57,0;11,1,OK,SUCCESS,102.36,0.00,true,
+D,0,true,58,21,1,OK,SUCCESS,93.98,0.00,true,
+D,0,true,59,38;5;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,307.48,0.00,true,
+D,0,true,60,5;0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,298.93,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,61,1,1,OK,SUCCESS,36.67,0.00,true,
+D,0,true,62,3;0;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,352.64,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,63,30;5,1,OK,SUCCESS,44.23,0.00,true,
+D,0,true,64,14,1,OK,SUCCESS,39.43,0.00,true,
+D,0,true,65,0;29,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,264.01,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,66,36,1,OK,SUCCESS,34.88,0.00,true,
+D,0,true,67,6,1,OK,SUCCESS,157.66,0.00,true,
+D,0,true,68,7;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,174.72,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,69,38,1,OK,SUCCESS,26.58,0.00,true,
+D,0,true,70,2;15;9,1,OK,SUCCESS,141.95,0.00,true,
+D,0,true,71,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,605.81,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,72,35;25,1,OK,SUCCESS,34.70,0.00,true,
+D,0,true,73,14;1;8,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,436.19,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,74,1;0;34,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,212.04,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,75,21;8;11,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,195.80,0.00,true,
+D,0,true,76,3,1,OK,SUCCESS,86.37,0.00,true,
+D,0,true,77,1;15;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,184.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,78,12;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,178.94,0.00,true,
+D,0,true,79,34;0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,541.59,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,80,0;34,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,222.00,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,81,0,1,OK,SUCCESS,80.09,0.00,true,
+D,0,true,82,15;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,476.93,0.00,true,
+D,0,true,83,4,1,OK,SUCCESS,77.82,0.00,true,
+D,0,true,84,0;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,263.00,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,85,7;2;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,211.83,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,86,44;0,1,OK,SUCCESS,90.31,0.00,true,
+D,0,true,87,4,1,OK,SUCCESS,75.21,0.00,true,
+D,0,true,88,26,1,OK,SUCCESS,76.20,0.00,true,
+D,0,true,89,13;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,373.50,0.00,true,
+D,0,true,90,18;1;20,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,325.79,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,91,12;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,138.34,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,92,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,130.40,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,93,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,353.79,0.00,true,
+D,0,true,94,7,1,OK,SUCCESS,79.73,0.00,true,
+D,0,true,95,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,121.90,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,96,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,130.72,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,97,2,1,OK,SUCCESS,75.71,0.00,true,
+D,0,true,98,16,1,OK,SUCCESS,419.39,0.00,true,
+D,0,true,99,6,1,OK,SUCCESS,80.49,0.00,true,
+D,0,true,100,1,1,OK,SUCCESS,80.36,0.00,true,
+D,0,true,101,1;5;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,517.89,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,102,1;5,1,OK,SUCCESS,104.98,0.00,true,
+D,0,true,103,0;37,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,605.65,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,104,0;2;18,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,179.21,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,105,0;18,1,OK,SUCCESS,258.59,0.00,true,
+D,0,true,106,7;16,1,OK,SUCCESS,129.03,0.00,true,
+D,0,true,107,1;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,190.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,108,12;21,1,OK,SUCCESS,366.46,0.00,true,
+D,0,true,109,8;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,126.60,0.00,true,
+D,0,true,110,3;0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,418.58,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,111,1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,523.91,0.00,true,
+D,0,true,112,2,1,OK,SUCCESS,138.11,0.00,true,
+D,0,true,113,15;28;1,1,OK,SUCCESS,185.03,0.00,true,
+D,0,true,114,0;16;17,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,495.30,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,115,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,92.23,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,116,31,1,OK,SUCCESS,419.52,0.00,true,
+D,0,true,117,1;0;18,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,110.40,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,118,0;8,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,225.89,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,119,0;44;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,126.99,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,120,4;0;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,129.89,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,121,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,252.07,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,122,6;16;1,1,OK,SUCCESS,212.25,0.00,true,
+D,0,true,123,6;2;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,353.17,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,124,1;17,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,63.96,0.00,true,
+D,0,true,125,6;28;10,1,OK,SUCCESS,459.29,0.00,true,
+D,0,true,126,2;3,1,OK,SUCCESS,25.87,0.00,true,
+D,0,true,127,0;15,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,354.92,0.00,true,
+D,0,true,128,34,1,OK,SUCCESS,33.59,0.00,true,
+D,0,true,129,2;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,344.92,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,130,1;21,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,378.71,0.00,true,
+D,0,true,131,0;1;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,297.88,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,132,2;44,1,OK,SUCCESS,162.98,0.00,true,
+D,0,true,133,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,455.58,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,134,0;9,1,OK,SUCCESS,243.91,0.00,true,
+D,0,true,135,8,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,68.28,0.00,true,
+D,0,true,136,9;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,383.90,0.00,true,
+D,0,true,137,1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,196.88,0.00,true,
+D,0,true,138,12;5;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,512.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,139,28,1,OK,SUCCESS,149.90,0.00,true,
+D,0,true,140,9,1,OK,SUCCESS,148.02,0.00,true,
+D,0,true,141,12;7,1,OK,SUCCESS,49.48,0.00,true,
+D,0,true,142,0,1,OK,SUCCESS,27.26,0.00,true,
+D,0,true,143,0;3;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,306.06,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,144,13,1,OK,SUCCESS,47.06,0.00,true,
+D,0,true,145,39,1,OK,SUCCESS,44.06,0.00,true,
+D,0,true,146,0;8;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,317.72,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,147,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,374.55,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,148,10,1,OK,SUCCESS,162.39,0.00,true,
+D,0,true,149,0;40,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,400.37,0.00,true,
+D,0,true,150,11;10;13,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,415.63,0.00,true,
+D,0,true,151,2;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,215.27,0.00,true,
+D,0,true,152,49;35,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,404.74,0.00,true,
+D,0,true,153,2;7,1,OK,SUCCESS,174.91,0.00,true,
+D,0,true,154,4;0;19,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,337.64,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,155,0;17;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,363.35,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,156,4;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,263.76,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,157,0;25;21,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,362.60,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,158,4;22,1,OK,SUCCESS,79.68,0.00,true,
+D,0,true,159,41;4;14,1,OK,SUCCESS,323.32,0.00,true,
+D,0,true,160,17;18;11,1,OK,SUCCESS,121.17,0.00,true,
+D,0,true,161,11;0;16,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,266.30,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,162,23;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,294.14,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,163,0;23;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,355.10,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,164,4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,278.31,0.00,true,
+D,0,true,165,8;23;1,1,OK,SUCCESS,149.05,0.00,true,
+D,0,true,166,0,1,OK,SUCCESS,203.79,0.00,true,
+D,0,true,167,2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,119.15,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,168,3;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,332.09,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,169,0,1,OK,SUCCESS,98.27,0.00,true,
+D,0,true,170,0;10;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,325.66,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,171,13,1,OK,SUCCESS,180.56,0.00,true,
+D,0,true,172,0;18;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,329.02,0.00,true,
+D,0,true,173,6,1,OK,SUCCESS,237.19,0.00,true,
+D,0,true,174,1,1,OK,SUCCESS,25.14,0.00,true,
+D,0,true,175,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,212.64,0.00,true,
+D,0,true,176,35,1,OK,SUCCESS,112.06,0.00,true,
+D,0,true,177,12,1,OK,SUCCESS,111.71,0.00,true,
+D,0,true,178,16;2;19,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,237.08,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,179,26,1,OK,SUCCESS,36.93,0.00,true,
+D,0,true,180,26;4;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,259.58,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,181,1,1,OK,SUCCESS,161.85,0.00,true,
+D,0,true,182,40;1;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,218.78,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,183,0;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,222.43,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,184,1;0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,215.14,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,185,7;0,1,OK,SUCCESS,111.19,0.00,true,
+D,0,true,186,5,1,OK,SUCCESS,107.84,0.00,true,
+D,0,true,187,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,116.89,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,188,26;19,1,OK,SUCCESS,175.39,0.00,true,
+D,0,true,189,1;20,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,192.15,0.00,true,
+D,0,true,190,3;0;34,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,208.88,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,191,8;3,1,OK,SUCCESS,138.29,0.00,true,
+D,0,true,192,0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,201.79,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,0,true,193,2,1,OK,SUCCESS,107.62,0.00,true,
+D,0,true,194,4,1,OK,SUCCESS,27.08,0.00,true,
+D,0,true,195,0;33;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,137.23,0.00,true,
+D,0,true,196,7;29;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,178.85,0.00,true,
+D,0,true,197,38,1,OK,SUCCESS,88.56,0.00,true,
+D,0,true,198,0;12;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,169.32,0.00,true,
+D,0,true,199,20;2,1,OK,SUCCESS,108.16,0.00,true,
+D,1,false,0,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,471.81,0.00,true,
+D,1,false,1,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,104.27,0.00,true,
+D,1,false,2,10;13;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,137.97,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,3,38,1,OK,SUCCESS,23.71,0.00,true,
+D,1,false,4,33;4;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,304.52,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,5,4;0;17,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,133.42,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,6,0,1,OK,SUCCESS,18.77,0.00,true,
+D,1,false,7,2,1,OK,SUCCESS,19.95,0.00,true,
+D,1,false,8,28,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,60.85,0.00,true,
+D,1,false,9,20;0;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,132.83,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,10,12;1,1,OK,SUCCESS,34.35,0.00,true,
+D,1,false,11,6,1,OK,SUCCESS,20.15,0.00,true,
+D,1,false,12,40;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,136.68,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,13,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,54.81,0.00,true,
+D,1,false,14,4;0;24,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,145.25,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,15,3;1;30,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,100.53,0.00,true,
+D,1,false,16,1;0;48,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,136.65,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,17,46;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,149.87,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,18,28,1,OK,SUCCESS,18.57,0.00,true,
+D,1,false,19,3,1,OK,SUCCESS,18.57,0.00,true,
+D,1,false,20,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,513.94,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,21,9;33,1,OK,SUCCESS,330.75,0.00,true,
+D,1,false,22,1;0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,346.99,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,23,42;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,141.68,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,24,1;20;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,311.47,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,25,19,1,OK,SUCCESS,163.96,0.00,true,
+D,1,false,26,2;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,234.41,0.00,true,
+D,1,false,27,18;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,216.31,0.00,true,
+D,1,false,28,36;15;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,331.19,0.00,true,
+D,1,false,29,9;0;28,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,320.14,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,30,20;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,178.09,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,31,0;13;22,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,811.81,0.00,true,
+D,1,false,32,10;13;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,869.56,0.00,true,
+D,1,false,33,8,1,OK,SUCCESS,233.79,0.00,true,
+D,1,false,34,1,1,OK,SUCCESS,190.84,0.00,true,
+D,1,false,35,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,559.10,0.00,true,
+D,1,false,36,1;9;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,386.53,0.00,true,
+D,1,false,37,25;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,158.13,0.00,true,
+D,1,false,38,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,220.33,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,39,15;3;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,588.37,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,40,26,1,OK,SUCCESS,463.07,0.00,true,
+D,1,false,41,29,1,OK,SUCCESS,347.71,0.00,true,
+D,1,false,42,3;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,203.71,0.00,true,
+D,1,false,43,31;0;16,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,233.66,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,44,7,1,OK,SUCCESS,351.27,0.00,true,
+D,1,false,45,0,1,OK,SUCCESS,151.04,0.00,true,
+D,1,false,46,6;5;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,303.88,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,47,1;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,388.79,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,48,18,1,OK,SUCCESS,154.91,0.00,true,
+D,1,false,49,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,343.06,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,50,1,1,OK,SUCCESS,31.99,0.00,true,
+D,1,false,51,4;0;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,134.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,52,7;34;14,1,OK,SUCCESS,64.53,0.00,true,
+D,1,false,53,9;0;17,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,458.00,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,54,15;2,1,OK,SUCCESS,48.48,0.00,true,
+D,1,false,55,36;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,118.20,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,56,1;3;6,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,304.81,0.00,true,
+D,1,false,57,18,1,OK,SUCCESS,48.65,0.00,true,
+D,1,false,58,1;19,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,79.45,0.00,true,
+D,1,false,59,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,63.30,0.00,true,
+D,1,false,60,26;37;4,1,OK,SUCCESS,48.29,0.00,true,
+D,1,false,61,15;2;16,1,OK,SUCCESS,40.94,0.00,true,
+D,1,false,62,26,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,39.71,0.00,true,
+D,1,false,63,4;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,735.78,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,64,3;1;39,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,107.59,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,65,18,1,OK,SUCCESS,20.87,0.00,true,
+D,1,false,66,17,1,OK,SUCCESS,114.45,0.00,true,
+D,1,false,67,42;49;1,1,OK,SUCCESS,37.79,0.00,true,
+D,1,false,68,15;10,1,OK,SUCCESS,78.50,0.00,true,
+D,1,false,69,10;6,1,OK,SUCCESS,182.22,0.00,true,
+D,1,false,70,0;2;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,109.65,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,71,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,205.35,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,72,3;4;19,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,177.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,73,1;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,89.51,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,74,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,48.40,0.00,true,
+D,1,false,75,2;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,98.49,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,76,0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,683.41,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,77,0;13;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,784.41,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,78,26;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,727.77,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,79,7;20;5,1,OK,SUCCESS,274.66,0.00,true,
+D,1,false,80,4,1,OK,SUCCESS,34.38,0.00,true,
+D,1,false,81,8,1,OK,SUCCESS,179.95,0.00,true,
+D,1,false,82,10,1,OK,SUCCESS,31.98,0.00,true,
+D,1,false,83,2;39;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,379.17,0.00,true,
+D,1,false,84,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,438.78,0.00,true,
+D,1,false,85,13;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,106.51,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,86,7;5;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,168.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,87,3,1,OK,SUCCESS,182.07,0.00,true,
+D,1,false,88,30;0,1,OK,SUCCESS,33.33,0.00,true,
+D,1,false,89,1;12,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,56.74,0.00,true,
+D,1,false,90,28;2,1,OK,SUCCESS,29.71,0.00,true,
+D,1,false,91,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,74.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,92,1;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,117.39,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,93,43,1,OK,SUCCESS,189.17,0.00,true,
+D,1,false,94,27;0;14,1,OK,SUCCESS,24.61,0.00,true,
+D,1,false,95,0;21;15,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,162.98,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,96,1;3,1,OK,SUCCESS,90.60,0.00,true,
+D,1,false,97,0;38,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,77.21,0.00,true,
+D,1,false,98,4;32;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,167.64,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,99,41;21;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,388.32,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,100,10;22;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,113.63,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,101,20;3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,564.97,0.00,true,
+D,1,false,102,32;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,369.79,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,103,0,1,OK,SUCCESS,27.94,0.00,true,
+D,1,false,104,37;6;36,1,OK,SUCCESS,50.76,0.00,true,
+D,1,false,105,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,539.53,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,106,1,1,OK,SUCCESS,39.59,0.00,true,
+D,1,false,107,1;29,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,502.08,0.00,true,
+D,1,false,108,0;46;39,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,381.64,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,109,0;1;19,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,308.81,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,110,4;13,1,OK,SUCCESS,39.61,0.00,true,
+D,1,false,111,0;4;41,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,60.24,0.00,true,
+D,1,false,112,32;15;6,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,413.16,0.00,true,
+D,1,false,113,0;30;26,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,318.45,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,114,8;0,1,OK,SUCCESS,83.66,0.00,true,
+D,1,false,115,30,1,OK,SUCCESS,21.35,0.00,true,
+D,1,false,116,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,620.70,0.00,true,
+D,1,false,117,10;5;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,329.08,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,118,5;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,547.05,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,119,0,1,OK,SUCCESS,347.73,0.00,true,
+D,1,false,120,19,1,OK,SUCCESS,30.38,0.00,true,
+D,1,false,121,3;5;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,619.08,0.00,true,
+D,1,false,122,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,304.62,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,123,0;8;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,484.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,124,10;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,402.64,0.00,true,
+D,1,false,125,7;2;9,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,407.60,0.00,true,
+D,1,false,126,2;0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,347.00,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,127,38,1,OK,SUCCESS,144.71,0.00,true,
+D,1,false,128,7;18;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,508.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,129,49;14;21,1,OK,SUCCESS,593.28,0.00,true,
+D,1,false,130,4;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,346.07,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,131,10;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,460.65,0.00,true,
+D,1,false,132,3;18;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,582.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,133,43;15,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,455.38,0.00,true,
+D,1,false,134,0;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,345.19,0.00,true,
+D,1,false,135,1;15;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,341.12,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,136,37,1,OK,SUCCESS,34.71,0.00,true,
+D,1,false,137,21;5,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,287.97,0.00,true,
+D,1,false,138,31,1,OK,SUCCESS,449.33,0.00,true,
+D,1,false,139,9;13,1,OK,SUCCESS,300.61,0.00,true,
+D,1,false,140,18,1,OK,SUCCESS,453.45,0.00,true,
+D,1,false,141,1,1,OK,SUCCESS,229.94,0.00,true,
+D,1,false,142,6;1;25,1,OK,SUCCESS,124.86,0.00,true,
+D,1,false,143,43;11,1,OK,SUCCESS,231.48,0.00,true,
+D,1,false,144,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,497.10,0.00,true,
+D,1,false,145,3;28,1,OK,SUCCESS,353.07,0.00,true,
+D,1,false,146,9;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,256.61,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,147,0;1;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,262.77,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,148,2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,135.07,0.00,true,
+D,1,false,149,8,1,OK,SUCCESS,264.82,0.00,true,
+D,1,false,150,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,175.88,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,151,5;20,1,OK,SUCCESS,87.58,0.00,true,
+D,1,false,152,37;30,1,OK,SUCCESS,72.99,0.00,true,
+D,1,false,153,39;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,128.00,0.00,true,
+D,1,false,154,47;38;37,1,OK,SUCCESS,339.63,0.00,true,
+D,1,false,155,13;0,1,OK,SUCCESS,50.15,0.00,true,
+D,1,false,156,2,1,OK,SUCCESS,30.21,0.00,true,
+D,1,false,157,0;7,1,OK,SUCCESS,252.59,0.00,true,
+D,1,false,158,4;9;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,126.54,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,159,4,1,OK,SUCCESS,193.42,0.00,true,
+D,1,false,160,3;1,1,OK,SUCCESS,44.70,0.00,true,
+D,1,false,161,0;3;41,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,125.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,162,0;8;31,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,305.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,163,4;25;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,317.28,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,164,3;16;33,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,95.78,0.00,true,
+D,1,false,165,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,90.42,0.00,true,
+D,1,false,166,0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,99.49,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,167,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,286.79,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,168,9;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,112.45,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,169,0;14;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,117.05,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,170,4;13,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,67.58,0.00,true,
+D,1,false,171,0;2;16,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,113.03,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,172,7;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,262.87,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,173,5,1,OK,SUCCESS,26.62,0.00,true,
+D,1,false,174,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,257.71,0.00,true,
+D,1,false,175,3,1,OK,SUCCESS,196.21,0.00,true,
+D,1,false,176,14;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,234.00,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,177,0,1,OK,SUCCESS,82.76,0.00,true,
+D,1,false,178,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,78.18,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,179,21;19;18,1,OK,SUCCESS,31.70,0.00,true,
+D,1,false,180,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,43.98,0.00,true,
+D,1,false,181,19;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,73.56,0.00,true,
+D,1,false,182,1;14,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,235.42,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,183,0;28,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,181.19,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,184,27,1,OK,SUCCESS,80.19,0.00,true,
+D,1,false,185,9,1,OK,SUCCESS,29.42,0.00,true,
+D,1,false,186,36;17;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,148.41,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,187,11;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,157.65,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,188,13;1;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,210.59,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,189,17,1,OK,SUCCESS,84.35,0.00,true,
+D,1,false,190,36,1,OK,SUCCESS,86.80,0.00,true,
+D,1,false,191,26;11;37,1,OK,SUCCESS,121.72,0.00,true,
+D,1,false,192,6,1,OK,SUCCESS,27.88,0.00,true,
+D,1,false,193,7;30;6,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,174.26,0.00,true,
+D,1,false,194,2;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,65.90,0.00,true,
+D,1,false,195,3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,90.82,0.00,true,
+D,1,false,196,47;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,165.30,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,197,0;1;17,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,162.26,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,1,false,198,3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,133.77,0.00,true,
+D,1,false,199,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,125.67,0.00,true,
+D,2,false,0,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,183.40,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,1,46,1,OK,SUCCESS,18.45,0.00,true,
+D,2,false,2,35;3,1,OK,SUCCESS,23.91,0.00,true,
+D,2,false,3,0,1,OK,SUCCESS,20.86,0.00,true,
+D,2,false,4,1;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,95.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,5,12,1,OK,SUCCESS,18.92,0.00,true,
+D,2,false,6,2;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,94.08,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,7,2;48,1,OK,SUCCESS,23.60,0.00,true,
+D,2,false,8,2;19,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,280.70,0.00,true,
+D,2,false,9,7;25;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,111.53,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,10,10;8,1,OK,SUCCESS,26.61,0.00,true,
+D,2,false,11,8;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,212.01,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,12,0;5;22,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,115.41,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,13,0;36,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,87.26,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,14,20,1,OK,SUCCESS,21.83,0.00,true,
+D,2,false,15,1,1,OK,SUCCESS,20.86,0.00,true,
+D,2,false,16,46,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,47.70,0.00,true,
+D,2,false,17,0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,94.46,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,18,2;19;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,118.61,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,19,2;14,1,OK,SUCCESS,54.18,0.00,true,
+D,2,false,20,3,1,OK,SUCCESS,180.40,0.00,true,
+D,2,false,21,0,1,OK,SUCCESS,132.06,0.00,true,
+D,2,false,22,16;4,1,OK,SUCCESS,140.23,0.00,true,
+D,2,false,23,0;9;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,792.44,0.00,true,
+D,2,false,24,1;8;27,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,165.81,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,25,32;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,379.21,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,26,21;34,1,OK,SUCCESS,52.74,0.00,true,
+D,2,false,27,1;10,1,OK,SUCCESS,142.61,0.00,true,
+D,2,false,28,4;8,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,226.26,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,29,0,1,OK,SUCCESS,241.88,0.00,true,
+D,2,false,30,7,1,OK,SUCCESS,419.55,0.00,true,
+D,2,false,31,9;0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,301.16,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,32,34,1,OK,SUCCESS,112.53,0.00,true,
+D,2,false,33,15;1;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,141.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,34,35;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,635.23,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,35,8;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,400.58,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,36,34;5;31,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,472.88,0.00,true,
+D,2,false,37,5,1,OK,SUCCESS,158.43,0.00,true,
+D,2,false,38,15;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,343.02,0.00,true,
+D,2,false,39,2;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,559.29,0.00,true,
+D,2,false,40,25;39;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,162.74,0.00,true,
+D,2,false,41,1;32,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,208.67,0.00,true,
+D,2,false,42,0;19,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,490.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,43,1,1,OK,SUCCESS,164.38,0.00,true,
+D,2,false,44,0;4;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,218.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,45,6,1,OK,SUCCESS,166.99,0.00,true,
+D,2,false,46,43;35;47,1,OK,SUCCESS,138.50,0.00,true,
+D,2,false,47,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,166.94,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,48,1;32;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,351.06,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,49,20;3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,61.33,0.00,true,
+D,2,false,50,4;35,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,462.91,0.00,true,
+D,2,false,51,11;22,1,OK,SUCCESS,35.10,0.00,true,
+D,2,false,52,1;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,109.59,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,53,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,94.81,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,54,0,1,OK,SUCCESS,27.20,0.00,true,
+D,2,false,55,1,1,OK,SUCCESS,25.94,0.00,true,
+D,2,false,56,1;18,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,67.43,0.00,true,
+D,2,false,57,0;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,79.61,0.00,true,
+D,2,false,58,42,1,OK,SUCCESS,27.93,0.00,true,
+D,2,false,59,6,1,OK,SUCCESS,27.01,0.00,true,
+D,2,false,60,2;0,1,OK,SUCCESS,31.30,0.00,true,
+D,2,false,61,0;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,152.92,0.00,true,
+D,2,false,62,6;17,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,69.21,0.00,true,
+D,2,false,63,15;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,200.84,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,64,14;1;28,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,385.07,0.00,true,
+D,2,false,65,0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,150.80,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,66,7,1,OK,SUCCESS,30.06,0.00,true,
+D,2,false,67,0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,144.19,0.00,true,
+D,2,false,68,27;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,323.02,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,69,2,1,OK,SUCCESS,25.98,0.00,true,
+D,2,false,70,0,1,OK,SUCCESS,24.17,0.00,true,
+D,2,false,71,4;30,1,OK,SUCCESS,77.46,0.00,true,
+D,2,false,72,1,1,OK,SUCCESS,441.85,0.00,true,
+D,2,false,73,1;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,297.09,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,74,1;11,1,OK,SUCCESS,20.98,0.00,true,
+D,2,false,75,20;2;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,432.40,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,76,34;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,96.76,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,77,40,1,OK,SUCCESS,121.81,0.00,true,
+D,2,false,78,24;6;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,523.35,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,79,3;11;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,292.53,0.00,true,
+D,2,false,80,32;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,92.80,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,81,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,557.76,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,82,4,1,OK,SUCCESS,120.71,0.00,true,
+D,2,false,83,0;23,1,OK,SUCCESS,26.76,0.00,true,
+D,2,false,84,3;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,516.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,85,39;27;29,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,111.65,0.00,true,
+D,2,false,86,27,1,OK,SUCCESS,291.74,0.00,true,
+D,2,false,87,0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,103.93,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,88,3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,566.41,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,89,0;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,551.95,0.00,true,
+D,2,false,90,1;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,124.25,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,91,49;1;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,146.78,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,92,18;25,1,OK,SUCCESS,46.20,0.00,true,
+D,2,false,93,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,110.33,0.00,true,
+D,2,false,94,17,1,OK,SUCCESS,265.04,0.00,true,
+D,2,false,95,14;0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,666.69,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,96,39,1,OK,SUCCESS,39.83,0.00,true,
+D,2,false,97,7;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,118.26,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,98,12,1,OK,SUCCESS,39.88,0.00,true,
+D,2,false,99,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,367.19,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,100,34;39;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,415.69,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,101,6,1,OK,SUCCESS,23.45,0.00,true,
+D,2,false,102,8;1,1,OK,SUCCESS,24.71,0.00,true,
+D,2,false,103,0;2;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,142.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,104,0;3;43,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,279.08,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,105,38;35,1,OK,SUCCESS,26.38,0.00,true,
+D,2,false,106,1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,129.26,0.00,true,
+D,2,false,107,7,1,OK,SUCCESS,179.38,0.00,true,
+D,2,false,108,35;3;25,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,81.69,0.00,true,
+D,2,false,109,0;27,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,585.49,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,110,0;2;10,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,410.18,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,111,0,1,OK,SUCCESS,199.28,0.00,true,
+D,2,false,112,0;23,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,89.13,0.00,true,
+D,2,false,113,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,110.36,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,114,4;27,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,101.79,0.00,true,
+D,2,false,115,22;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,401.78,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,116,45;49;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,156.10,0.00,true,
+D,2,false,117,46;34;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,540.03,0.00,true,
+D,2,false,118,4;0;31,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,281.30,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,119,0;2;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,238.96,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,120,2,1,OK,SUCCESS,240.72,0.00,true,
+D,2,false,121,0;41;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,161.03,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,122,6,1,OK,SUCCESS,60.70,0.00,true,
+D,2,false,123,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,84.91,0.00,true,
+D,2,false,124,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,201.91,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,125,25,1,OK,SUCCESS,121.99,0.00,true,
+D,2,false,126,14;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,205.32,0.00,true,
+D,2,false,127,2,1,OK,SUCCESS,119.61,0.00,true,
+D,2,false,128,1;24;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,322.35,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,129,46;0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,141.48,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,130,12;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,440.07,0.00,true,
+D,2,false,131,24;9,1,OK,SUCCESS,64.94,0.00,true,
+D,2,false,132,0;30;25,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,203.27,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,133,7,1,OK,SUCCESS,150.06,0.00,true,
+D,2,false,134,10,1,OK,SUCCESS,99.08,0.00,true,
+D,2,false,135,0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,271.62,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,136,4;0;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,412.13,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,137,7;45;28,1,OK,SUCCESS,102.01,0.00,true,
+D,2,false,138,0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,283.73,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,139,32,1,OK,SUCCESS,26.10,0.00,true,
+D,2,false,140,3;0;38,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,303.60,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,141,9;1;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,396.75,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,142,1;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,377.74,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,143,2,1,OK,SUCCESS,213.22,0.00,true,
+D,2,false,144,0;11,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,245.46,0.00,true,
+D,2,false,145,7;45,1,OK,SUCCESS,146.02,0.00,true,
+D,2,false,146,0;3,1,OK,SUCCESS,32.32,0.00,true,
+D,2,false,147,4,1,OK,SUCCESS,22.87,0.00,true,
+D,2,false,148,0;7;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,202.93,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,149,2;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,245.09,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,150,0;4;36,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,391.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,151,38,1,OK,SUCCESS,26.04,0.00,true,
+D,2,false,152,20,1,OK,SUCCESS,150.85,0.00,true,
+D,2,false,153,31,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,41.78,0.00,true,
+D,2,false,154,7;3,1,OK,SUCCESS,89.91,0.00,true,
+D,2,false,155,3;14;0,1,OK,SUCCESS,34.25,0.00,true,
+D,2,false,156,1,1,OK,SUCCESS,23.35,0.00,true,
+D,2,false,157,7;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,117.72,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,158,44;0;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,199.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,159,10;48;1,1,OK,SUCCESS,113.21,0.00,true,
+D,2,false,160,21,1,OK,SUCCESS,91.48,0.00,true,
+D,2,false,161,0;5;28,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,101.14,0.00,true,
+D,2,false,162,1;19,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,293.40,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,163,1;41;38,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,312.37,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,164,0,1,OK,SUCCESS,32.98,0.00,true,
+D,2,false,165,15;4,1,OK,SUCCESS,117.98,0.00,true,
+D,2,false,166,49,1,OK,SUCCESS,116.37,0.00,true,
+D,2,false,167,9,1,OK,SUCCESS,125.48,0.00,true,
+D,2,false,168,0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,293.94,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,169,15;46,1,OK,SUCCESS,47.70,0.00,true,
+D,2,false,170,0;5;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,151.08,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,171,1;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,212.11,0.00,true,
+D,2,false,172,43;1;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,303.10,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,173,7,1,OK,SUCCESS,183.18,0.00,true,
+D,2,false,174,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,222.77,0.00,true,
+D,2,false,175,2,1,OK,SUCCESS,100.21,0.00,true,
+D,2,false,176,2;40,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,151.08,0.00,true,
+D,2,false,177,32;13,1,OK,SUCCESS,185.57,0.00,true,
+D,2,false,178,1;26;8,1,OK,SUCCESS,118.11,0.00,true,
+D,2,false,179,43,1,OK,SUCCESS,108.83,0.00,true,
+D,2,false,180,0,1,OK,SUCCESS,49.51,0.00,true,
+D,2,false,181,23;11;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,258.57,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,182,0;11,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,159.31,0.00,true,
+D,2,false,183,1;21;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,244.77,0.00,true,
+D,2,false,184,16;3,1,OK,SUCCESS,175.57,0.00,true,
+D,2,false,185,1;14;5,1,OK,SUCCESS,49.55,0.00,true,
+D,2,false,186,39;15,1,OK,SUCCESS,39.79,0.00,true,
+D,2,false,187,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,218.20,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,188,0,1,OK,SUCCESS,28.90,0.00,true,
+D,2,false,189,18,1,OK,SUCCESS,95.61,0.00,true,
+D,2,false,190,0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,206.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,191,2;3;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,215.01,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,192,0;5;37,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,186.10,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,193,48;2;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,206.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,194,30;0;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,203.54,0.00,true,
+D,2,false,195,19;1;5,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,200.73,0.00,true,
+D,2,false,196,2,1,OK,SUCCESS,24.94,0.00,true,
+D,2,false,197,2;4;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,200.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,2,false,198,13;18,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,163.32,0.00,true,
+D,2,false,199,5;2,1,OK,SUCCESS,118.43,0.00,true,
+D,3,false,0,6;20;7,1,OK,SUCCESS,117.33,0.00,true,
+D,3,false,1,1;10,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,276.65,0.00,true,
+D,3,false,2,0;3;26,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,374.96,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,3,33,1,OK,SUCCESS,82.97,0.00,true,
+D,3,false,4,0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,237.54,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,5,6;0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,469.68,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,6,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,162.96,0.00,true,
+D,3,false,7,0;4;38,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,747.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,8,1;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,355.53,0.00,true,
+D,3,false,9,1;12,1,OK,SUCCESS,92.96,0.00,true,
+D,3,false,10,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,297.25,0.00,true,
+D,3,false,11,1;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,249.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,12,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,611.59,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,13,0;3;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,282.33,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,14,3;5;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,459.84,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,15,1;24;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,374.28,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,16,23;34;37,1,OK,SUCCESS,116.97,0.00,true,
+D,3,false,17,0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,871.50,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,18,0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,247.18,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,19,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,205.44,0.00,true,
+D,3,false,20,12,1,OK,SUCCESS,329.54,0.00,true,
+D,3,false,21,4;0;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,318.47,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,22,1;39,1,OK,SUCCESS,183.04,0.00,true,
+D,3,false,23,3;2,1,OK,SUCCESS,189.01,0.00,true,
+D,3,false,24,8,1,OK,SUCCESS,436.66,0.00,true,
+D,3,false,25,30;1,1,OK,SUCCESS,513.93,0.00,true,
+D,3,false,26,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,762.50,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,27,12;24;28,1,OK,SUCCESS,276.90,0.00,true,
+D,3,false,28,23,1,OK,SUCCESS,183.57,0.00,true,
+D,3,false,29,31;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,672.59,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,30,23;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,311.75,0.00,true,
+D,3,false,31,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,351.86,0.00,true,
+D,3,false,32,23;10;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,496.90,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,33,0;15,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,256.81,0.00,true,
+D,3,false,34,1;2;30,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,557.78,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,35,43,1,OK,SUCCESS,191.36,0.00,true,
+D,3,false,36,0;16;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,510.48,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,37,10,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,348.04,0.00,true,
+D,3,false,38,1;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,447.34,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,39,2;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,854.94,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,40,2;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,731.67,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,41,0;48,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,777.14,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,42,11;20;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,962.48,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,43,4;14;6,1,OK,SUCCESS,429.22,0.00,true,
+D,3,false,44,5;0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,963.70,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,45,45;2;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,654.49,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,46,2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,366.78,0.00,true,
+D,3,false,47,3;21;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,476.75,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,48,33;18;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,538.44,0.00,true,
+D,3,false,49,0,1,OK,SUCCESS,76.93,0.00,true,
+D,3,false,50,3;2;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,401.79,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,51,7;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,434.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,52,14;41;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,339.82,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,53,33;2,1,OK,SUCCESS,181.01,0.00,true,
+D,3,false,54,0;2;49,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,505.14,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,55,4;16;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,483.89,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,56,17,1,OK,SUCCESS,352.27,0.00,true,
+D,3,false,57,9,1,OK,SUCCESS,47.01,0.00,true,
+D,3,false,58,3,1,OK,SUCCESS,51.42,0.00,true,
+D,3,false,59,18;7;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,215.06,0.00,true,
+D,3,false,60,0;14;18,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,603.59,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,61,10;5;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,649.53,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,62,2;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,204.92,0.00,true,
+D,3,false,63,11;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,381.56,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,64,0,1,OK,SUCCESS,213.39,0.00,true,
+D,3,false,65,0;1;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,639.83,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,66,0;10,1,OK,SUCCESS,139.18,0.00,true,
+D,3,false,67,2,1,OK,SUCCESS,207.31,0.00,true,
+D,3,false,68,1;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,240.30,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,69,6;0;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,586.63,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,70,0;20;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,190.51,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,71,29,1,OK,SUCCESS,54.69,0.00,true,
+D,3,false,72,29,1,OK,SUCCESS,204.02,0.00,true,
+D,3,false,73,0;7;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,369.90,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,74,3,1,OK,SUCCESS,194.56,0.00,true,
+D,3,false,75,11;5,1,OK,SUCCESS,85.08,0.00,true,
+D,3,false,76,0;5;27,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,218.10,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,77,3;6;33,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,123.98,0.00,true,
+D,3,false,78,3;5;15,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,626.38,0.00,true,
+D,3,false,79,26;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,164.90,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,80,37,1,OK,SUCCESS,35.89,0.00,true,
+D,3,false,81,4;11,1,OK,SUCCESS,126.53,0.00,true,
+D,3,false,82,45;2;12,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,230.14,0.00,true,
+D,3,false,83,5;37;15,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,108.93,0.00,true,
+D,3,false,84,0;35,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,81.53,0.00,true,
+D,3,false,85,11;4,1,OK,SUCCESS,44.14,0.00,true,
+D,3,false,86,2;38,1,OK,SUCCESS,95.53,0.00,true,
+D,3,false,87,2,1,OK,SUCCESS,28.01,0.00,true,
+D,3,false,88,17;7,1,OK,SUCCESS,41.66,0.00,true,
+D,3,false,89,12;48,1,OK,SUCCESS,36.50,0.00,true,
+D,3,false,90,1;0;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,400.27,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,91,43,1,OK,SUCCESS,80.59,0.00,true,
+D,3,false,92,3,1,OK,SUCCESS,31.49,0.00,true,
+D,3,false,93,31;1;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,129.12,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,94,6;0;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,130.20,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,95,6;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,317.07,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,96,15;10;12,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,91.56,0.00,true,
+D,3,false,97,1;7,1,OK,SUCCESS,418.52,0.00,true,
+D,3,false,98,8;6;28,1,OK,SUCCESS,46.15,0.00,true,
+D,3,false,99,7,1,OK,SUCCESS,30.95,0.00,true,
+D,3,false,100,15,1,OK,SUCCESS,157.69,0.00,true,
+D,3,false,101,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,108.72,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,102,1;16,1,OK,SUCCESS,166.95,0.00,true,
+D,3,false,103,7;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,206.89,0.00,true,
+D,3,false,104,3;16;15,1,OK,SUCCESS,276.66,0.00,true,
+D,3,false,105,23,1,OK,SUCCESS,29.19,0.00,true,
+D,3,false,106,10,1,OK,SUCCESS,26.68,0.00,true,
+D,3,false,107,5;11;8,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,146.76,0.00,true,
+D,3,false,108,25,1,OK,SUCCESS,298.05,0.00,true,
+D,3,false,109,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,324.57,0.00,true,
+D,3,false,110,0;41,1,OK,SUCCESS,260.35,0.00,true,
+D,3,false,111,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,57.89,0.00,true,
+D,3,false,112,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,231.70,0.00,true,
+D,3,false,113,2;0;14,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,448.53,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,114,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,92.65,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,115,11;42,1,OK,SUCCESS,42.06,0.00,true,
+D,3,false,116,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,293.71,0.00,true,
+D,3,false,117,1;0;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,247.66,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,118,11;43,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,66.12,0.00,true,
+D,3,false,119,12,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,137.94,0.00,true,
+D,3,false,120,30;1;10,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,148.25,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,121,1,1,OK,SUCCESS,32.74,0.00,true,
+D,3,false,122,0;49,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,130.51,0.00,true,
+D,3,false,123,0;23,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,117.15,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,124,5,1,OK,SUCCESS,22.38,0.00,true,
+D,3,false,125,0;39;13,1,OK,SUCCESS,31.15,0.00,true,
+D,3,false,126,1;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,227.20,0.00,true,
+D,3,false,127,30,1,OK,SUCCESS,21.07,0.00,true,
+D,3,false,128,16,1,OK,SUCCESS,18.22,0.00,true,
+D,3,false,129,3;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,252.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,130,5,1,OK,SUCCESS,154.11,0.00,true,
+D,3,false,131,0,1,OK,SUCCESS,102.00,0.00,true,
+D,3,false,132,1;2;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,143.07,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,133,1;12,1,OK,SUCCESS,163.52,0.00,true,
+D,3,false,134,15,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,81.02,0.00,true,
+D,3,false,135,47;5;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,152.92,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,136,6,1,OK,SUCCESS,103.19,0.00,true,
+D,3,false,137,4,1,OK,SUCCESS,43.68,0.00,true,
+D,3,false,138,5,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,72.55,0.00,true,
+D,3,false,139,2;1;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,356.49,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,140,20,1,OK,SUCCESS,139.61,0.00,true,
+D,3,false,141,31;3,1,OK,SUCCESS,52.95,0.00,true,
+D,3,false,142,0;35;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,171.04,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,143,27;5,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,120.00,0.00,true,
+D,3,false,144,24,1,OK,SUCCESS,30.71,0.00,true,
+D,3,false,145,5;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,99.95,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,146,13,1,OK,SUCCESS,29.59,0.00,true,
+D,3,false,147,17;48;9,1,OK,SUCCESS,44.33,0.00,true,
+D,3,false,148,43,1,OK,SUCCESS,26.96,0.00,true,
+D,3,false,149,13;24,1,OK,SUCCESS,80.99,0.00,true,
+D,3,false,150,16;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,291.35,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,151,15;0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,107.82,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,152,4;32;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,150.51,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,153,10;9,1,OK,SUCCESS,80.14,0.00,true,
+D,3,false,154,17;21;23,1,OK,SUCCESS,88.22,0.00,true,
+D,3,false,155,8;0,1,OK,SUCCESS,35.05,0.00,true,
+D,3,false,156,4,1,OK,SUCCESS,20.43,0.00,true,
+D,3,false,157,9;0;16,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,304.78,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,158,2;5,1,OK,SUCCESS,28.32,0.00,true,
+D,3,false,159,2;4;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,216.09,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,160,13,1,OK,SUCCESS,70.04,0.00,true,
+D,3,false,161,0,1,OK,SUCCESS,117.02,0.00,true,
+D,3,false,162,3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,261.04,0.00,true,
+D,3,false,163,1,1,OK,SUCCESS,26.22,0.00,true,
+D,3,false,164,33,1,OK,SUCCESS,69.40,0.00,true,
+D,3,false,165,45,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,150.51,0.00,true,
+D,3,false,166,0;13;10,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,168.52,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,167,6;1;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,240.60,0.00,true,
+D,3,false,168,4;37,1,OK,SUCCESS,79.22,0.00,true,
+D,3,false,169,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,182.52,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,170,2;22;26,1,OK,SUCCESS,88.83,0.00,true,
+D,3,false,171,0;10,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,246.16,0.00,true,
+D,3,false,172,11;45,1,OK,SUCCESS,71.14,0.00,true,
+D,3,false,173,1;46;23,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,173.77,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,174,12,1,OK,SUCCESS,22.31,0.00,true,
+D,3,false,175,33,1,OK,SUCCESS,59.40,0.00,true,
+D,3,false,176,41,1,OK,SUCCESS,124.30,0.00,true,
+D,3,false,177,38,1,OK,SUCCESS,64.17,0.00,true,
+D,3,false,178,23,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,199.69,0.00,true,
+D,3,false,179,11,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,100.07,0.00,true,
+D,3,false,180,9;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,217.46,0.00,true,
+D,3,false,181,2;37;6,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,128.49,0.00,true,
+D,3,false,182,21;40,1,OK,SUCCESS,25.76,0.00,true,
+D,3,false,183,39;18;16,1,OK,SUCCESS,30.65,0.00,true,
+D,3,false,184,4;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,102.99,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,185,0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,188.66,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,186,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,198.29,0.00,true,
+D,3,false,187,11;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,185.50,0.00,true,
+D,3,false,188,1;7;15,1,OK,SUCCESS,95.82,0.00,true,
+D,3,false,189,24,1,OK,SUCCESS,178.96,0.00,true,
+D,3,false,190,33;8;36,1,OK,SUCCESS,90.77,0.00,true,
+D,3,false,191,1;0;45,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,205.93,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,192,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,63.97,0.00,true,
+D,3,false,193,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,180.92,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,194,0;8,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,172.39,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,3,false,195,0;13;27,1,OK,SUCCESS,152.65,0.00,true,
+D,3,false,196,18,1,OK,SUCCESS,152.34,0.00,true,
+D,3,false,197,1,1,OK,SUCCESS,32.74,0.00,true,
+D,3,false,198,10;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,169.34,0.00,true,
+D,3,false,199,16;25;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,164.10,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,0,32;21;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,96.10,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,1,0;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,150.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,2,1;6;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,295.33,0.00,true,
+D,4,false,3,0;14;40,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,185.34,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,4,0;9;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,173.90,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,5,1;20,1,OK,SUCCESS,21.99,0.00,true,
+D,4,false,6,3;4;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,203.67,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,7,0,1,OK,SUCCESS,18.75,0.00,true,
+D,4,false,8,0;4;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,178.58,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,9,6,1,OK,SUCCESS,16.44,0.00,true,
+D,4,false,10,5;27,1,OK,SUCCESS,26.36,0.00,true,
+D,4,false,11,0;11;37,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,108.61,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,12,6;22,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,122.97,0.00,true,
+D,4,false,13,2,1,OK,SUCCESS,16.19,0.00,true,
+D,4,false,14,3,1,OK,SUCCESS,15.29,0.00,true,
+D,4,false,15,13;0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,155.00,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,16,7;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,327.35,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,17,26,1,OK,SUCCESS,17.35,0.00,true,
+D,4,false,18,1;26,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,164.19,0.00,true,
+D,4,false,19,23,1,OK,SUCCESS,31.76,0.00,true,
+D,4,false,20,4;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,209.19,0.00,true,
+D,4,false,21,2,1,OK,SUCCESS,61.84,0.00,true,
+D,4,false,22,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,201.18,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,23,0;23;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,227.46,0.00,true,
+D,4,false,24,4;11;19,1,OK,SUCCESS,45.35,0.00,true,
+D,4,false,25,2,1,OK,SUCCESS,36.54,0.00,true,
+D,4,false,26,3;1,1,OK,SUCCESS,43.92,0.00,true,
+D,4,false,27,20;0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,143.80,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,28,1;32;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,169.69,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,29,18;0;45,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,122.41,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,30,0,1,OK,SUCCESS,44.33,0.00,true,
+D,4,false,31,17;9,1,OK,SUCCESS,46.20,0.00,true,
+D,4,false,32,13;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,118.92,0.00,true,
+D,4,false,33,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,414.77,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,34,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,142.27,0.00,true,
+D,4,false,35,24;0;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,247.13,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,36,3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,144.80,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,37,17;14;8,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,296.02,0.00,true,
+D,4,false,38,16;44,1,OK,SUCCESS,137.83,0.00,true,
+D,4,false,39,2;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,115.43,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,40,25,1,OK,SUCCESS,90.39,0.00,true,
+D,4,false,41,1;5;17,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,215.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,42,13;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,90.92,0.00,true,
+D,4,false,43,4,1,OK,SUCCESS,57.47,0.00,true,
+D,4,false,44,12,1,OK,SUCCESS,59.30,0.00,true,
+D,4,false,45,6,1,OK,SUCCESS,60.05,0.00,true,
+D,4,false,46,0,1,OK,SUCCESS,60.18,0.00,true,
+D,4,false,47,12,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,143.12,0.00,true,
+D,4,false,48,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,171.31,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,49,14;13,1,OK,SUCCESS,26.65,0.00,true,
+D,4,false,50,0,1,OK,SUCCESS,16.22,0.00,true,
+D,4,false,51,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,114.16,0.00,true,
+D,4,false,52,18;0;42,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,96.09,0.00,true,
+D,4,false,53,28,1,OK,SUCCESS,47.01,0.00,true,
+D,4,false,54,21,1,OK,SUCCESS,181.24,0.00,true,
+D,4,false,55,8,1,OK,SUCCESS,98.50,0.00,true,
+D,4,false,56,37;5;8,1,OK,SUCCESS,26.47,0.00,true,
+D,4,false,57,18;17;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,150.51,0.00,true,
+D,4,false,58,1;39;5,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,327.18,0.00,true,
+D,4,false,59,12;0;28,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,272.52,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,60,1,1,OK,SUCCESS,62.87,0.00,true,
+D,4,false,61,2;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,402.20,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,62,41;13,1,OK,SUCCESS,103.05,0.00,true,
+D,4,false,63,0;48,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,158.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,64,0;17;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,351.85,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,65,49,1,OK,SUCCESS,17.21,0.00,true,
+D,4,false,66,0,1,OK,SUCCESS,15.61,0.00,true,
+D,4,false,67,1;41,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,161.87,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,68,12;9,1,OK,SUCCESS,28.13,0.00,true,
+D,4,false,69,3;0;45,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,204.36,0.00,true,
+D,4,false,70,8,1,OK,SUCCESS,20.19,0.00,true,
+D,4,false,71,24;5,1,OK,SUCCESS,30.09,0.00,true,
+D,4,false,72,10;43;14,1,OK,SUCCESS,42.69,0.00,true,
+D,4,false,73,6,1,OK,SUCCESS,29.89,0.00,true,
+D,4,false,74,34;0,1,OK,SUCCESS,117.42,0.00,true,
+D,4,false,75,2,1,OK,SUCCESS,107.23,0.00,true,
+D,4,false,76,0;2;15,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,175.90,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,77,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,111.18,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,78,5;4,1,OK,SUCCESS,27.72,0.00,true,
+D,4,false,79,4;3;11,1,OK,SUCCESS,74.57,0.00,true,
+D,4,false,80,7,1,OK,SUCCESS,58.25,0.00,true,
+D,4,false,81,1,1,OK,SUCCESS,22.79,0.00,true,
+D,4,false,82,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,169.23,0.00,true,
+D,4,false,83,29,1,OK,SUCCESS,102.49,0.00,true,
+D,4,false,84,21,1,OK,SUCCESS,56.33,0.00,true,
+D,4,false,85,0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,201.96,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,86,5,1,OK,SUCCESS,20.52,0.00,true,
+D,4,false,87,0;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,197.97,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,88,0;1;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,176.26,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,89,34;0;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,144.16,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,90,1;18,1,OK,SUCCESS,22.57,0.00,true,
+D,4,false,91,3;7,1,OK,SUCCESS,69.29,0.00,true,
+D,4,false,92,15;24;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1363.57,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,93,16;0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,136.96,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,94,0,1,OK,SUCCESS,157.77,0.00,true,
+D,4,false,95,14;0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,188.86,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,96,4;5;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,204.55,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,97,0;45;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,183.23,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,98,29;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,125.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,99,2;16,1,OK,SUCCESS,26.41,0.00,true,
+D,4,false,100,5,1,OK,SUCCESS,21.61,0.00,true,
+D,4,false,101,24,1,OK,SUCCESS,62.37,0.00,true,
+D,4,false,102,2;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1409.43,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,103,3;41;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,169.36,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,104,16;9,1,OK,SUCCESS,27.39,0.00,true,
+D,4,false,105,11,1,OK,SUCCESS,66.84,0.00,true,
+D,4,false,106,1,1,OK,SUCCESS,20.80,0.00,true,
+D,4,false,107,2;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,238.26,0.00,true,
+D,4,false,108,12;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,119.65,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,109,12,1,OK,SUCCESS,110.20,0.00,true,
+D,4,false,110,42;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,136.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,111,30;0;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,124.73,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,112,1,1,OK,SUCCESS,62.04,0.00,true,
+D,4,false,113,31;9,1,OK,SUCCESS,70.69,0.00,true,
+D,4,false,114,5;41,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,134.55,0.00,true,
+D,4,false,115,19;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,345.47,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,116,4,1,OK,SUCCESS,101.58,0.00,true,
+D,4,false,117,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,335.06,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,118,2,1,OK,SUCCESS,66.06,0.00,true,
+D,4,false,119,19;0;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,293.69,0.00,true,
+D,4,false,120,3;30,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,169.12,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,121,0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,219.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,122,0;4;24,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,304.89,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,123,8;0,1,OK,SUCCESS,112.34,0.00,true,
+D,4,false,124,1,1,OK,SUCCESS,70.62,0.00,true,
+D,4,false,125,7;24,1,OK,SUCCESS,72.35,0.00,true,
+D,4,false,126,36;18,1,OK,SUCCESS,77.41,0.00,true,
+D,4,false,127,27;6,1,OK,SUCCESS,32.00,0.00,true,
+D,4,false,128,0;32;16,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,159.57,0.00,true,
+D,4,false,129,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,231.60,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,130,9,1,OK,SUCCESS,58.99,0.00,true,
+D,4,false,131,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,186.27,0.00,true,
+D,4,false,132,13;45;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,112.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,133,0;22;43,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,196.84,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,134,2;20;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1244.61,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,135,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,76.07,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,136,23,1,OK,SUCCESS,156.58,0.00,true,
+D,4,false,137,41;2,1,OK,SUCCESS,21.90,0.00,true,
+D,4,false,138,3;8;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,1213.25,0.00,true,
+D,4,false,139,1;3,1,OK,SUCCESS,56.27,0.00,true,
+D,4,false,140,30;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,243.86,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,141,0,1,OK,SUCCESS,65.40,0.00,true,
+D,4,false,142,0;28,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,152.21,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,143,5;11;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,208.44,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,144,21,1,OK,SUCCESS,69.04,0.00,true,
+D,4,false,145,1;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;CannotAcquireLockException,OTHER_DEADLOCK,1237.32,0.00,true,"PSQLException: ERROR: deadlock detected   Detail: Process 98 waits for ShareLock on transaction 23876; blocked by process 96. Process 96 waits for ShareLock on transaction 23880; blocked by process 98.   Hint: See server log for query details.   Where: while updating tuple (32,90) in relation 'products'"
+D,4,false,146,6;0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1340.80,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,147,33;4;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,185.31,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,148,11,1,OK,SUCCESS,23.20,0.00,true,
+D,4,false,149,3,1,OK,SUCCESS,67.55,0.00,true,
+D,4,false,150,7;11;22,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,194.31,0.00,true,
+D,4,false,151,17;20;10,1,OK,SUCCESS,81.83,0.00,true,
+D,4,false,152,0,1,OK,SUCCESS,109.60,0.00,true,
+D,4,false,153,3,1,OK,SUCCESS,79.76,0.00,true,
+D,4,false,154,11,1,OK,SUCCESS,74.37,0.00,true,
+D,4,false,155,24;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,210.48,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,156,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1180.14,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,157,17;16;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1280.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,158,2,1,OK,SUCCESS,71.75,0.00,true,
+D,4,false,159,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,205.25,0.00,true,
+D,4,false,160,1;2;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1265.44,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,161,0,1,OK,SUCCESS,70.49,0.00,true,
+D,4,false,162,29;7,1,OK,SUCCESS,39.29,0.00,true,
+D,4,false,163,12;49;29,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,135.62,0.00,true,
+D,4,false,164,0;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,197.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,165,40;5;15,1,OK,SUCCESS,155.54,0.00,true,
+D,4,false,166,20;14;7,1,OK,SUCCESS,91.04,0.00,true,
+D,4,false,167,25;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,114.33,0.00,true,
+D,4,false,168,0;36;29,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,1307.69,0.00,true,
+D,4,false,169,21;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,1148.23,0.00,true,
+D,4,false,170,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,174.37,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,171,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,1247.68,0.00,true,
+D,4,false,172,9;0;24,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1230.70,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,173,0;46;11,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1228.07,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,174,13;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1290.55,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,175,0;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1212.66,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,176,0;27;33,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1226.26,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,177,0;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1276.32,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,178,9;0,1,OK,SUCCESS,76.13,0.00,true,
+D,4,false,179,2;33,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,1120.77,0.00,true,
+D,4,false,180,18;9;24,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,1113.78,0.00,true,
+D,4,false,181,44;7;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1266.75,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,182,1;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,1172.99,0.00,true,
+D,4,false,183,8;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,1173.17,0.00,true,
+D,4,false,184,15;1;19,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1174.27,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,185,28;6,1,OK,SUCCESS,134.07,0.00,true,
+D,4,false,186,0,1,OK,SUCCESS,96.38,0.00,true,
+D,4,false,187,9;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1161.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,188,2,1,OK,SUCCESS,99.39,0.00,true,
+D,4,false,189,15,1,OK,SUCCESS,1138.12,0.00,true,
+D,4,false,190,36,1,OK,SUCCESS,1150.13,0.00,true,
+D,4,false,191,0;1;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,1227.41,0.00,true,
+D,4,false,192,2;3;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1194.25,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,193,8;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1181.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,194,2;0;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1191.49,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,195,0,1,OK,SUCCESS,81.64,0.00,true,
+D,4,false,196,5,1,OK,SUCCESS,81.26,0.00,true,
+D,4,false,197,2;0;20,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,1196.39,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,4,false,198,4;24;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,1165.78,0.00,true,
+D,4,false,199,2,1,OK,SUCCESS,1064.28,0.00,true,
+D,5,false,0,0;8;38,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,196.46,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,1,3;12;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,101.84,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,2,23;3;14,1,OK,SUCCESS,34.14,0.00,true,
+D,5,false,3,0;29;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,293.19,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,4,10,1,OK,SUCCESS,23.71,0.00,true,
+D,5,false,5,29;1;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,144.14,0.00,true,
+D,5,false,6,4,1,OK,SUCCESS,23.96,0.00,true,
+D,5,false,7,0,1,OK,SUCCESS,24.96,0.00,true,
+D,5,false,8,23;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,51.01,0.00,true,
+D,5,false,9,1;0;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,135.36,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,10,8,1,OK,SUCCESS,23.86,0.00,true,
+D,5,false,11,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,127.78,0.00,true,
+D,5,false,12,0;48,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,160.03,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,13,11,1,OK,SUCCESS,25.71,0.00,true,
+D,5,false,14,30;17,1,OK,SUCCESS,28.76,0.00,true,
+D,5,false,15,9;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,120.27,0.00,true,
+D,5,false,16,4;16,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,243.22,0.00,true,
+D,5,false,17,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,46.50,0.00,true,
+D,5,false,18,21;1,1,OK,SUCCESS,28.19,0.00,true,
+D,5,false,19,23;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,191.68,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,20,8;21;2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,275.07,0.00,true,
+D,5,false,21,38;7;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,239.34,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,22,3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,81.38,0.00,true,
+D,5,false,23,17;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,238.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,24,0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,219.96,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,25,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,322.94,0.00,true,
+D,5,false,26,22,1,OK,SUCCESS,42.81,0.00,true,
+D,5,false,27,17,1,OK,SUCCESS,43.89,0.00,true,
+D,5,false,28,1,1,OK,SUCCESS,44.27,0.00,true,
+D,5,false,29,0;23;47,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,190.07,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,30,3;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,327.39,0.00,true,
+D,5,false,31,0;20;16,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,470.43,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,32,19,1,OK,SUCCESS,43.71,0.00,true,
+D,5,false,33,0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,169.19,0.00,true,
+D,5,false,34,3;36;15,1,OK,SUCCESS,55.75,0.00,true,
+D,5,false,35,3;5,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,165.88,0.00,true,
+D,5,false,36,3,1,OK,SUCCESS,97.35,0.00,true,
+D,5,false,37,26,1,OK,SUCCESS,51.50,0.00,true,
+D,5,false,38,0,1,OK,SUCCESS,97.33,0.00,true,
+D,5,false,39,43;2,1,OK,SUCCESS,68.82,0.00,true,
+D,5,false,40,7;12,1,OK,SUCCESS,68.43,0.00,true,
+D,5,false,41,0;41,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,229.69,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,42,47;0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,280.24,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,43,1;11,1,OK,SUCCESS,73.72,0.00,true,
+D,5,false,44,7;46,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,428.43,0.00,true,
+D,5,false,45,0;7;16,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,543.30,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,46,0;8;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,429.22,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,47,14,1,OK,SUCCESS,68.29,0.00,true,
+D,5,false,48,16,1,OK,SUCCESS,72.25,0.00,true,
+D,5,false,49,0;2;18,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,213.39,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,50,16;0,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,324.92,0.00,true,
+D,5,false,51,1;0;14,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,240.05,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,52,13,1,OK,SUCCESS,16.30,0.00,true,
+D,5,false,53,0,1,OK,SUCCESS,54.89,0.00,true,
+D,5,false,54,3,1,OK,SUCCESS,107.62,0.00,true,
+D,5,false,55,46,1,OK,SUCCESS,107.53,0.00,true,
+D,5,false,56,1;0;30,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,90.71,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,57,0,1,OK,SUCCESS,111.45,0.00,true,
+D,5,false,58,3;9;15,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,245.94,0.00,true,
+D,5,false,59,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,307.82,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,60,0;2;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,343.93,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,61,28;20,1,OK,SUCCESS,30.22,0.00,true,
+D,5,false,62,11;0;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,386.09,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,63,17;48;10,1,OK,SUCCESS,33.19,0.00,true,
+D,5,false,64,23;11,1,OK,SUCCESS,67.90,0.00,true,
+D,5,false,65,0;3;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,105.72,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,66,30,1,OK,SUCCESS,459.62,0.00,true,
+D,5,false,67,2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,106.33,0.00,true,
+D,5,false,68,2;14,1,OK,SUCCESS,68.51,0.00,true,
+D,5,false,69,22;14,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,200.00,0.00,true,
+D,5,false,70,0;1;7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,403.56,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,71,27;39;6,1,OK,SUCCESS,35.34,0.00,true,
+D,5,false,72,2;0;32,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,319.98,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,73,39;14;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,118.47,0.00,true,
+D,5,false,74,8;2,1,OK,SUCCESS,37.62,0.00,true,
+D,5,false,75,13;4,1,OK,SUCCESS,34.44,0.00,true,
+D,5,false,76,18;0,1,OK,SUCCESS,20.01,0.00,true,
+D,5,false,77,8;30,1,OK,SUCCESS,90.56,0.00,true,
+D,5,false,78,6;0,1,OK,SUCCESS,145.87,0.00,true,
+D,5,false,79,0;21,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,654.82,0.00,true,
+D,5,false,80,16,1,OK,SUCCESS,25.99,0.00,true,
+D,5,false,81,4;22;1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,250.95,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,82,0;5;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,326.98,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,83,42;1;13,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,205.17,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,84,7;0;3,1,OK,SUCCESS,97.74,0.00,true,
+D,5,false,85,0;4;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,255.11,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,86,0;48,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,333.34,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,87,44;3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,215.95,0.00,true,
+D,5,false,88,40;4;5,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,370.83,0.00,true,
+D,5,false,89,16,1,OK,SUCCESS,20.34,0.00,true,
+D,5,false,90,23,1,OK,SUCCESS,172.46,0.00,true,
+D,5,false,91,1;4;44,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,207.15,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,92,10;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,346.55,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,93,36;26;4,1,OK,SUCCESS,51.25,0.00,true,
+D,5,false,94,5,1,OK,SUCCESS,28.95,0.00,true,
+D,5,false,95,1;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,418.62,0.00,true,
+D,5,false,96,14,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,217.46,0.00,true,
+D,5,false,97,1;19,1,OK,SUCCESS,122.44,0.00,true,
+D,5,false,98,0;10,1,OK,SUCCESS,117.56,0.00,true,
+D,5,false,99,9,1,OK,SUCCESS,186.32,0.00,true,
+D,5,false,100,2;18;32,1,OK,SUCCESS,138.30,0.00,true,
+D,5,false,101,43,1,OK,SUCCESS,120.34,0.00,true,
+D,5,false,102,0;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,301.97,0.00,true,
+D,5,false,103,1;13,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,238.40,0.00,true,
+D,5,false,104,1;43,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,240.08,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,105,1,1,OK,SUCCESS,39.63,0.00,true,
+D,5,false,106,0,1,OK,SUCCESS,111.71,0.00,true,
+D,5,false,107,35;0;28,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,362.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,108,2;7,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,163.37,0.00,true,
+D,5,false,109,0;10;7,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,351.62,0.00,true,
+D,5,false,110,48;10;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,440.80,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,111,39;1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,304.01,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,112,48;28,1,OK,SUCCESS,294.86,0.00,true,
+D,5,false,113,0;18,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,155.27,0.00,true,
+D,5,false,114,0;19;10,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,537.20,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,115,2;3;44,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,218.44,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,116,4,1,OK,SUCCESS,83.00,0.00,true,
+D,5,false,117,24;11,1,OK,SUCCESS,134.27,0.00,true,
+D,5,false,118,19,1,OK,SUCCESS,108.12,0.00,true,
+D,5,false,119,7,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,213.05,0.00,true,
+D,5,false,120,0;30;15,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,383.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,121,1;28,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,357.38,0.00,true,
+D,5,false,122,29;7,1,OK,SUCCESS,48.10,0.00,true,
+D,5,false,123,2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,136.86,0.00,true,
+D,5,false,124,18,1,OK,SUCCESS,24.13,0.00,true,
+D,5,false,125,1,1,OK,SUCCESS,26.27,0.00,true,
+D,5,false,126,20;17,1,OK,SUCCESS,35.97,0.00,true,
+D,5,false,127,1,1,OK,SUCCESS,168.81,0.00,true,
+D,5,false,128,7,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,288.52,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,129,0;3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,320.34,0.00,true,
+D,5,false,130,1;37;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,260.41,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,131,28,1,OK,SUCCESS,158.84,0.00,true,
+D,5,false,132,6;3,1,OK,SUCCESS,120.88,0.00,true,
+D,5,false,133,3;18;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,533.29,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,134,19,1,OK,SUCCESS,153.87,0.00,true,
+D,5,false,135,1,1,OK,SUCCESS,109.59,0.00,true,
+D,5,false,136,6;11,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,419.21,0.00,true,
+D,5,false,137,25;28;14,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,497.31,0.00,true,
+D,5,false,138,31;15;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,194.78,0.00,true,
+D,5,false,139,12;41,1,OK,SUCCESS,116.25,0.00,true,
+D,5,false,140,1,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,377.44,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,141,20;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,484.28,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,142,0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,376.00,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,143,0;29;32,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,479.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,144,0;6;37,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,466.15,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,145,16;5,1,OK,SUCCESS,56.18,0.00,true,
+D,5,false,146,17;10,1,OK,SUCCESS,116.63,0.00,true,
+D,5,false,147,20,1,OK,SUCCESS,90.26,0.00,true,
+D,5,false,148,0,1,OK,SUCCESS,48.01,0.00,true,
+D,5,false,149,0;12,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,313.17,0.00,true,
+D,5,false,150,41;10,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,232.77,0.00,true,
+D,5,false,151,1;5;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,414.66,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,152,1;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,219.25,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,153,0;22,1,OK,SUCCESS,32.54,0.00,true,
+D,5,false,154,12,1,OK,SUCCESS,104.44,0.00,true,
+D,5,false,155,8,1,OK,SUCCESS,75.87,0.00,true,
+D,5,false,156,23;14,1,OK,SUCCESS,113.39,0.00,true,
+D,5,false,157,6;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,92.78,0.00,true,
+D,5,false,158,5,1,OK,SUCCESS,73.05,0.00,true,
+D,5,false,159,9,1,OK,SUCCESS,94.24,0.00,true,
+D,5,false,160,22;25;4,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,211.41,0.00,true,
+D,5,false,161,3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,333.42,0.00,true,
+D,5,false,162,0;16;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,277.14,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,163,3;1;31,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,404.33,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,164,18;1,1,OK,SUCCESS,222.04,0.00,true,
+D,5,false,165,9;26;11,1,OK,SUCCESS,140.91,0.00,true,
+D,5,false,166,1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,244.40,0.00,true,
+D,5,false,167,21,1,OK,SUCCESS,48.70,0.00,true,
+D,5,false,168,0;37;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,372.72,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,169,9;14;35,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,303.37,0.00,true,
+D,5,false,170,0;3;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,366.44,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,171,2,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,212.34,0.00,true,
+D,5,false,172,36;12;2,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,375.37,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,173,3,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,323.47,0.00,true,
+D,5,false,174,14;2;4,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,360.08,0.00,true,
+D,5,false,175,2,1,OK,SUCCESS,143.11,0.00,true,
+D,5,false,176,2;1,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,328.19,0.00,true,
+D,5,false,177,6;3;9,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,184.43,0.00,true,
+D,5,false,178,47;14,1,OK,SUCCESS,150.02,0.00,true,
+D,5,false,179,2;27;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,329.84,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,180,8;20;6,1,OK,SUCCESS,90.74,0.00,true,
+D,5,false,181,36;33,1,OK,SUCCESS,86.04,0.00,true,
+D,5,false,182,45;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,279.02,0.00,true,
+D,5,false,183,0;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,316.92,0.00,true,
+D,5,false,184,34;16;0,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,324.73,0.00,true,
+D,5,false,185,18;0;39,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,316.68,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,186,0;7,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,286.97,0.00,true,
+D,5,false,187,15;13;10,1,OK,SUCCESS,161.74,0.00,true,
+D,5,false,188,12;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;OK,SUCCESS,272.98,0.00,true,
+D,5,false,189,5,1,OK,SUCCESS,137.64,0.00,true,
+D,5,false,190,14,1,OK,SUCCESS,135.17,0.00,true,
+D,5,false,191,33;7;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,277.38,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,192,5;3,1,OK,SUCCESS,146.91,0.00,true,
+D,5,false,193,16;26,1,OK,SUCCESS,160.11,0.00,true,
+D,5,false,194,6;20,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,204.33,0.00,true,
+D,5,false,195,6,1,OK,SUCCESS,39.47,0.00,true,
+D,5,false,196,0;12;6,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,220.92,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,197,0;9;3,3,ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException;ObjectOptimisticLockingFailureException,RETRY_EXHAUSTED,224.81,0.00,true,APIException: Order could not be placed due to high demand on one of the products. Your payment has been refunded.
+D,5,false,198,23,1,OK,SUCCESS,117.40,0.00,true,
+D,5,false,199,29;9,2,ObjectOptimisticLockingFailureException;OK,SUCCESS,196.08,0.00,true,

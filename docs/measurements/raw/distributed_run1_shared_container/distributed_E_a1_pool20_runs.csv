@@ -1,0 +1,7 @@
+scenario,run,warmup,seed,max_attempts,pool_size,products,orders,order_items,threads,arrival,success,out_of_stock,retry_exhausted,other_deadlock,other,exhausted_with_stock_left,oversold_products,orders_in_db,orders_in_db_eq_success,ordered_qty_eq_success_items,refund_calls,optimistic_failures,success_attempt1,success_attempt2,success_attempt3,success_attempt_over3,total_attempts,wall_ms,avg_ms,p50_ms,p95_ms,p99_ms,max_ms,queue_avg_ms,queue_p95_ms,hikari_max_active,hikari_max_pending,hikari_avg_pending
+E,0,true,0,1,20,1,200,200,50,simultaneous,17,0,183,0,0,183,0,17,true,true,183,183,17,0,0,0,200,402.03,92.68,80.35,191.86,251.65,277.47,0.00,0.00,20,30,26.36
+E,1,false,1,1,20,1,200,200,50,simultaneous,17,0,183,0,0,183,0,17,true,true,183,183,17,0,0,0,200,434.42,86.67,57.70,252.43,345.34,380.89,0.00,0.00,20,30,20.99
+E,2,false,2,1,20,1,200,200,50,simultaneous,16,0,184,0,0,184,0,16,true,true,184,184,16,0,0,0,200,304.94,67.87,49.69,191.37,228.36,297.97,0.00,0.00,20,30,24.55
+E,3,false,3,1,20,1,200,200,50,simultaneous,17,0,183,0,0,183,0,17,true,true,183,183,17,0,0,0,200,344.66,69.83,51.97,185.46,254.84,329.41,0.00,0.00,20,30,21.01
+E,4,false,4,1,20,1,200,200,50,simultaneous,16,0,184,0,0,184,0,16,true,true,184,184,16,0,0,0,200,343.46,72.81,70.37,123.39,147.56,177.26,0.00,0.00,20,30,23.58
+E,5,false,5,1,20,1,200,200,50,simultaneous,18,0,182,0,0,182,0,18,true,true,182,182,18,0,0,0,200,1219.96,276.46,257.43,454.87,564.64,649.05,0.00,0.00,20,30,25.37

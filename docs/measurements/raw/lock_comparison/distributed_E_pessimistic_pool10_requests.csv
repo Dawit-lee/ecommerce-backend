@@ -1,0 +1,1201 @@
+scenario,run,warmup,order,products,attempts,attempt_log,result,latency_ms,queue_ms,stock_left_for_all_items,error
+E,0,true,0,0,1,OK,SUCCESS,8.01,0.00,false,
+E,0,true,1,0,1,OK,SUCCESS,22.42,0.00,false,
+E,0,true,2,0,1,OK,SUCCESS,24.84,0.00,false,
+E,0,true,3,0,1,OK,SUCCESS,27.49,0.00,false,
+E,0,true,4,0,1,OK,SUCCESS,10.75,0.00,false,
+E,0,true,5,0,1,OK,SUCCESS,5.10,0.00,false,
+E,0,true,6,0,1,OK,SUCCESS,13.34,0.00,false,
+E,0,true,7,0,1,OK,SUCCESS,16.80,0.00,false,
+E,0,true,8,0,1,OK,SUCCESS,19.67,0.00,false,
+E,0,true,9,0,1,OK,SUCCESS,30.75,0.00,false,
+E,0,true,10,0,1,OK,SUCCESS,33.04,0.00,false,
+E,0,true,11,0,1,APIException,OUT_OF_STOCK,327.10,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,12,0,1,OK,SUCCESS,35.44,0.00,false,
+E,0,true,13,0,1,OK,SUCCESS,161.24,0.00,false,
+E,0,true,14,0,1,OK,SUCCESS,169.21,0.00,false,
+E,0,true,15,0,1,OK,SUCCESS,265.82,0.00,false,
+E,0,true,16,0,1,APIException,OUT_OF_STOCK,337.46,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,17,0,1,OK,SUCCESS,58.70,0.00,false,
+E,0,true,18,0,1,OK,SUCCESS,173.45,0.00,false,
+E,0,true,19,0,1,OK,SUCCESS,54.12,0.00,false,
+E,0,true,20,0,1,OK,SUCCESS,63.25,0.00,false,
+E,0,true,21,0,1,OK,SUCCESS,60.85,0.00,false,
+E,0,true,22,0,1,OK,SUCCESS,186.74,0.00,false,
+E,0,true,23,0,1,OK,SUCCESS,75.51,0.00,false,
+E,0,true,24,0,1,OK,SUCCESS,66.04,0.00,false,
+E,0,true,25,0,1,OK,SUCCESS,72.83,0.00,false,
+E,0,true,26,0,1,OK,SUCCESS,77.88,0.00,false,
+E,0,true,27,0,1,OK,SUCCESS,80.84,0.00,false,
+E,0,true,28,0,1,OK,SUCCESS,83.36,0.00,false,
+E,0,true,29,0,1,OK,SUCCESS,87.91,0.00,false,
+E,0,true,30,0,1,OK,SUCCESS,85.46,0.00,false,
+E,0,true,31,0,1,APIException,OUT_OF_STOCK,294.40,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,32,0,1,OK,SUCCESS,92.69,0.00,false,
+E,0,true,33,0,1,OK,SUCCESS,96.92,0.00,false,
+E,0,true,34,0,1,APIException,OUT_OF_STOCK,299.73,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,35,0,1,OK,SUCCESS,102.29,0.00,false,
+E,0,true,36,0,1,APIException,OUT_OF_STOCK,302.57,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,37,0,1,APIException,OUT_OF_STOCK,304.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,38,0,1,OK,SUCCESS,227.99,0.00,false,
+E,0,true,39,0,1,APIException,OUT_OF_STOCK,307.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,40,0,1,APIException,OUT_OF_STOCK,308.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,41,0,1,APIException,OUT_OF_STOCK,310.20,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,42,0,1,APIException,OUT_OF_STOCK,311.61,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,43,0,1,OK,SUCCESS,123.66,0.00,false,
+E,0,true,44,0,1,OK,SUCCESS,132.12,0.00,false,
+E,0,true,45,0,1,APIException,OUT_OF_STOCK,315.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,46,0,1,OK,SUCCESS,138.22,0.00,false,
+E,0,true,47,0,1,OK,SUCCESS,126.44,0.00,false,
+E,0,true,48,0,1,APIException,OUT_OF_STOCK,319.42,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,49,0,1,APIException,OUT_OF_STOCK,321.28,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,50,0,1,OK,SUCCESS,125.42,0.00,false,
+E,0,true,51,0,1,OK,SUCCESS,30.19,0.00,false,
+E,0,true,52,0,1,OK,SUCCESS,29.92,0.00,false,
+E,0,true,53,0,1,APIException,OUT_OF_STOCK,317.47,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,54,0,1,OK,SUCCESS,27.27,0.00,false,
+E,0,true,55,0,1,OK,SUCCESS,27.03,0.00,false,
+E,0,true,56,0,1,OK,SUCCESS,26.79,0.00,false,
+E,0,true,57,0,1,OK,SUCCESS,27.00,0.00,false,
+E,0,true,58,0,1,APIException,OUT_OF_STOCK,315.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,59,0,1,OK,SUCCESS,148.45,0.00,false,
+E,0,true,60,0,1,APIException,OUT_OF_STOCK,314.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,61,0,1,APIException,OUT_OF_STOCK,247.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,62,0,1,OK,SUCCESS,32.11,0.00,false,
+E,0,true,63,0,1,OK,SUCCESS,152.23,0.00,false,
+E,0,true,64,0,1,APIException,OUT_OF_STOCK,312.33,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,65,0,1,APIException,OUT_OF_STOCK,311.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,66,0,1,APIException,OUT_OF_STOCK,311.15,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,67,0,1,APIException,OUT_OF_STOCK,239.42,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,68,0,1,APIException,OUT_OF_STOCK,311.37,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,69,0,1,OK,SUCCESS,149.07,0.00,false,
+E,0,true,70,0,1,OK,SUCCESS,29.89,0.00,false,
+E,0,true,71,0,1,OK,SUCCESS,139.62,0.00,false,
+E,0,true,72,0,1,APIException,OUT_OF_STOCK,231.58,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,73,0,1,OK,SUCCESS,146.38,0.00,false,
+E,0,true,74,0,1,OK,SUCCESS,27.39,0.00,false,
+E,0,true,75,0,1,APIException,OUT_OF_STOCK,226.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,76,0,1,OK,SUCCESS,27.54,0.00,false,
+E,0,true,77,0,1,OK,SUCCESS,30.52,0.00,false,
+E,0,true,78,0,1,OK,SUCCESS,30.36,0.00,false,
+E,0,true,79,0,1,OK,SUCCESS,22.53,0.00,false,
+E,0,true,80,0,1,OK,SUCCESS,27.98,0.00,false,
+E,0,true,81,0,1,OK,SUCCESS,27.77,0.00,false,
+E,0,true,82,0,1,OK,SUCCESS,28.08,0.00,false,
+E,0,true,83,0,1,OK,SUCCESS,147.48,0.00,false,
+E,0,true,84,0,1,APIException,OUT_OF_STOCK,214.86,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,85,0,1,OK,SUCCESS,43.07,0.00,false,
+E,0,true,86,0,1,APIException,OUT_OF_STOCK,212.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,87,0,1,APIException,OUT_OF_STOCK,210.52,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,88,0,1,OK,SUCCESS,39.92,0.00,false,
+E,0,true,89,0,1,OK,SUCCESS,40.68,0.00,false,
+E,0,true,90,0,1,APIException,OUT_OF_STOCK,208.27,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,91,0,1,OK,SUCCESS,39.45,0.00,false,
+E,0,true,92,0,1,OK,SUCCESS,139.64,0.00,false,
+E,0,true,93,0,1,OK,SUCCESS,40.13,0.00,false,
+E,0,true,94,0,1,OK,SUCCESS,39.53,0.00,false,
+E,0,true,95,0,1,APIException,OUT_OF_STOCK,204.40,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,96,0,1,OK,SUCCESS,38.26,0.00,false,
+E,0,true,97,0,1,OK,SUCCESS,133.86,0.00,false,
+E,0,true,98,0,1,OK,SUCCESS,30.06,0.00,false,
+E,0,true,99,0,1,APIException,OUT_OF_STOCK,194.14,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,100,0,1,OK,SUCCESS,27.33,0.00,false,
+E,0,true,101,0,1,OK,SUCCESS,26.51,0.00,false,
+E,0,true,102,0,1,APIException,OUT_OF_STOCK,118.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,103,0,1,APIException,OUT_OF_STOCK,188.45,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,104,0,1,OK,SUCCESS,27.98,0.00,false,
+E,0,true,105,0,1,OK,SUCCESS,21.29,0.00,false,
+E,0,true,106,0,1,OK,SUCCESS,26.32,0.00,false,
+E,0,true,107,0,1,OK,SUCCESS,26.71,0.00,false,
+E,0,true,108,0,1,OK,SUCCESS,29.43,0.00,false,
+E,0,true,109,0,1,APIException,OUT_OF_STOCK,188.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,110,0,1,OK,SUCCESS,28.18,0.00,false,
+E,0,true,111,0,1,APIException,OUT_OF_STOCK,111.74,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,112,0,1,OK,SUCCESS,25.74,0.00,false,
+E,0,true,113,0,1,APIException,OUT_OF_STOCK,108.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,114,0,1,OK,SUCCESS,26.64,0.00,false,
+E,0,true,115,0,1,OK,SUCCESS,30.97,0.00,false,
+E,0,true,116,0,1,OK,SUCCESS,23.82,0.00,false,
+E,0,true,117,0,1,OK,SUCCESS,23.64,0.00,false,
+E,0,true,118,0,1,APIException,OUT_OF_STOCK,103.72,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,119,0,1,OK,SUCCESS,27.78,0.00,false,
+E,0,true,120,0,1,OK,SUCCESS,27.81,0.00,false,
+E,0,true,121,0,1,OK,SUCCESS,29.79,0.00,false,
+E,0,true,122,0,1,OK,SUCCESS,18.52,0.00,false,
+E,0,true,123,0,1,APIException,OUT_OF_STOCK,97.52,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,124,0,1,OK,SUCCESS,27.85,0.00,false,
+E,0,true,125,0,1,OK,SUCCESS,16.28,0.00,false,
+E,0,true,126,0,1,OK,SUCCESS,25.74,0.00,false,
+E,0,true,127,0,1,OK,SUCCESS,25.55,0.00,false,
+E,0,true,128,0,1,OK,SUCCESS,14.06,0.00,false,
+E,0,true,129,0,1,OK,SUCCESS,22.54,0.00,false,
+E,0,true,130,0,1,OK,SUCCESS,22.82,0.00,false,
+E,0,true,131,0,1,OK,SUCCESS,23.22,0.00,false,
+E,0,true,132,0,1,APIException,OUT_OF_STOCK,91.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,133,0,1,OK,SUCCESS,23.50,0.00,false,
+E,0,true,134,0,1,APIException,OUT_OF_STOCK,89.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,135,0,1,OK,SUCCESS,23.16,0.00,false,
+E,0,true,136,0,1,OK,SUCCESS,23.31,0.00,false,
+E,0,true,137,0,1,APIException,OUT_OF_STOCK,89.93,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,138,0,1,OK,SUCCESS,26.13,0.00,false,
+E,0,true,139,0,1,APIException,OUT_OF_STOCK,27.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,140,0,1,OK,SUCCESS,19.27,0.00,false,
+E,0,true,141,0,1,APIException,OUT_OF_STOCK,90.58,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,142,0,1,APIException,OUT_OF_STOCK,90.15,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,143,0,1,APIException,OUT_OF_STOCK,20.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,144,0,1,APIException,OUT_OF_STOCK,20.99,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,145,0,1,APIException,OUT_OF_STOCK,17.29,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,146,0,1,APIException,OUT_OF_STOCK,17.72,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,147,0,1,APIException,OUT_OF_STOCK,90.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,148,0,1,APIException,OUT_OF_STOCK,17.27,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,149,0,1,APIException,OUT_OF_STOCK,11.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,150,0,1,APIException,OUT_OF_STOCK,88.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,151,0,1,APIException,OUT_OF_STOCK,89.06,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,152,0,1,APIException,OUT_OF_STOCK,89.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,153,0,1,APIException,OUT_OF_STOCK,89.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,154,0,1,APIException,OUT_OF_STOCK,90.69,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,155,0,1,APIException,OUT_OF_STOCK,90.97,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,156,0,1,APIException,OUT_OF_STOCK,91.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,157,0,1,APIException,OUT_OF_STOCK,92.46,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,158,0,1,APIException,OUT_OF_STOCK,92.83,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,159,0,1,APIException,OUT_OF_STOCK,93.14,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,160,0,1,APIException,OUT_OF_STOCK,92.20,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,161,0,1,APIException,OUT_OF_STOCK,92.57,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,162,0,1,APIException,OUT_OF_STOCK,92.48,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,163,0,1,APIException,OUT_OF_STOCK,92.42,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,164,0,1,APIException,OUT_OF_STOCK,92.38,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,165,0,1,APIException,OUT_OF_STOCK,92.25,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,166,0,1,APIException,OUT_OF_STOCK,92.62,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,167,0,1,APIException,OUT_OF_STOCK,92.78,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,168,0,1,APIException,OUT_OF_STOCK,92.63,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,169,0,1,APIException,OUT_OF_STOCK,92.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,170,0,1,APIException,OUT_OF_STOCK,93.70,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,171,0,1,APIException,OUT_OF_STOCK,93.84,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,172,0,1,APIException,OUT_OF_STOCK,94.00,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,173,0,1,APIException,OUT_OF_STOCK,94.13,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,174,0,1,APIException,OUT_OF_STOCK,94.20,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,175,0,1,APIException,OUT_OF_STOCK,94.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,176,0,1,APIException,OUT_OF_STOCK,94.84,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,177,0,1,APIException,OUT_OF_STOCK,95.88,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,178,0,1,APIException,OUT_OF_STOCK,96.36,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,179,0,1,APIException,OUT_OF_STOCK,96.02,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,180,0,1,APIException,OUT_OF_STOCK,95.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,181,0,1,APIException,OUT_OF_STOCK,94.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,182,0,1,APIException,OUT_OF_STOCK,93.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,183,0,1,APIException,OUT_OF_STOCK,93.29,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,184,0,1,APIException,OUT_OF_STOCK,92.88,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,185,0,1,APIException,OUT_OF_STOCK,91.66,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,186,0,1,APIException,OUT_OF_STOCK,90.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,187,0,1,APIException,OUT_OF_STOCK,89.97,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,188,0,1,APIException,OUT_OF_STOCK,88.12,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,189,0,1,APIException,OUT_OF_STOCK,86.81,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,190,0,1,APIException,OUT_OF_STOCK,86.37,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,191,0,1,APIException,OUT_OF_STOCK,85.48,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,192,0,1,APIException,OUT_OF_STOCK,85.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,193,0,1,APIException,OUT_OF_STOCK,84.37,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,194,0,1,APIException,OUT_OF_STOCK,82.46,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,195,0,1,APIException,OUT_OF_STOCK,81.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,196,0,1,APIException,OUT_OF_STOCK,81.30,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,197,0,1,APIException,OUT_OF_STOCK,79.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,198,0,1,APIException,OUT_OF_STOCK,78.80,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,0,true,199,0,1,APIException,OUT_OF_STOCK,78.53,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er0 0'. Available: 0, requested: 1."
+E,1,false,0,0,1,OK,SUCCESS,25.39,0.00,false,
+E,1,false,1,0,1,OK,SUCCESS,10.36,0.00,false,
+E,1,false,2,0,1,OK,SUCCESS,27.88,0.00,false,
+E,1,false,3,0,1,OK,SUCCESS,22.50,0.00,false,
+E,1,false,4,0,1,OK,SUCCESS,7.51,0.00,false,
+E,1,false,5,0,1,OK,SUCCESS,30.97,0.00,false,
+E,1,false,6,0,1,OK,SUCCESS,3.90,0.00,false,
+E,1,false,7,0,1,OK,SUCCESS,16.12,0.00,false,
+E,1,false,8,0,1,OK,SUCCESS,12.69,0.00,false,
+E,1,false,9,0,1,OK,SUCCESS,18.76,0.00,false,
+E,1,false,10,0,1,OK,SUCCESS,34.02,0.00,false,
+E,1,false,11,0,1,OK,SUCCESS,36.14,0.00,false,
+E,1,false,12,0,1,OK,SUCCESS,39.24,0.00,false,
+E,1,false,13,0,1,OK,SUCCESS,199.09,0.00,false,
+E,1,false,14,0,1,OK,SUCCESS,43.85,0.00,false,
+E,1,false,15,0,1,OK,SUCCESS,48.34,0.00,false,
+E,1,false,16,0,1,OK,SUCCESS,56.82,0.00,false,
+E,1,false,17,0,1,OK,SUCCESS,52.05,0.00,false,
+E,1,false,18,0,1,OK,SUCCESS,210.32,0.00,false,
+E,1,false,19,0,1,OK,SUCCESS,217.97,0.00,false,
+E,1,false,20,0,1,OK,SUCCESS,74.68,0.00,false,
+E,1,false,21,0,1,OK,SUCCESS,215.76,0.00,false,
+E,1,false,22,0,1,OK,SUCCESS,108.04,0.00,false,
+E,1,false,23,0,1,OK,SUCCESS,99.90,0.00,false,
+E,1,false,24,0,1,OK,SUCCESS,111.80,0.00,false,
+E,1,false,25,0,1,OK,SUCCESS,117.41,0.00,false,
+E,1,false,26,0,1,OK,SUCCESS,104.56,0.00,false,
+E,1,false,27,0,1,OK,SUCCESS,120.33,0.00,false,
+E,1,false,28,0,1,OK,SUCCESS,123.29,0.00,false,
+E,1,false,29,0,1,OK,SUCCESS,241.66,0.00,false,
+E,1,false,30,0,1,APIException,OUT_OF_STOCK,331.73,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,31,0,1,APIException,OUT_OF_STOCK,333.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,32,0,1,OK,SUCCESS,135.06,0.00,false,
+E,1,false,33,0,1,OK,SUCCESS,138.65,0.00,false,
+E,1,false,34,0,1,OK,SUCCESS,126.04,0.00,false,
+E,1,false,35,0,1,OK,SUCCESS,142.31,0.00,false,
+E,1,false,36,0,1,OK,SUCCESS,263.66,0.00,false,
+E,1,false,37,0,1,OK,SUCCESS,148.52,0.00,false,
+E,1,false,38,0,1,OK,SUCCESS,259.05,0.00,false,
+E,1,false,39,0,1,OK,SUCCESS,151.29,0.00,false,
+E,1,false,40,0,1,OK,SUCCESS,157.30,0.00,false,
+E,1,false,41,0,1,OK,SUCCESS,170.84,0.00,false,
+E,1,false,42,0,1,OK,SUCCESS,160.15,0.00,false,
+E,1,false,43,0,1,OK,SUCCESS,163.31,0.00,false,
+E,1,false,44,0,1,APIException,OUT_OF_STOCK,354.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,45,0,1,OK,SUCCESS,176.10,0.00,false,
+E,1,false,46,0,1,APIException,OUT_OF_STOCK,357.35,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,47,0,1,OK,SUCCESS,181.80,0.00,false,
+E,1,false,48,0,1,OK,SUCCESS,184.21,0.00,false,
+E,1,false,49,0,1,OK,SUCCESS,187.33,0.00,false,
+E,1,false,50,0,1,OK,SUCCESS,176.56,0.00,false,
+E,1,false,51,0,1,OK,SUCCESS,188.71,0.00,false,
+E,1,false,52,0,1,OK,SUCCESS,288.36,0.00,false,
+E,1,false,53,0,1,OK,SUCCESS,28.96,0.00,false,
+E,1,false,54,0,1,OK,SUCCESS,287.28,0.00,false,
+E,1,false,55,0,1,OK,SUCCESS,286.89,0.00,false,
+E,1,false,56,0,1,OK,SUCCESS,178.86,0.00,false,
+E,1,false,57,0,1,OK,SUCCESS,182.38,0.00,false,
+E,1,false,58,0,1,OK,SUCCESS,40.27,0.00,false,
+E,1,false,59,0,1,APIException,OUT_OF_STOCK,286.06,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,60,0,1,OK,SUCCESS,46.05,0.00,false,
+E,1,false,61,0,1,OK,SUCCESS,51.60,0.00,false,
+E,1,false,62,0,1,OK,SUCCESS,185.07,0.00,false,
+E,1,false,63,0,1,APIException,OUT_OF_STOCK,278.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,64,0,1,OK,SUCCESS,182.78,0.00,false,
+E,1,false,65,0,1,OK,SUCCESS,173.20,0.00,false,
+E,1,false,66,0,1,OK,SUCCESS,180.17,0.00,false,
+E,1,false,67,0,1,OK,SUCCESS,177.84,0.00,false,
+E,1,false,68,0,1,OK,SUCCESS,168.97,0.00,false,
+E,1,false,69,0,1,OK,SUCCESS,55.52,0.00,false,
+E,1,false,70,0,1,OK,SUCCESS,35.50,0.00,false,
+E,1,false,71,0,1,OK,SUCCESS,45.26,0.00,false,
+E,1,false,72,0,1,OK,SUCCESS,139.86,0.00,false,
+E,1,false,73,0,1,APIException,OUT_OF_STOCK,231.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,74,0,1,OK,SUCCESS,141.54,0.00,false,
+E,1,false,75,0,1,OK,SUCCESS,142.51,0.00,false,
+E,1,false,76,0,1,APIException,OUT_OF_STOCK,225.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,77,0,1,OK,SUCCESS,28.75,0.00,false,
+E,1,false,78,0,1,APIException,OUT_OF_STOCK,222.98,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,79,0,1,OK,SUCCESS,31.60,0.00,false,
+E,1,false,80,0,1,APIException,OUT_OF_STOCK,220.42,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,81,0,1,OK,SUCCESS,139.09,0.00,false,
+E,1,false,82,0,1,OK,SUCCESS,139.36,0.00,false,
+E,1,false,83,0,1,APIException,OUT_OF_STOCK,216.70,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,84,0,1,OK,SUCCESS,28.90,0.00,false,
+E,1,false,85,0,1,APIException,OUT_OF_STOCK,213.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,86,0,1,OK,SUCCESS,27.99,0.00,false,
+E,1,false,87,0,1,APIException,OUT_OF_STOCK,211.14,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,88,0,1,APIException,OUT_OF_STOCK,211.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,89,0,1,OK,SUCCESS,132.97,0.00,false,
+E,1,false,90,0,1,APIException,OUT_OF_STOCK,210.28,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,91,0,1,APIException,OUT_OF_STOCK,210.21,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,92,0,1,OK,SUCCESS,26.61,0.00,false,
+E,1,false,93,0,1,APIException,OUT_OF_STOCK,209.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,94,0,1,OK,SUCCESS,21.95,0.00,false,
+E,1,false,95,0,1,OK,SUCCESS,29.05,0.00,false,
+E,1,false,96,0,1,OK,SUCCESS,130.87,0.00,false,
+E,1,false,97,0,1,OK,SUCCESS,129.75,0.00,false,
+E,1,false,98,0,1,OK,SUCCESS,129.75,0.00,false,
+E,1,false,99,0,1,OK,SUCCESS,28.10,0.00,false,
+E,1,false,100,0,1,APIException,OUT_OF_STOCK,209.26,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,101,0,1,APIException,OUT_OF_STOCK,127.42,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,102,0,1,APIException,OUT_OF_STOCK,127.22,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,103,0,1,OK,SUCCESS,33.39,0.00,false,
+E,1,false,104,0,1,APIException,OUT_OF_STOCK,207.45,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,105,0,1,APIException,OUT_OF_STOCK,207.50,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,106,0,1,APIException,OUT_OF_STOCK,206.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,107,0,1,APIException,OUT_OF_STOCK,209.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,108,0,1,APIException,OUT_OF_STOCK,211.83,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,109,0,1,APIException,OUT_OF_STOCK,211.96,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,110,0,1,OK,SUCCESS,28.93,0.00,false,
+E,1,false,111,0,1,OK,SUCCESS,29.48,0.00,false,
+E,1,false,112,0,1,APIException,OUT_OF_STOCK,113.58,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,113,0,1,OK,SUCCESS,27.81,0.00,false,
+E,1,false,114,0,1,APIException,OUT_OF_STOCK,111.10,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,115,0,1,APIException,OUT_OF_STOCK,110.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,116,0,1,OK,SUCCESS,25.27,0.00,false,
+E,1,false,117,0,1,APIException,OUT_OF_STOCK,108.00,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,118,0,1,OK,SUCCESS,25.08,0.00,false,
+E,1,false,119,0,1,APIException,OUT_OF_STOCK,105.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,120,0,1,OK,SUCCESS,24.43,0.00,false,
+E,1,false,121,0,1,APIException,OUT_OF_STOCK,104.55,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,122,0,1,APIException,OUT_OF_STOCK,103.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,123,0,1,OK,SUCCESS,24.85,0.00,false,
+E,1,false,124,0,1,OK,SUCCESS,25.11,0.00,false,
+E,1,false,125,0,1,OK,SUCCESS,25.50,0.00,false,
+E,1,false,126,0,1,OK,SUCCESS,25.01,0.00,false,
+E,1,false,127,0,1,OK,SUCCESS,24.93,0.00,false,
+E,1,false,128,0,1,OK,SUCCESS,29.14,0.00,false,
+E,1,false,129,0,1,APIException,OUT_OF_STOCK,101.93,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,130,0,1,OK,SUCCESS,26.77,0.00,false,
+E,1,false,131,0,1,OK,SUCCESS,26.61,0.00,false,
+E,1,false,132,0,1,APIException,OUT_OF_STOCK,101.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,133,0,1,OK,SUCCESS,26.45,0.00,false,
+E,1,false,134,0,1,APIException,OUT_OF_STOCK,103.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,135,0,1,APIException,OUT_OF_STOCK,104.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,136,0,1,APIException,OUT_OF_STOCK,106.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,137,0,1,APIException,OUT_OF_STOCK,106.42,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,138,0,1,APIException,OUT_OF_STOCK,105.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,139,0,1,APIException,OUT_OF_STOCK,104.91,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,140,0,1,OK,SUCCESS,21.37,0.00,false,
+E,1,false,141,0,1,APIException,OUT_OF_STOCK,103.53,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,142,0,1,APIException,OUT_OF_STOCK,103.04,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,143,0,1,APIException,OUT_OF_STOCK,102.41,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,144,0,1,APIException,OUT_OF_STOCK,19.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,145,0,1,APIException,OUT_OF_STOCK,18.63,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,146,0,1,APIException,OUT_OF_STOCK,20.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,147,0,1,APIException,OUT_OF_STOCK,15.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,148,0,1,APIException,OUT_OF_STOCK,16.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,149,0,1,APIException,OUT_OF_STOCK,16.02,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,150,0,1,APIException,OUT_OF_STOCK,128.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,151,0,1,APIException,OUT_OF_STOCK,131.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,152,0,1,APIException,OUT_OF_STOCK,133.57,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,153,0,1,APIException,OUT_OF_STOCK,135.84,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,154,0,1,APIException,OUT_OF_STOCK,138.27,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,155,0,1,APIException,OUT_OF_STOCK,140.28,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,156,0,1,APIException,OUT_OF_STOCK,141.71,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,157,0,1,APIException,OUT_OF_STOCK,141.87,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,158,0,1,APIException,OUT_OF_STOCK,142.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,159,0,1,APIException,OUT_OF_STOCK,142.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,160,0,1,APIException,OUT_OF_STOCK,142.86,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,161,0,1,APIException,OUT_OF_STOCK,142.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,162,0,1,APIException,OUT_OF_STOCK,142.81,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,163,0,1,APIException,OUT_OF_STOCK,142.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,164,0,1,APIException,OUT_OF_STOCK,142.96,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,165,0,1,APIException,OUT_OF_STOCK,142.47,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,166,0,1,APIException,OUT_OF_STOCK,142.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,167,0,1,APIException,OUT_OF_STOCK,143.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,168,0,1,APIException,OUT_OF_STOCK,146.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,169,0,1,APIException,OUT_OF_STOCK,146.10,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,170,0,1,APIException,OUT_OF_STOCK,145.52,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,171,0,1,APIException,OUT_OF_STOCK,144.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,172,0,1,APIException,OUT_OF_STOCK,144.98,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,173,0,1,APIException,OUT_OF_STOCK,144.69,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,174,0,1,APIException,OUT_OF_STOCK,143.83,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,175,0,1,APIException,OUT_OF_STOCK,143.70,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,176,0,1,APIException,OUT_OF_STOCK,143.38,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,177,0,1,APIException,OUT_OF_STOCK,142.74,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,178,0,1,APIException,OUT_OF_STOCK,141.23,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,179,0,1,APIException,OUT_OF_STOCK,139.82,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,180,0,1,APIException,OUT_OF_STOCK,145.81,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,181,0,1,APIException,OUT_OF_STOCK,145.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,182,0,1,APIException,OUT_OF_STOCK,144.15,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,183,0,1,APIException,OUT_OF_STOCK,141.40,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,184,0,1,APIException,OUT_OF_STOCK,140.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,185,0,1,APIException,OUT_OF_STOCK,139.06,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,186,0,1,APIException,OUT_OF_STOCK,136.21,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,187,0,1,APIException,OUT_OF_STOCK,135.59,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,188,0,1,APIException,OUT_OF_STOCK,134.00,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,189,0,1,APIException,OUT_OF_STOCK,133.46,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,190,0,1,APIException,OUT_OF_STOCK,133.13,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,191,0,1,APIException,OUT_OF_STOCK,132.66,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,192,0,1,APIException,OUT_OF_STOCK,131.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,193,0,1,APIException,OUT_OF_STOCK,131.55,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,194,0,1,APIException,OUT_OF_STOCK,129.98,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,195,0,1,APIException,OUT_OF_STOCK,129.20,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,196,0,1,APIException,OUT_OF_STOCK,129.27,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,197,0,1,APIException,OUT_OF_STOCK,124.41,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,198,0,1,APIException,OUT_OF_STOCK,120.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,1,false,199,0,1,APIException,OUT_OF_STOCK,118.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er1 0'. Available: 0, requested: 1."
+E,2,false,0,0,1,OK,SUCCESS,6.09,0.00,false,
+E,2,false,1,0,1,OK,SUCCESS,11.82,0.00,false,
+E,2,false,2,0,1,OK,SUCCESS,15.62,0.00,false,
+E,2,false,3,0,1,OK,SUCCESS,18.33,0.00,false,
+E,2,false,4,0,1,OK,SUCCESS,8.52,0.00,false,
+E,2,false,5,0,1,OK,SUCCESS,22.80,0.00,false,
+E,2,false,6,0,1,OK,SUCCESS,20.30,0.00,false,
+E,2,false,7,0,1,OK,SUCCESS,27.61,0.00,false,
+E,2,false,8,0,1,OK,SUCCESS,29.95,0.00,false,
+E,2,false,9,0,1,OK,SUCCESS,24.43,0.00,false,
+E,2,false,10,0,1,OK,SUCCESS,32.06,0.00,false,
+E,2,false,11,0,1,OK,SUCCESS,36.84,0.00,false,
+E,2,false,12,0,1,OK,SUCCESS,139.72,0.00,false,
+E,2,false,13,0,1,OK,SUCCESS,39.59,0.00,false,
+E,2,false,14,0,1,OK,SUCCESS,253.87,0.00,false,
+E,2,false,15,0,1,OK,SUCCESS,45.70,0.00,false,
+E,2,false,16,0,1,APIException,OUT_OF_STOCK,379.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,17,0,1,APIException,OUT_OF_STOCK,383.20,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,18,0,1,OK,SUCCESS,256.32,0.00,false,
+E,2,false,19,0,1,OK,SUCCESS,55.79,0.00,false,
+E,2,false,20,0,1,APIException,OUT_OF_STOCK,405.71,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,21,0,1,OK,SUCCESS,60.91,0.00,false,
+E,2,false,22,0,1,APIException,OUT_OF_STOCK,270.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,23,0,1,APIException,OUT_OF_STOCK,451.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,24,0,1,OK,SUCCESS,177.79,0.00,false,
+E,2,false,25,0,1,OK,SUCCESS,68.68,0.00,false,
+E,2,false,26,0,1,APIException,OUT_OF_STOCK,477.71,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,27,0,1,OK,SUCCESS,182.02,0.00,false,
+E,2,false,28,0,1,OK,SUCCESS,184.40,0.00,false,
+E,2,false,29,0,1,OK,SUCCESS,187.22,0.00,false,
+E,2,false,30,0,1,APIException,OUT_OF_STOCK,287.10,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,31,0,1,OK,SUCCESS,198.92,0.00,false,
+E,2,false,32,0,1,OK,SUCCESS,192.38,0.00,false,
+E,2,false,33,0,1,OK,SUCCESS,90.96,0.00,false,
+E,2,false,34,0,1,OK,SUCCESS,202.85,0.00,false,
+E,2,false,35,0,1,APIException,OUT_OF_STOCK,315.14,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,36,0,1,OK,SUCCESS,100.93,0.00,false,
+E,2,false,37,0,1,APIException,OUT_OF_STOCK,322.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,38,0,1,OK,SUCCESS,98.34,0.00,false,
+E,2,false,39,0,1,OK,SUCCESS,214.66,0.00,false,
+E,2,false,40,0,1,OK,SUCCESS,108.10,0.00,false,
+E,2,false,41,0,1,APIException,OUT_OF_STOCK,335.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,42,0,1,OK,SUCCESS,222.36,0.00,false,
+E,2,false,43,0,1,APIException,OUT_OF_STOCK,341.69,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,44,0,1,OK,SUCCESS,119.08,0.00,false,
+E,2,false,45,0,1,OK,SUCCESS,121.11,0.00,false,
+E,2,false,46,0,1,OK,SUCCESS,224.82,0.00,false,
+E,2,false,47,0,1,OK,SUCCESS,127.29,0.00,false,
+E,2,false,48,0,1,OK,SUCCESS,234.58,0.00,false,
+E,2,false,49,0,1,APIException,OUT_OF_STOCK,357.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,50,0,1,APIException,OUT_OF_STOCK,358.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,51,0,1,OK,SUCCESS,27.16,0.00,false,
+E,2,false,52,0,1,OK,SUCCESS,132.78,0.00,false,
+E,2,false,53,0,1,OK,SUCCESS,237.07,0.00,false,
+E,2,false,54,0,1,OK,SUCCESS,25.74,0.00,false,
+E,2,false,55,0,1,APIException,OUT_OF_STOCK,357.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,56,0,1,OK,SUCCESS,26.68,0.00,false,
+E,2,false,57,0,1,OK,SUCCESS,26.97,0.00,false,
+E,2,false,58,0,1,OK,SUCCESS,26.87,0.00,false,
+E,2,false,59,0,1,OK,SUCCESS,133.77,0.00,false,
+E,2,false,60,0,1,OK,SUCCESS,26.74,0.00,false,
+E,2,false,61,0,1,APIException,OUT_OF_STOCK,376.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,62,0,1,OK,SUCCESS,27.11,0.00,false,
+E,2,false,63,0,1,OK,SUCCESS,27.08,0.00,false,
+E,2,false,64,0,1,APIException,OUT_OF_STOCK,232.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,65,0,1,OK,SUCCESS,27.54,0.00,false,
+E,2,false,66,0,1,OK,SUCCESS,22.73,0.00,false,
+E,2,false,67,0,1,OK,SUCCESS,24.58,0.00,false,
+E,2,false,68,0,1,OK,SUCCESS,25.72,0.00,false,
+E,2,false,69,0,1,OK,SUCCESS,25.80,0.00,false,
+E,2,false,70,0,1,OK,SUCCESS,25.81,0.00,false,
+E,2,false,71,0,1,OK,SUCCESS,25.62,0.00,false,
+E,2,false,72,0,1,OK,SUCCESS,25.18,0.00,false,
+E,2,false,73,0,1,OK,SUCCESS,123.44,0.00,false,
+E,2,false,74,0,1,OK,SUCCESS,25.67,0.00,false,
+E,2,false,75,0,1,OK,SUCCESS,26.00,0.00,false,
+E,2,false,76,0,1,APIException,OUT_OF_STOCK,247.55,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,77,0,1,OK,SUCCESS,30.95,0.00,false,
+E,2,false,78,0,1,APIException,OUT_OF_STOCK,247.86,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,79,0,1,OK,SUCCESS,22.18,0.00,false,
+E,2,false,80,0,1,APIException,OUT_OF_STOCK,250.19,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,81,0,1,OK,SUCCESS,25.16,0.00,false,
+E,2,false,82,0,1,OK,SUCCESS,25.75,0.00,false,
+E,2,false,83,0,1,OK,SUCCESS,25.99,0.00,false,
+E,2,false,84,0,1,OK,SUCCESS,136.56,0.00,false,
+E,2,false,85,0,1,APIException,OUT_OF_STOCK,252.30,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,86,0,1,OK,SUCCESS,25.87,0.00,false,
+E,2,false,87,0,1,OK,SUCCESS,137.02,0.00,false,
+E,2,false,88,0,1,OK,SUCCESS,28.13,0.00,false,
+E,2,false,89,0,1,OK,SUCCESS,28.02,0.00,false,
+E,2,false,90,0,1,OK,SUCCESS,27.74,0.00,false,
+E,2,false,91,0,1,APIException,OUT_OF_STOCK,253.40,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,92,0,1,APIException,OUT_OF_STOCK,252.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,93,0,1,OK,SUCCESS,29.51,0.00,false,
+E,2,false,94,0,1,OK,SUCCESS,30.26,0.00,false,
+E,2,false,95,0,1,OK,SUCCESS,30.44,0.00,false,
+E,2,false,96,0,1,OK,SUCCESS,30.12,0.00,false,
+E,2,false,97,0,1,OK,SUCCESS,29.12,0.00,false,
+E,2,false,98,0,1,OK,SUCCESS,28.53,0.00,false,
+E,2,false,99,0,1,OK,SUCCESS,124.11,0.00,false,
+E,2,false,100,0,1,OK,SUCCESS,28.61,0.00,false,
+E,2,false,101,0,1,OK,SUCCESS,28.49,0.00,false,
+E,2,false,102,0,1,OK,SUCCESS,30.50,0.00,false,
+E,2,false,103,0,1,OK,SUCCESS,23.62,0.00,false,
+E,2,false,104,0,1,OK,SUCCESS,25.45,0.00,false,
+E,2,false,105,0,1,APIException,OUT_OF_STOCK,318.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,106,0,1,OK,SUCCESS,24.96,0.00,false,
+E,2,false,107,0,1,APIException,OUT_OF_STOCK,124.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,108,0,1,APIException,OUT_OF_STOCK,123.40,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,109,0,1,APIException,OUT_OF_STOCK,122.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,110,0,1,OK,SUCCESS,30.01,0.00,false,
+E,2,false,111,0,1,APIException,OUT_OF_STOCK,121.88,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,112,0,1,APIException,OUT_OF_STOCK,123.82,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,113,0,1,APIException,OUT_OF_STOCK,128.33,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,114,0,1,APIException,OUT_OF_STOCK,134.48,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,115,0,1,OK,SUCCESS,27.44,0.00,false,
+E,2,false,116,0,1,OK,SUCCESS,27.66,0.00,false,
+E,2,false,117,0,1,OK,SUCCESS,27.86,0.00,false,
+E,2,false,118,0,1,OK,SUCCESS,28.37,0.00,false,
+E,2,false,119,0,1,APIException,OUT_OF_STOCK,143.35,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,120,0,1,OK,SUCCESS,28.11,0.00,false,
+E,2,false,121,0,1,OK,SUCCESS,27.95,0.00,false,
+E,2,false,122,0,1,APIException,OUT_OF_STOCK,143.69,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,123,0,1,OK,SUCCESS,29.50,0.00,false,
+E,2,false,124,0,1,APIException,OUT_OF_STOCK,141.74,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,125,0,1,OK,SUCCESS,28.16,0.00,false,
+E,2,false,126,0,1,APIException,OUT_OF_STOCK,143.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,127,0,1,APIException,OUT_OF_STOCK,391.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,128,0,1,APIException,OUT_OF_STOCK,142.04,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,129,0,1,OK,SUCCESS,25.87,0.00,false,
+E,2,false,130,0,1,OK,SUCCESS,25.90,0.00,false,
+E,2,false,131,0,1,OK,SUCCESS,25.59,0.00,false,
+E,2,false,132,0,1,OK,SUCCESS,25.38,0.00,false,
+E,2,false,133,0,1,APIException,OUT_OF_STOCK,144.91,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,134,0,1,APIException,OUT_OF_STOCK,146.56,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,135,0,1,OK,SUCCESS,34.65,0.00,false,
+E,2,false,136,0,1,OK,SUCCESS,27.06,0.00,false,
+E,2,false,137,0,1,OK,SUCCESS,27.02,0.00,false,
+E,2,false,138,0,1,APIException,OUT_OF_STOCK,149.48,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,139,0,1,APIException,OUT_OF_STOCK,153.13,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,140,0,1,APIException,OUT_OF_STOCK,23.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,141,0,1,APIException,OUT_OF_STOCK,22.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,142,0,1,APIException,OUT_OF_STOCK,172.67,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,143,0,1,APIException,OUT_OF_STOCK,21.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,144,0,1,APIException,OUT_OF_STOCK,207.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,145,0,1,APIException,OUT_OF_STOCK,20.83,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,146,0,1,APIException,OUT_OF_STOCK,20.72,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,147,0,1,APIException,OUT_OF_STOCK,226.27,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,148,0,1,APIException,OUT_OF_STOCK,230.52,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,149,0,1,APIException,OUT_OF_STOCK,233.48,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,150,0,1,APIException,OUT_OF_STOCK,240.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,151,0,1,APIException,OUT_OF_STOCK,248.18,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,152,0,1,APIException,OUT_OF_STOCK,254.84,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,153,0,1,APIException,OUT_OF_STOCK,256.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,154,0,1,APIException,OUT_OF_STOCK,258.13,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,155,0,1,APIException,OUT_OF_STOCK,259.62,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,156,0,1,APIException,OUT_OF_STOCK,260.33,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,157,0,1,APIException,OUT_OF_STOCK,259.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,158,0,1,APIException,OUT_OF_STOCK,262.01,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,159,0,1,APIException,OUT_OF_STOCK,266.27,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,160,0,1,APIException,OUT_OF_STOCK,271.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,161,0,1,APIException,OUT_OF_STOCK,276.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,162,0,1,APIException,OUT_OF_STOCK,282.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,163,0,1,APIException,OUT_OF_STOCK,279.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,164,0,1,APIException,OUT_OF_STOCK,276.70,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,165,0,1,APIException,OUT_OF_STOCK,275.78,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,166,0,1,APIException,OUT_OF_STOCK,274.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,167,0,1,APIException,OUT_OF_STOCK,29.38,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,168,0,1,APIException,OUT_OF_STOCK,280.92,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,169,0,1,APIException,OUT_OF_STOCK,282.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,170,0,1,APIException,OUT_OF_STOCK,283.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,171,0,1,APIException,OUT_OF_STOCK,284.21,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,172,0,1,APIException,OUT_OF_STOCK,284.66,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,173,0,1,APIException,OUT_OF_STOCK,284.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,174,0,1,APIException,OUT_OF_STOCK,285.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,175,0,1,APIException,OUT_OF_STOCK,284.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,176,0,1,APIException,OUT_OF_STOCK,285.48,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,177,0,1,APIException,OUT_OF_STOCK,286.61,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,178,0,1,APIException,OUT_OF_STOCK,288.53,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,179,0,1,APIException,OUT_OF_STOCK,288.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,180,0,1,APIException,OUT_OF_STOCK,287.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,181,0,1,APIException,OUT_OF_STOCK,287.45,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,182,0,1,APIException,OUT_OF_STOCK,287.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,183,0,1,APIException,OUT_OF_STOCK,286.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,184,0,1,APIException,OUT_OF_STOCK,285.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,185,0,1,APIException,OUT_OF_STOCK,286.12,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,186,0,1,APIException,OUT_OF_STOCK,286.93,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,187,0,1,APIException,OUT_OF_STOCK,286.00,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,188,0,1,APIException,OUT_OF_STOCK,283.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,189,0,1,APIException,OUT_OF_STOCK,281.01,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,190,0,1,APIException,OUT_OF_STOCK,273.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,191,0,1,APIException,OUT_OF_STOCK,272.19,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,192,0,1,APIException,OUT_OF_STOCK,263.20,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,193,0,1,APIException,OUT_OF_STOCK,234.36,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,194,0,1,APIException,OUT_OF_STOCK,225.97,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,195,0,1,APIException,OUT_OF_STOCK,218.87,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,196,0,1,APIException,OUT_OF_STOCK,213.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,197,0,1,APIException,OUT_OF_STOCK,205.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,198,0,1,APIException,OUT_OF_STOCK,201.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,2,false,199,0,1,APIException,OUT_OF_STOCK,198.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er2 0'. Available: 0, requested: 1."
+E,3,false,0,0,1,OK,SUCCESS,65.69,0.45,false,
+E,3,false,1,0,1,OK,SUCCESS,140.81,0.38,false,
+E,3,false,2,0,1,OK,SUCCESS,129.05,0.45,false,
+E,3,false,3,0,1,OK,SUCCESS,531.15,0.45,false,
+E,3,false,4,0,1,OK,SUCCESS,126.39,0.18,false,
+E,3,false,5,0,1,OK,SUCCESS,134.83,0.20,false,
+E,3,false,6,0,1,OK,SUCCESS,310.84,0.39,false,
+E,3,false,7,0,1,OK,SUCCESS,106.78,0.00,false,
+E,3,false,8,0,1,OK,SUCCESS,307.26,0.39,false,
+E,3,false,9,0,1,OK,SUCCESS,41.91,0.15,false,
+E,3,false,10,0,1,OK,SUCCESS,25.68,0.36,false,
+E,3,false,11,0,1,OK,SUCCESS,60.34,0.36,false,
+E,3,false,12,0,1,OK,SUCCESS,13.26,0.31,false,
+E,3,false,13,0,1,OK,SUCCESS,34.86,0.00,false,
+E,3,false,14,0,1,OK,SUCCESS,54.30,0.00,false,
+E,3,false,15,0,1,OK,SUCCESS,293.13,0.00,false,
+E,3,false,16,0,1,OK,SUCCESS,88.44,0.00,false,
+E,3,false,17,0,1,OK,SUCCESS,116.99,0.00,false,
+E,3,false,18,0,1,OK,SUCCESS,119.82,0.00,false,
+E,3,false,19,0,1,OK,SUCCESS,49.10,0.00,false,
+E,3,false,20,0,1,OK,SUCCESS,70.66,0.00,false,
+E,3,false,21,0,1,OK,SUCCESS,130.58,0.00,false,
+E,3,false,22,0,1,APIException,OUT_OF_STOCK,552.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,23,0,1,OK,SUCCESS,142.90,0.00,false,
+E,3,false,24,0,1,OK,SUCCESS,138.04,0.00,false,
+E,3,false,25,0,1,OK,SUCCESS,378.41,0.00,false,
+E,3,false,26,0,1,OK,SUCCESS,358.03,0.00,false,
+E,3,false,27,0,1,OK,SUCCESS,365.69,0.00,false,
+E,3,false,28,0,1,OK,SUCCESS,155.49,0.00,false,
+E,3,false,29,0,1,OK,SUCCESS,152.77,0.00,false,
+E,3,false,30,0,1,OK,SUCCESS,161.65,0.00,false,
+E,3,false,31,0,1,OK,SUCCESS,167.06,0.00,false,
+E,3,false,32,0,1,OK,SUCCESS,177.58,0.00,false,
+E,3,false,33,0,1,OK,SUCCESS,218.18,0.00,false,
+E,3,false,34,0,1,OK,SUCCESS,201.59,0.00,false,
+E,3,false,35,0,1,OK,SUCCESS,421.91,0.00,false,
+E,3,false,36,0,1,OK,SUCCESS,430.30,0.00,false,
+E,3,false,37,0,1,OK,SUCCESS,234.83,0.00,false,
+E,3,false,38,0,1,OK,SUCCESS,240.93,0.00,false,
+E,3,false,39,0,1,APIException,OUT_OF_STOCK,592.36,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,40,0,1,OK,SUCCESS,458.51,0.00,false,
+E,3,false,41,0,1,OK,SUCCESS,244.41,0.00,false,
+E,3,false,42,0,1,OK,SUCCESS,490.03,0.00,false,
+E,3,false,43,0,1,OK,SUCCESS,258.99,0.00,false,
+E,3,false,44,0,1,OK,SUCCESS,251.87,0.00,false,
+E,3,false,45,0,1,OK,SUCCESS,255.18,0.00,false,
+E,3,false,46,0,1,OK,SUCCESS,266.18,0.00,false,
+E,3,false,47,0,1,OK,SUCCESS,280.32,0.00,false,
+E,3,false,48,0,1,OK,SUCCESS,122.84,0.27,false,
+E,3,false,49,0,1,OK,SUCCESS,17.27,0.00,false,
+E,3,false,50,0,1,OK,SUCCESS,64.29,0.00,false,
+E,3,false,51,0,1,OK,SUCCESS,287.14,0.00,false,
+E,3,false,52,0,1,OK,SUCCESS,72.65,0.00,false,
+E,3,false,53,0,1,OK,SUCCESS,265.17,0.00,false,
+E,3,false,54,0,1,OK,SUCCESS,72.10,0.00,false,
+E,3,false,55,0,1,OK,SUCCESS,61.91,0.00,false,
+E,3,false,56,0,1,OK,SUCCESS,264.36,0.00,false,
+E,3,false,57,0,1,OK,SUCCESS,261.39,0.00,false,
+E,3,false,58,0,1,OK,SUCCESS,473.87,0.00,false,
+E,3,false,59,0,1,OK,SUCCESS,472.81,0.00,false,
+E,3,false,60,0,1,OK,SUCCESS,257.71,0.00,false,
+E,3,false,61,0,1,OK,SUCCESS,251.35,0.00,false,
+E,3,false,62,0,1,OK,SUCCESS,244.70,0.00,false,
+E,3,false,63,0,1,OK,SUCCESS,30.98,0.00,false,
+E,3,false,64,0,1,OK,SUCCESS,235.77,0.00,false,
+E,3,false,65,0,1,OK,SUCCESS,236.62,0.00,false,
+E,3,false,66,0,1,OK,SUCCESS,238.59,0.00,false,
+E,3,false,67,0,1,OK,SUCCESS,31.56,0.00,false,
+E,3,false,68,0,1,OK,SUCCESS,23.34,0.00,false,
+E,3,false,69,0,1,OK,SUCCESS,27.88,0.00,false,
+E,3,false,70,0,1,OK,SUCCESS,260.49,0.00,false,
+E,3,false,71,0,1,APIException,OUT_OF_STOCK,442.86,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,72,0,1,OK,SUCCESS,261.72,0.00,false,
+E,3,false,73,0,1,APIException,OUT_OF_STOCK,441.73,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,74,0,1,OK,SUCCESS,267.33,0.00,false,
+E,3,false,75,0,1,OK,SUCCESS,270.11,0.00,false,
+E,3,false,76,0,1,OK,SUCCESS,274.98,0.00,false,
+E,3,false,77,0,1,OK,SUCCESS,83.69,0.00,false,
+E,3,false,78,0,1,OK,SUCCESS,85.74,0.00,false,
+E,3,false,79,0,1,APIException,OUT_OF_STOCK,440.29,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,80,0,1,OK,SUCCESS,289.33,0.00,false,
+E,3,false,81,0,1,OK,SUCCESS,54.45,0.00,false,
+E,3,false,82,0,1,OK,SUCCESS,291.55,0.00,false,
+E,3,false,83,0,1,OK,SUCCESS,81.25,0.00,false,
+E,3,false,84,0,1,OK,SUCCESS,286.14,0.00,false,
+E,3,false,85,0,1,OK,SUCCESS,268.57,0.00,false,
+E,3,false,86,0,1,OK,SUCCESS,265.28,0.00,false,
+E,3,false,87,0,1,OK,SUCCESS,261.95,0.00,false,
+E,3,false,88,0,1,OK,SUCCESS,48.55,0.00,false,
+E,3,false,89,0,1,OK,SUCCESS,255.21,0.00,false,
+E,3,false,90,0,1,OK,SUCCESS,259.91,0.00,false,
+E,3,false,91,0,1,OK,SUCCESS,258.57,0.00,false,
+E,3,false,92,0,1,OK,SUCCESS,259.56,0.00,false,
+E,3,false,93,0,1,OK,SUCCESS,262.25,0.00,false,
+E,3,false,94,0,1,OK,SUCCESS,264.33,0.00,false,
+E,3,false,95,0,1,OK,SUCCESS,53.19,0.00,false,
+E,3,false,96,0,1,OK,SUCCESS,261.07,0.00,false,
+E,3,false,97,0,1,OK,SUCCESS,261.90,0.00,false,
+E,3,false,98,0,1,OK,SUCCESS,44.29,0.00,false,
+E,3,false,99,0,1,OK,SUCCESS,45.14,0.00,false,
+E,3,false,100,0,1,APIException,OUT_OF_STOCK,254.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,101,0,1,APIException,OUT_OF_STOCK,249.25,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,102,0,1,APIException,OUT_OF_STOCK,247.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,103,0,1,OK,SUCCESS,20.69,0.00,false,
+E,3,false,104,0,1,APIException,OUT_OF_STOCK,245.61,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,105,0,1,APIException,OUT_OF_STOCK,243.34,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,106,0,1,APIException,OUT_OF_STOCK,241.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,107,0,1,APIException,OUT_OF_STOCK,243.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,108,0,1,APIException,OUT_OF_STOCK,237.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,109,0,1,APIException,OUT_OF_STOCK,239.37,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,110,0,1,APIException,OUT_OF_STOCK,237.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,111,0,1,OK,SUCCESS,43.97,0.00,false,
+E,3,false,112,0,1,APIException,OUT_OF_STOCK,237.22,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,113,0,1,OK,SUCCESS,57.48,0.00,false,
+E,3,false,114,0,1,APIException,OUT_OF_STOCK,235.11,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,115,0,1,APIException,OUT_OF_STOCK,234.41,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,116,0,1,APIException,OUT_OF_STOCK,231.35,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,117,0,1,APIException,OUT_OF_STOCK,225.86,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,118,0,1,APIException,OUT_OF_STOCK,220.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,119,0,1,OK,SUCCESS,62.83,0.00,false,
+E,3,false,120,0,1,APIException,OUT_OF_STOCK,212.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,121,0,1,OK,SUCCESS,65.13,0.00,false,
+E,3,false,122,0,1,APIException,OUT_OF_STOCK,204.26,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,123,0,1,APIException,OUT_OF_STOCK,201.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,124,0,1,APIException,OUT_OF_STOCK,197.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,125,0,1,APIException,OUT_OF_STOCK,193.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,126,0,1,APIException,OUT_OF_STOCK,188.18,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,127,0,1,APIException,OUT_OF_STOCK,182.81,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,128,0,1,APIException,OUT_OF_STOCK,176.46,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,129,0,1,APIException,OUT_OF_STOCK,172.71,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,130,0,1,APIException,OUT_OF_STOCK,168.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,131,0,1,APIException,OUT_OF_STOCK,164.78,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,132,0,1,APIException,OUT_OF_STOCK,161.84,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,133,0,1,APIException,OUT_OF_STOCK,158.85,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,134,0,1,APIException,OUT_OF_STOCK,155.73,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,135,0,1,APIException,OUT_OF_STOCK,150.97,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,136,0,1,APIException,OUT_OF_STOCK,147.85,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,137,0,1,APIException,OUT_OF_STOCK,144.70,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,138,0,1,APIException,OUT_OF_STOCK,140.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,139,0,1,APIException,OUT_OF_STOCK,138.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,140,0,1,APIException,OUT_OF_STOCK,135.87,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,141,0,1,APIException,OUT_OF_STOCK,133.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,142,0,1,APIException,OUT_OF_STOCK,130.30,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,143,0,1,APIException,OUT_OF_STOCK,126.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,144,0,1,APIException,OUT_OF_STOCK,122.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,145,0,1,APIException,OUT_OF_STOCK,119.53,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,146,0,1,APIException,OUT_OF_STOCK,116.52,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,147,0,1,APIException,OUT_OF_STOCK,115.01,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,148,0,1,APIException,OUT_OF_STOCK,112.20,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,149,0,1,APIException,OUT_OF_STOCK,109.46,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,150,0,1,APIException,OUT_OF_STOCK,107.58,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,151,0,1,APIException,OUT_OF_STOCK,107.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,152,0,1,APIException,OUT_OF_STOCK,107.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,153,0,1,APIException,OUT_OF_STOCK,106.10,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,154,0,1,APIException,OUT_OF_STOCK,105.07,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,155,0,1,APIException,OUT_OF_STOCK,105.23,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,156,0,1,APIException,OUT_OF_STOCK,104.82,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,157,0,1,APIException,OUT_OF_STOCK,103.59,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,158,0,1,APIException,OUT_OF_STOCK,102.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,159,0,1,APIException,OUT_OF_STOCK,102.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,160,0,1,APIException,OUT_OF_STOCK,101.72,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,161,0,1,APIException,OUT_OF_STOCK,99.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,162,0,1,APIException,OUT_OF_STOCK,98.11,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,163,0,1,APIException,OUT_OF_STOCK,98.06,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,164,0,1,APIException,OUT_OF_STOCK,98.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,165,0,1,APIException,OUT_OF_STOCK,98.78,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,166,0,1,APIException,OUT_OF_STOCK,98.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,167,0,1,APIException,OUT_OF_STOCK,97.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,168,0,1,APIException,OUT_OF_STOCK,97.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,169,0,1,APIException,OUT_OF_STOCK,98.30,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,170,0,1,APIException,OUT_OF_STOCK,97.36,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,171,0,1,APIException,OUT_OF_STOCK,97.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,172,0,1,APIException,OUT_OF_STOCK,97.71,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,173,0,1,APIException,OUT_OF_STOCK,97.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,174,0,1,APIException,OUT_OF_STOCK,95.52,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,175,0,1,APIException,OUT_OF_STOCK,95.15,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,176,0,1,APIException,OUT_OF_STOCK,95.02,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,177,0,1,APIException,OUT_OF_STOCK,94.32,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,178,0,1,APIException,OUT_OF_STOCK,93.63,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,179,0,1,APIException,OUT_OF_STOCK,93.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,180,0,1,APIException,OUT_OF_STOCK,93.96,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,181,0,1,APIException,OUT_OF_STOCK,93.28,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,182,0,1,APIException,OUT_OF_STOCK,93.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,183,0,1,APIException,OUT_OF_STOCK,92.66,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,184,0,1,APIException,OUT_OF_STOCK,92.30,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,185,0,1,APIException,OUT_OF_STOCK,92.06,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,186,0,1,APIException,OUT_OF_STOCK,91.51,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,187,0,1,APIException,OUT_OF_STOCK,90.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,188,0,1,APIException,OUT_OF_STOCK,90.93,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,189,0,1,APIException,OUT_OF_STOCK,90.92,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,190,0,1,APIException,OUT_OF_STOCK,90.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,191,0,1,APIException,OUT_OF_STOCK,89.88,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,192,0,1,APIException,OUT_OF_STOCK,89.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,193,0,1,APIException,OUT_OF_STOCK,89.23,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,194,0,1,APIException,OUT_OF_STOCK,88.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,195,0,1,APIException,OUT_OF_STOCK,88.97,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,196,0,1,APIException,OUT_OF_STOCK,89.01,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,197,0,1,APIException,OUT_OF_STOCK,88.32,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,198,0,1,APIException,OUT_OF_STOCK,87.87,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,3,false,199,0,1,APIException,OUT_OF_STOCK,87.63,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er3 0'. Available: 0, requested: 1."
+E,4,false,0,0,1,OK,SUCCESS,23.24,0.00,false,
+E,4,false,1,0,1,OK,SUCCESS,39.20,0.00,false,
+E,4,false,2,0,1,OK,SUCCESS,10.95,0.00,false,
+E,4,false,3,0,1,OK,SUCCESS,34.82,0.00,false,
+E,4,false,4,0,1,OK,SUCCESS,31.08,0.00,false,
+E,4,false,5,0,1,OK,SUCCESS,19.02,0.00,false,
+E,4,false,6,0,1,OK,SUCCESS,43.03,0.00,false,
+E,4,false,7,0,1,OK,SUCCESS,45.57,0.00,false,
+E,4,false,8,0,1,OK,SUCCESS,26.58,0.00,false,
+E,4,false,9,0,1,OK,SUCCESS,16.13,0.00,false,
+E,4,false,10,0,1,APIException,OUT_OF_STOCK,452.59,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,11,0,1,OK,SUCCESS,51.51,0.00,false,
+E,4,false,12,0,1,OK,SUCCESS,307.05,0.00,false,
+E,4,false,13,0,1,OK,SUCCESS,59.46,0.00,false,
+E,4,false,14,0,1,OK,SUCCESS,326.20,0.00,false,
+E,4,false,15,0,1,OK,SUCCESS,69.69,0.00,false,
+E,4,false,16,0,1,OK,SUCCESS,63.16,0.00,false,
+E,4,false,17,0,1,OK,SUCCESS,66.89,0.00,false,
+E,4,false,18,0,1,OK,SUCCESS,72.73,0.00,false,
+E,4,false,19,0,1,OK,SUCCESS,75.98,0.00,false,
+E,4,false,20,0,1,OK,SUCCESS,79.10,0.00,false,
+E,4,false,21,0,1,OK,SUCCESS,81.74,0.00,false,
+E,4,false,22,0,1,OK,SUCCESS,210.22,0.00,false,
+E,4,false,23,0,1,OK,SUCCESS,84.10,0.00,false,
+E,4,false,24,0,1,OK,SUCCESS,89.27,0.00,false,
+E,4,false,25,0,1,OK,SUCCESS,92.17,0.00,false,
+E,4,false,26,0,1,APIException,OUT_OF_STOCK,381.76,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,27,0,1,APIException,OUT_OF_STOCK,383.98,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,28,0,1,APIException,OUT_OF_STOCK,387.33,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,29,0,1,OK,SUCCESS,107.20,0.00,false,
+E,4,false,30,0,1,OK,SUCCESS,110.26,0.00,false,
+E,4,false,31,0,1,OK,SUCCESS,117.24,0.00,false,
+E,4,false,32,0,1,OK,SUCCESS,121.15,0.00,false,
+E,4,false,33,0,1,OK,SUCCESS,238.25,0.00,false,
+E,4,false,34,0,1,OK,SUCCESS,127.32,0.00,false,
+E,4,false,35,0,1,OK,SUCCESS,124.80,0.00,false,
+E,4,false,36,0,1,OK,SUCCESS,136.36,0.00,false,
+E,4,false,37,0,1,APIException,OUT_OF_STOCK,413.22,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,38,0,1,OK,SUCCESS,133.38,0.00,false,
+E,4,false,39,0,1,OK,SUCCESS,138.82,0.00,false,
+E,4,false,40,0,1,OK,SUCCESS,141.51,0.00,false,
+E,4,false,41,0,1,APIException,OUT_OF_STOCK,434.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,42,0,1,OK,SUCCESS,257.00,0.00,false,
+E,4,false,43,0,1,OK,SUCCESS,149.68,0.00,false,
+E,4,false,44,0,1,APIException,OUT_OF_STOCK,437.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,45,0,1,OK,SUCCESS,154.76,0.00,false,
+E,4,false,46,0,1,APIException,OUT_OF_STOCK,443.85,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,47,0,1,APIException,OUT_OF_STOCK,445.94,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,48,0,1,OK,SUCCESS,162.27,0.00,false,
+E,4,false,49,0,1,OK,SUCCESS,167.87,0.00,false,
+E,4,false,50,0,1,OK,SUCCESS,38.04,0.00,false,
+E,4,false,51,0,1,APIException,OUT_OF_STOCK,438.82,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,52,0,1,OK,SUCCESS,35.31,0.00,false,
+E,4,false,53,0,1,OK,SUCCESS,297.86,0.00,false,
+E,4,false,54,0,1,OK,SUCCESS,30.07,0.00,false,
+E,4,false,55,0,1,OK,SUCCESS,157.31,0.00,false,
+E,4,false,56,0,1,APIException,OUT_OF_STOCK,431.84,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,57,0,1,OK,SUCCESS,152.09,0.00,false,
+E,4,false,58,0,1,APIException,OUT_OF_STOCK,430.87,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,59,0,1,APIException,OUT_OF_STOCK,433.36,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,60,0,1,APIException,OUT_OF_STOCK,431.85,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,61,0,1,APIException,OUT_OF_STOCK,306.67,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,62,0,1,APIException,OUT_OF_STOCK,315.77,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,63,0,1,OK,SUCCESS,30.06,0.00,false,
+E,4,false,64,0,1,APIException,OUT_OF_STOCK,316.33,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,65,0,1,APIException,OUT_OF_STOCK,315.82,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,66,0,1,OK,SUCCESS,29.85,0.00,false,
+E,4,false,67,0,1,OK,SUCCESS,30.13,0.00,false,
+E,4,false,68,0,1,OK,SUCCESS,31.18,0.00,false,
+E,4,false,69,0,1,APIException,OUT_OF_STOCK,313.40,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,70,0,1,APIException,OUT_OF_STOCK,312.33,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,71,0,1,APIException,OUT_OF_STOCK,312.36,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,72,0,1,OK,SUCCESS,144.34,0.00,false,
+E,4,false,73,0,1,OK,SUCCESS,26.95,0.00,false,
+E,4,false,74,0,1,OK,SUCCESS,152.05,0.00,false,
+E,4,false,75,0,1,OK,SUCCESS,143.63,0.00,false,
+E,4,false,76,0,1,OK,SUCCESS,33.73,0.00,false,
+E,4,false,77,0,1,OK,SUCCESS,146.30,0.00,false,
+E,4,false,78,0,1,APIException,OUT_OF_STOCK,314.40,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,79,0,1,APIException,OUT_OF_STOCK,316.58,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,80,0,1,APIException,OUT_OF_STOCK,318.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,81,0,1,OK,SUCCESS,30.98,0.00,false,
+E,4,false,82,0,1,OK,SUCCESS,29.91,0.00,false,
+E,4,false,83,0,1,OK,SUCCESS,30.98,0.00,false,
+E,4,false,84,0,1,APIException,OUT_OF_STOCK,314.23,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,85,0,1,APIException,OUT_OF_STOCK,314.30,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,86,0,1,OK,SUCCESS,27.18,0.00,false,
+E,4,false,87,0,1,OK,SUCCESS,26.47,0.00,false,
+E,4,false,88,0,1,APIException,OUT_OF_STOCK,311.45,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,89,0,1,APIException,OUT_OF_STOCK,311.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,90,0,1,OK,SUCCESS,30.39,0.00,false,
+E,4,false,91,0,1,OK,SUCCESS,31.32,0.00,false,
+E,4,false,92,0,1,OK,SUCCESS,31.36,0.00,false,
+E,4,false,93,0,1,OK,SUCCESS,31.91,0.00,false,
+E,4,false,94,0,1,OK,SUCCESS,32.49,0.00,false,
+E,4,false,95,0,1,OK,SUCCESS,177.22,0.00,false,
+E,4,false,96,0,1,OK,SUCCESS,39.08,0.00,false,
+E,4,false,97,0,1,APIException,OUT_OF_STOCK,309.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,98,0,1,OK,SUCCESS,36.65,0.00,false,
+E,4,false,99,0,1,OK,SUCCESS,38.23,0.00,false,
+E,4,false,100,0,1,OK,SUCCESS,29.12,0.00,false,
+E,4,false,101,0,1,OK,SUCCESS,17.85,0.00,false,
+E,4,false,102,0,1,OK,SUCCESS,24.98,0.00,false,
+E,4,false,103,0,1,APIException,OUT_OF_STOCK,189.98,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,104,0,1,OK,SUCCESS,30.53,0.00,false,
+E,4,false,105,0,1,OK,SUCCESS,32.21,0.00,false,
+E,4,false,106,0,1,OK,SUCCESS,32.65,0.00,false,
+E,4,false,107,0,1,OK,SUCCESS,19.17,0.00,false,
+E,4,false,108,0,1,OK,SUCCESS,21.10,0.00,false,
+E,4,false,109,0,1,OK,SUCCESS,26.82,0.00,false,
+E,4,false,110,0,1,OK,SUCCESS,29.33,0.00,false,
+E,4,false,111,0,1,OK,SUCCESS,29.50,0.00,false,
+E,4,false,112,0,1,APIException,OUT_OF_STOCK,189.94,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,113,0,1,APIException,OUT_OF_STOCK,188.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,114,0,1,APIException,OUT_OF_STOCK,191.29,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,115,0,1,APIException,OUT_OF_STOCK,193.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,116,0,1,OK,SUCCESS,25.85,0.00,false,
+E,4,false,117,0,1,APIException,OUT_OF_STOCK,195.35,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,118,0,1,OK,SUCCESS,25.50,0.00,false,
+E,4,false,119,0,1,OK,SUCCESS,25.38,0.00,false,
+E,4,false,120,0,1,OK,SUCCESS,26.49,0.00,false,
+E,4,false,121,0,1,APIException,OUT_OF_STOCK,201.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,122,0,1,OK,SUCCESS,29.58,0.00,false,
+E,4,false,123,0,1,OK,SUCCESS,23.75,0.00,false,
+E,4,false,124,0,1,OK,SUCCESS,26.95,0.00,false,
+E,4,false,125,0,1,OK,SUCCESS,27.05,0.00,false,
+E,4,false,126,0,1,OK,SUCCESS,27.19,0.00,false,
+E,4,false,127,0,1,OK,SUCCESS,31.07,0.00,false,
+E,4,false,128,0,1,OK,SUCCESS,34.35,0.00,false,
+E,4,false,129,0,1,OK,SUCCESS,36.04,0.00,false,
+E,4,false,130,0,1,OK,SUCCESS,38.52,0.00,false,
+E,4,false,131,0,1,OK,SUCCESS,43.82,0.00,false,
+E,4,false,132,0,1,APIException,OUT_OF_STOCK,196.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,133,0,1,APIException,OUT_OF_STOCK,195.38,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,134,0,1,APIException,OUT_OF_STOCK,196.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,135,0,1,APIException,OUT_OF_STOCK,195.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,136,0,1,OK,SUCCESS,68.77,0.00,false,
+E,4,false,137,0,1,OK,SUCCESS,67.83,0.00,false,
+E,4,false,138,0,1,OK,SUCCESS,66.46,0.00,false,
+E,4,false,139,0,1,OK,SUCCESS,67.22,0.00,false,
+E,4,false,140,0,1,APIException,OUT_OF_STOCK,71.86,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,141,0,1,APIException,OUT_OF_STOCK,180.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,142,0,1,APIException,OUT_OF_STOCK,177.47,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,143,0,1,APIException,OUT_OF_STOCK,167.22,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,144,0,1,APIException,OUT_OF_STOCK,164.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,145,0,1,APIException,OUT_OF_STOCK,160.66,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,146,0,1,APIException,OUT_OF_STOCK,157.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,147,0,1,APIException,OUT_OF_STOCK,153.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,148,0,1,APIException,OUT_OF_STOCK,151.81,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,149,0,1,APIException,OUT_OF_STOCK,150.09,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,150,0,1,APIException,OUT_OF_STOCK,148.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,151,0,1,APIException,OUT_OF_STOCK,143.34,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,152,0,1,APIException,OUT_OF_STOCK,143.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,153,0,1,APIException,OUT_OF_STOCK,147.52,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,154,0,1,APIException,OUT_OF_STOCK,148.70,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,155,0,1,APIException,OUT_OF_STOCK,148.01,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,156,0,1,APIException,OUT_OF_STOCK,147.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,157,0,1,APIException,OUT_OF_STOCK,147.29,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,158,0,1,APIException,OUT_OF_STOCK,147.22,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,159,0,1,APIException,OUT_OF_STOCK,149.06,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,160,0,1,APIException,OUT_OF_STOCK,149.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,161,0,1,APIException,OUT_OF_STOCK,149.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,162,0,1,APIException,OUT_OF_STOCK,149.98,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,163,0,1,APIException,OUT_OF_STOCK,150.55,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,164,0,1,APIException,OUT_OF_STOCK,146.38,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,165,0,1,APIException,OUT_OF_STOCK,143.34,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,166,0,1,APIException,OUT_OF_STOCK,140.67,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,167,0,1,APIException,OUT_OF_STOCK,141.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,168,0,1,APIException,OUT_OF_STOCK,140.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,169,0,1,APIException,OUT_OF_STOCK,136.11,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,170,0,1,APIException,OUT_OF_STOCK,133.35,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,171,0,1,APIException,OUT_OF_STOCK,131.56,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,172,0,1,APIException,OUT_OF_STOCK,130.19,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,173,0,1,APIException,OUT_OF_STOCK,131.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,174,0,1,APIException,OUT_OF_STOCK,132.02,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,175,0,1,APIException,OUT_OF_STOCK,132.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,176,0,1,APIException,OUT_OF_STOCK,132.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,177,0,1,APIException,OUT_OF_STOCK,133.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,178,0,1,APIException,OUT_OF_STOCK,134.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,179,0,1,APIException,OUT_OF_STOCK,137.53,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,180,0,1,APIException,OUT_OF_STOCK,139.37,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,181,0,1,APIException,OUT_OF_STOCK,146.61,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,182,0,1,APIException,OUT_OF_STOCK,154.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,183,0,1,APIException,OUT_OF_STOCK,156.88,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,184,0,1,APIException,OUT_OF_STOCK,156.36,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,185,0,1,APIException,OUT_OF_STOCK,158.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,186,0,1,APIException,OUT_OF_STOCK,158.65,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,187,0,1,APIException,OUT_OF_STOCK,164.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,188,0,1,APIException,OUT_OF_STOCK,164.07,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,189,0,1,APIException,OUT_OF_STOCK,164.27,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,190,0,1,APIException,OUT_OF_STOCK,166.46,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,191,0,1,APIException,OUT_OF_STOCK,168.47,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,192,0,1,APIException,OUT_OF_STOCK,171.90,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,193,0,1,APIException,OUT_OF_STOCK,170.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,194,0,1,APIException,OUT_OF_STOCK,171.15,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,195,0,1,APIException,OUT_OF_STOCK,170.80,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,196,0,1,APIException,OUT_OF_STOCK,168.55,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,197,0,1,APIException,OUT_OF_STOCK,169.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,198,0,1,APIException,OUT_OF_STOCK,168.72,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,4,false,199,0,1,APIException,OUT_OF_STOCK,167.24,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er4 0'. Available: 0, requested: 1."
+E,5,false,0,0,1,OK,SUCCESS,37.22,0.00,false,
+E,5,false,1,0,1,OK,SUCCESS,25.72,0.00,false,
+E,5,false,2,0,1,OK,SUCCESS,43.50,0.00,false,
+E,5,false,3,0,1,OK,SUCCESS,33.41,0.00,false,
+E,5,false,4,0,1,OK,SUCCESS,40.38,0.00,false,
+E,5,false,5,0,1,OK,SUCCESS,22.42,0.00,false,
+E,5,false,6,0,1,OK,SUCCESS,4.66,0.00,false,
+E,5,false,7,0,1,OK,SUCCESS,30.14,0.00,false,
+E,5,false,8,0,1,OK,SUCCESS,12.05,0.00,false,
+E,5,false,9,0,1,OK,SUCCESS,18.03,0.00,false,
+E,5,false,10,0,1,OK,SUCCESS,46.09,0.00,false,
+E,5,false,11,0,1,OK,SUCCESS,48.64,0.00,false,
+E,5,false,12,0,1,OK,SUCCESS,58.65,0.00,false,
+E,5,false,13,0,1,OK,SUCCESS,50.96,0.00,false,
+E,5,false,14,0,1,OK,SUCCESS,55.13,0.00,false,
+E,5,false,15,0,1,OK,SUCCESS,61.94,0.00,false,
+E,5,false,16,0,1,OK,SUCCESS,65.31,0.00,false,
+E,5,false,17,0,1,OK,SUCCESS,188.55,0.00,false,
+E,5,false,18,0,1,OK,SUCCESS,76.84,0.00,false,
+E,5,false,19,0,1,OK,SUCCESS,72.99,0.00,false,
+E,5,false,20,0,1,APIException,OUT_OF_STOCK,387.05,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,21,0,1,OK,SUCCESS,83.51,0.00,false,
+E,5,false,22,0,1,OK,SUCCESS,321.42,0.00,false,
+E,5,false,23,0,1,OK,SUCCESS,94.17,0.00,false,
+E,5,false,24,0,1,APIException,OUT_OF_STOCK,332.19,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,25,0,1,OK,SUCCESS,96.68,0.00,false,
+E,5,false,26,0,1,OK,SUCCESS,91.86,0.00,false,
+E,5,false,27,0,1,OK,SUCCESS,99.25,0.00,false,
+E,5,false,28,0,1,APIException,OUT_OF_STOCK,338.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,29,0,1,APIException,OUT_OF_STOCK,339.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,30,0,1,OK,SUCCESS,112.20,0.00,false,
+E,5,false,31,0,1,APIException,OUT_OF_STOCK,343.48,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,32,0,1,OK,SUCCESS,240.21,0.00,false,
+E,5,false,33,0,1,OK,SUCCESS,121.57,0.00,false,
+E,5,false,34,0,1,OK,SUCCESS,247.90,0.00,false,
+E,5,false,35,0,1,APIException,OUT_OF_STOCK,349.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,36,0,1,OK,SUCCESS,244.92,0.00,false,
+E,5,false,37,0,1,OK,SUCCESS,252.65,0.00,false,
+E,5,false,38,0,1,OK,SUCCESS,126.80,0.00,false,
+E,5,false,39,0,1,OK,SUCCESS,135.02,0.00,false,
+E,5,false,40,0,1,OK,SUCCESS,144.60,0.01,false,
+E,5,false,41,0,1,OK,SUCCESS,138.29,0.00,false,
+E,5,false,42,0,1,OK,SUCCESS,141.30,0.00,false,
+E,5,false,43,0,1,OK,SUCCESS,269.48,0.00,false,
+E,5,false,44,0,1,OK,SUCCESS,162.72,0.00,false,
+E,5,false,45,0,1,OK,SUCCESS,154.81,0.00,false,
+E,5,false,46,0,1,OK,SUCCESS,159.60,0.00,false,
+E,5,false,47,0,1,OK,SUCCESS,287.29,0.00,false,
+E,5,false,48,0,1,APIException,OUT_OF_STOCK,365.93,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,49,0,1,OK,SUCCESS,277.59,0.00,false,
+E,5,false,50,0,1,OK,SUCCESS,276.48,0.00,false,
+E,5,false,51,0,1,OK,SUCCESS,273.89,0.00,false,
+E,5,false,52,0,1,OK,SUCCESS,167.98,0.00,false,
+E,5,false,53,0,1,APIException,OUT_OF_STOCK,353.68,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,54,0,1,OK,SUCCESS,165.47,0.00,false,
+E,5,false,55,0,1,OK,SUCCESS,163.30,0.00,false,
+E,5,false,56,0,1,OK,SUCCESS,35.98,0.00,false,
+E,5,false,57,0,1,APIException,OUT_OF_STOCK,345.83,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,58,0,1,OK,SUCCESS,158.01,0.00,false,
+E,5,false,59,0,1,APIException,OUT_OF_STOCK,342.37,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,60,0,1,OK,SUCCESS,33.54,0.00,false,
+E,5,false,61,0,1,OK,SUCCESS,156.98,0.00,false,
+E,5,false,62,0,1,OK,SUCCESS,35.76,0.00,false,
+E,5,false,63,0,1,OK,SUCCESS,34.40,0.00,false,
+E,5,false,64,0,1,OK,SUCCESS,158.54,0.00,false,
+E,5,false,65,0,1,APIException,OUT_OF_STOCK,271.73,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,66,0,1,APIException,OUT_OF_STOCK,269.99,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,67,0,1,APIException,OUT_OF_STOCK,267.55,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,68,0,1,OK,SUCCESS,29.78,0.00,false,
+E,5,false,69,0,1,OK,SUCCESS,41.76,0.00,false,
+E,5,false,70,0,1,OK,SUCCESS,154.72,0.00,false,
+E,5,false,71,0,1,OK,SUCCESS,22.47,0.00,false,
+E,5,false,72,0,1,OK,SUCCESS,22.54,0.00,false,
+E,5,false,73,0,1,OK,SUCCESS,153.51,0.00,false,
+E,5,false,74,0,1,OK,SUCCESS,32.96,0.00,false,
+E,5,false,75,0,1,OK,SUCCESS,21.24,0.00,false,
+E,5,false,76,0,1,OK,SUCCESS,33.51,0.00,false,
+E,5,false,77,0,1,OK,SUCCESS,33.34,0.00,false,
+E,5,false,78,0,1,APIException,OUT_OF_STOCK,251.35,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,79,0,1,OK,SUCCESS,154.42,0.00,false,
+E,5,false,80,0,1,OK,SUCCESS,148.94,0.00,false,
+E,5,false,81,0,1,APIException,OUT_OF_STOCK,246.19,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,82,0,1,OK,SUCCESS,152.08,0.00,false,
+E,5,false,83,0,1,OK,SUCCESS,31.68,0.00,false,
+E,5,false,84,0,1,APIException,OUT_OF_STOCK,240.96,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,85,0,1,APIException,OUT_OF_STOCK,239.49,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,86,0,1,OK,SUCCESS,137.79,0.00,false,
+E,5,false,87,0,1,OK,SUCCESS,36.70,0.00,false,
+E,5,false,88,0,1,OK,SUCCESS,40.13,0.00,false,
+E,5,false,89,0,1,OK,SUCCESS,40.20,0.00,false,
+E,5,false,90,0,1,OK,SUCCESS,39.44,0.00,false,
+E,5,false,91,0,1,OK,SUCCESS,38.68,0.00,false,
+E,5,false,92,0,1,APIException,OUT_OF_STOCK,228.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,93,0,1,OK,SUCCESS,33.31,0.00,false,
+E,5,false,94,0,1,OK,SUCCESS,144.09,0.00,false,
+E,5,false,95,0,1,APIException,OUT_OF_STOCK,218.67,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,96,0,1,APIException,OUT_OF_STOCK,217.19,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,97,0,1,OK,SUCCESS,28.94,0.00,false,
+E,5,false,98,0,1,OK,SUCCESS,144.18,0.00,false,
+E,5,false,99,0,1,OK,SUCCESS,24.20,0.00,false,
+E,5,false,100,0,1,OK,SUCCESS,24.34,0.00,false,
+E,5,false,101,0,1,APIException,OUT_OF_STOCK,207.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,102,0,1,OK,SUCCESS,30.70,0.00,false,
+E,5,false,103,0,1,OK,SUCCESS,22.43,0.00,false,
+E,5,false,104,0,1,APIException,OUT_OF_STOCK,142.39,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,105,0,1,OK,SUCCESS,29.31,0.00,false,
+E,5,false,106,0,1,OK,SUCCESS,17.81,0.00,false,
+E,5,false,107,0,1,OK,SUCCESS,27.93,0.00,false,
+E,5,false,108,0,1,OK,SUCCESS,28.58,0.00,false,
+E,5,false,109,0,1,OK,SUCCESS,30.17,0.00,false,
+E,5,false,110,0,1,APIException,OUT_OF_STOCK,137.97,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,111,0,1,OK,SUCCESS,32.31,0.00,false,
+E,5,false,112,0,1,APIException,OUT_OF_STOCK,137.13,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,113,0,1,APIException,OUT_OF_STOCK,135.80,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,114,0,1,APIException,OUT_OF_STOCK,133.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,115,0,1,OK,SUCCESS,33.74,0.00,false,
+E,5,false,116,0,1,APIException,OUT_OF_STOCK,131.18,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,117,0,1,APIException,OUT_OF_STOCK,128.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,118,0,1,OK,SUCCESS,29.17,0.00,false,
+E,5,false,119,0,1,APIException,OUT_OF_STOCK,124.93,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,120,0,1,APIException,OUT_OF_STOCK,122.98,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,121,0,1,OK,SUCCESS,25.11,0.00,false,
+E,5,false,122,0,1,APIException,OUT_OF_STOCK,119.69,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,123,0,1,APIException,OUT_OF_STOCK,118.47,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,124,0,1,OK,SUCCESS,27.86,0.00,false,
+E,5,false,125,0,1,OK,SUCCESS,28.01,0.00,false,
+E,5,false,126,0,1,APIException,OUT_OF_STOCK,114.88,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,127,0,1,OK,SUCCESS,29.95,0.00,false,
+E,5,false,128,0,1,APIException,OUT_OF_STOCK,112.56,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,129,0,1,APIException,OUT_OF_STOCK,111.84,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,130,0,1,APIException,OUT_OF_STOCK,111.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,131,0,1,APIException,OUT_OF_STOCK,109.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,132,0,1,OK,SUCCESS,26.69,0.00,false,
+E,5,false,133,0,1,OK,SUCCESS,28.74,0.00,false,
+E,5,false,134,0,1,APIException,OUT_OF_STOCK,107.33,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,135,0,1,OK,SUCCESS,30.23,0.00,false,
+E,5,false,136,0,1,OK,SUCCESS,31.41,0.00,false,
+E,5,false,137,0,1,OK,SUCCESS,33.43,0.00,false,
+E,5,false,138,0,1,APIException,OUT_OF_STOCK,103.29,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,139,0,1,APIException,OUT_OF_STOCK,40.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,140,0,1,APIException,OUT_OF_STOCK,40.80,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,141,0,1,APIException,OUT_OF_STOCK,40.92,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,142,0,1,APIException,OUT_OF_STOCK,97.70,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,143,0,1,APIException,OUT_OF_STOCK,95.08,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,144,0,1,APIException,OUT_OF_STOCK,92.63,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,145,0,1,APIException,OUT_OF_STOCK,90.34,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,146,0,1,APIException,OUT_OF_STOCK,88.01,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,147,0,1,APIException,OUT_OF_STOCK,85.41,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,148,0,1,APIException,OUT_OF_STOCK,81.94,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,149,0,1,APIException,OUT_OF_STOCK,78.80,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,150,0,1,APIException,OUT_OF_STOCK,77.35,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,151,0,1,APIException,OUT_OF_STOCK,76.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,152,0,1,APIException,OUT_OF_STOCK,75.11,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,153,0,1,APIException,OUT_OF_STOCK,74.96,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,154,0,1,APIException,OUT_OF_STOCK,74.83,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,155,0,1,APIException,OUT_OF_STOCK,74.94,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,156,0,1,APIException,OUT_OF_STOCK,75.45,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,157,0,1,APIException,OUT_OF_STOCK,75.34,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,158,0,1,APIException,OUT_OF_STOCK,75.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,159,0,1,APIException,OUT_OF_STOCK,75.54,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,160,0,1,APIException,OUT_OF_STOCK,75.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,161,0,1,APIException,OUT_OF_STOCK,74.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,162,0,1,APIException,OUT_OF_STOCK,74.81,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,163,0,1,APIException,OUT_OF_STOCK,74.80,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,164,0,1,APIException,OUT_OF_STOCK,74.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,165,0,1,APIException,OUT_OF_STOCK,74.75,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,166,0,1,APIException,OUT_OF_STOCK,75.07,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,167,0,1,APIException,OUT_OF_STOCK,75.01,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,168,0,1,APIException,OUT_OF_STOCK,75.03,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,169,0,1,APIException,OUT_OF_STOCK,74.89,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,170,0,1,APIException,OUT_OF_STOCK,74.72,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,171,0,1,APIException,OUT_OF_STOCK,75.22,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,172,0,1,APIException,OUT_OF_STOCK,79.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,173,0,1,APIException,OUT_OF_STOCK,83.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,174,0,1,APIException,OUT_OF_STOCK,85.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,175,0,1,APIException,OUT_OF_STOCK,86.45,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,176,0,1,APIException,OUT_OF_STOCK,86.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,177,0,1,APIException,OUT_OF_STOCK,87.31,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,178,0,1,APIException,OUT_OF_STOCK,87.85,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,179,0,1,APIException,OUT_OF_STOCK,87.95,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,180,0,1,APIException,OUT_OF_STOCK,88.44,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,181,0,1,APIException,OUT_OF_STOCK,89.28,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,182,0,1,APIException,OUT_OF_STOCK,90.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,183,0,1,APIException,OUT_OF_STOCK,90.32,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,184,0,1,APIException,OUT_OF_STOCK,89.56,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,185,0,1,APIException,OUT_OF_STOCK,89.43,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,186,0,1,APIException,OUT_OF_STOCK,89.30,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,187,0,1,APIException,OUT_OF_STOCK,88.86,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,188,0,1,APIException,OUT_OF_STOCK,88.64,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,189,0,1,APIException,OUT_OF_STOCK,88.60,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,190,0,1,APIException,OUT_OF_STOCK,88.63,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,191,0,1,APIException,OUT_OF_STOCK,88.79,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,192,0,1,APIException,OUT_OF_STOCK,90.66,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,193,0,1,APIException,OUT_OF_STOCK,94.73,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,194,0,1,APIException,OUT_OF_STOCK,97.74,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,195,0,1,APIException,OUT_OF_STOCK,97.82,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,196,0,1,APIException,OUT_OF_STOCK,98.72,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,197,0,1,APIException,OUT_OF_STOCK,98.28,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,198,0,1,APIException,OUT_OF_STOCK,98.16,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
+E,5,false,199,0,1,APIException,OUT_OF_STOCK,98.17,0.00,false,"APIException: Not enough stock for product 'Dist pesp10Er5 0'. Available: 0, requested: 1."
